@@ -1,0 +1,490 @@
+{
+  "type": "FeatureCollection",
+  "name": "Çaldıran Seferi Menzil Güzergâhı (1514)",
+  "description": "İstanbul (Üsküdar) ordugâhından Tebriz'e uzanan menzil menzil sefer intikali, lojistik ikmal ve konaklama koordinatları (Haydar Çelebi Ruznâmesi ve Celâlzâde Selimnâmesi kayıtları doğrultusunda).",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-001",
+        "step_order": 1,
+        "name": "Üsküdar (Haydarpaşa Çayırı)",
+        "historical_name": "Üsküdâr / Çayır-ı Haydarpâşâ",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-04-20",
+        "date_departed": "1514-04-23",
+        "stay_duration_days": 3,
+        "elevation_meters": 20,
+        "terrain_type": "Kıyı Ovası / Çayırlık",
+        "water_supply_status": "Bol (Marmara kaynakları ve çeşmeler)",
+        "logistics_note": "Ordu-yı Hümâyûn otağ-ı hümâyûnu kurdu; Rumeli ve Anadolu tımarlı sipahileri ile kapıkulu ocakları toplandı.",
+        "historical_event": "Padişah I. Selim sefere bizzat hareket emri verdi.",
+        "primary_source_ref": "Haydar Çelebi Ruznâmesi, s. 45"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.0233, 40.9972]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-002",
+        "step_order": 2,
+        "name": "Gebze",
+        "historical_name": "Gekbûze",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-04-25",
+        "date_departed": "1514-04-26",
+        "stay_duration_days": 1,
+        "elevation_meters": 130,
+        "terrain_type": "Tepelik arazi",
+        "water_supply_status": "Yeterli",
+        "logistics_note": "Ağır yük arabaları ve mühimmat konvoyu tanzim edildi.",
+        "historical_event": "Fatih Sultan Mehmed'in Hünkâr Çayırı menzili ziyaret edildi.",
+        "primary_source_ref": "Celâlzâde Selimnâme, s. 74"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.4307, 40.8028]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-003",
+        "step_order": 3,
+        "name": "İzmit",
+        "historical_name": "İznikmîd",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-04-28",
+        "date_departed": "1514-04-29",
+        "stay_duration_days": 1,
+        "elevation_meters": 15,
+        "terrain_type": "Körfez kıyısı",
+        "water_supply_status": "Bol",
+        "logistics_note": "Tersaneden gelen deniz destekli erzak filikaları karşılandı.",
+        "historical_event": "Bolu ve Kocaeli sancakbeyleri orduya katıldı.",
+        "primary_source_ref": "Haydar Çelebi Ruznâmesi, s. 48"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.9167, 40.7667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-004",
+        "step_order": 4,
+        "name": "İznik",
+        "historical_name": "İznîk",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-05-02",
+        "date_departed": "1514-05-04",
+        "stay_duration_days": 2,
+        "elevation_meters": 110,
+        "terrain_type": "Göl havzası",
+        "water_supply_status": "Bol (İznik Gölü tatlı suyu)",
+        "logistics_note": "At ve katırların nallanması ve zahire ambarlarının takviyesi.",
+        "historical_event": "Padişah ulemâ ve meşâyıh ile sohbet eyledi.",
+        "primary_source_ref": "İbn Kemal IX. Defter, s. 165"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.7189, 40.4286]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-005",
+        "step_order": 5,
+        "name": "Eskişehir (Seyitgazi)",
+        "historical_name": "Sultânönü / Seyyid Battal Gazi",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-05-11",
+        "date_departed": "1514-05-13",
+        "stay_duration_days": 2,
+        "elevation_meters": 950,
+        "terrain_type": "Plato / Bozkır",
+        "water_supply_status": "Orta (Porsuk ve kaynak suları)",
+        "logistics_note": "İç Anadolu hububat alımı ve ordu zahiresine tahsis.",
+        "historical_event": "Seyyid Battal Gazi türbesi ziyaret edilip kurbanlar kesildi.",
+        "primary_source_ref": "Celâlzâde Selimnâme, s. 79"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [30.6933, 39.4444]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-006",
+        "step_order": 6,
+        "name": "Konya",
+        "historical_name": "Konyâ",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-05-22",
+        "date_departed": "1514-05-25",
+        "stay_duration_days": 3,
+        "elevation_meters": 1020,
+        "terrain_type": "Geniş Ova",
+        "water_supply_status": "Yeterli",
+        "logistics_note": "Karaman eyaleti tımarlı sipahileri ve mühimmat birleşimi sağlandı.",
+        "historical_event": "Mevlânâ Celâleddîn-i Rûmî ve Sadreddin Konevî türbeleri ziyaret edildi.",
+        "primary_source_ref": "Haydar Çelebi Ruznâmesi, s. 52"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.4932, 37.8714]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-007",
+        "step_order": 7,
+        "name": "Kayseri",
+        "historical_name": "Kayseriyye",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-06-03",
+        "date_departed": "1514-06-06",
+        "stay_duration_days": 3,
+        "elevation_meters": 1050,
+        "terrain_type": "Volkanik ova / Erciyes etekleri",
+        "water_supply_status": "Bol",
+        "logistics_note": "Dulkadiroğlu Alâüddevle Bey'e elçiler gönderilip zahire ve ittifak talep edildi.",
+        "historical_event": "Alâüddevle Bey'in ikmal kervanlarına saldırdığı haberleri ulaştı.",
+        "primary_source_ref": "İdris-i Bitlisî Selim-nâme, s. 112"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.4853, 38.7205]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-008",
+        "step_order": 8,
+        "name": "Sivas (Büyük Yoklama Sahrası)",
+        "historical_name": "Sîvâs",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-06-15",
+        "date_departed": "1514-06-22",
+        "stay_duration_days": 7,
+        "elevation_meters": 1285,
+        "terrain_type": "Yukarı Kızılırmak Havzası",
+        "water_supply_status": "Bol (Kızılırmak suları)",
+        "logistics_note": "Büyük ordu teftişi ve nefer sayımı yapıldı (100.000 mevcud). 40.000 kişilik muhafız kuvvet geride ihtiyat olarak bırakıldı.",
+        "historical_event": "Şah İsmail'e ikinci ihtarname ve fetihnâme mektubu Sivas'tan ulaştırıldı.",
+        "primary_source_ref": "Feridun Bey Münşeât, C. I, s. 382"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.0150, 39.7505]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-009",
+        "step_order": 9,
+        "name": "Erzincan",
+        "historical_name": "Erzincân",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-07-06",
+        "date_departed": "1514-07-09",
+        "stay_duration_days": 3,
+        "elevation_meters": 1185,
+        "terrain_type": "Fırat vadi tabanı",
+        "water_supply_status": "Bol (Fırat Nehri)",
+        "logistics_note": "Safevilerin tarlaları ve otlakları yaktığı görüldü; Trabzon limanından deve kervanlarıyla un ve barut sevk edildi.",
+        "historical_event": "Yeniçeriler arasında menzilin uzaklığı sebebiyle ilk homurdanmalar başladı.",
+        "primary_source_ref": "Haydar Çelebi Ruznâmesi, s. 59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.4900, 39.7500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-010",
+        "step_order": 10,
+        "name": "Tercan",
+        "historical_name": "Tercân",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-07-15",
+        "date_departed": "1514-07-16",
+        "stay_duration_days": 1,
+        "elevation_meters": 1430,
+        "terrain_type": "Dağlık vadi",
+        "water_supply_status": "Orta",
+        "logistics_note": "Aşırı sıcaklar ve çorak arazi sebebiyle at zayiatı arttı.",
+        "historical_event": "Öncü birlikler Safevi gözcü müfrezeleriyle temas kurdu.",
+        "primary_source_ref": "Celâlzâde Selimnâme, s. 86"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.3833, 39.7833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-011",
+        "step_order": 11,
+        "name": "Erzurum",
+        "historical_name": "Erzurûm",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-07-22",
+        "date_departed": "1514-07-25",
+        "stay_duration_days": 3,
+        "elevation_meters": 1890,
+        "terrain_type": "Yüksek Plato",
+        "water_supply_status": "Bol (Karasu pınarları)",
+        "logistics_note": "Karasu boyunda konaklanıp sahra topları teftişten geçirildi.",
+        "historical_event": "Hemşin ve Gürcü beylerinden sadakat ve zahire teminatı alındı.",
+        "primary_source_ref": "İbn Kemal IX. Defter, s. 175"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [41.2769, 39.9086]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-012",
+        "step_order": 12,
+        "name": "Eleşkirt",
+        "historical_name": "Alashkırd",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-08-04",
+        "date_departed": "1514-08-06",
+        "stay_duration_days": 2,
+        "elevation_meters": 1660,
+        "terrain_type": "Dağ arası ova",
+        "water_supply_status": "Kısıtlı",
+        "logistics_note": "Açlık ve iaşe sıkıntısı sebebiyle yeniçeriler padişah çadırına ok attı.",
+        "historical_event": "Yavuz Sultan Selim atına binerek tarihi hitabını yaptı: 'Dileyen kadınlarının yanına dönsün, ben tek başıma düşman üzerine varırım!'.",
+        "primary_source_ref": "Celâlzâde Selimnâme, s. 95-97"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.5833, 39.7833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-013",
+        "step_order": 13,
+        "name": "Diyadin",
+        "historical_name": "Diyâdîn",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-08-16",
+        "date_departed": "1514-08-18",
+        "stay_duration_days": 2,
+        "elevation_meters": 1925,
+        "terrain_type": "Murat Nehri kanyonu / Volkanik yayla",
+        "water_supply_status": "Orta (Murat Nehri kanyon suyu)",
+        "logistics_note": "Safevilerin Çaldıran ovasında ordugah kurduğu haberi keşif kolları tarafından teyit edildi.",
+        "historical_event": "Harp meclisi toplandı; Pirî Mehmed Paşa derhal taarruz edilmesini tavsiye etti.",
+        "primary_source_ref": "Haydar Çelebi Ruznâmesi, s. 66"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.6833, 39.5500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-014",
+        "step_order": 14,
+        "name": "Çaldıran Ovası (Harp Meydanı)",
+        "historical_name": "Çâldırân Sahrası",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-08-22",
+        "date_departed": "1514-08-25",
+        "stay_duration_days": 3,
+        "elevation_meters": 2050,
+        "terrain_type": "Geniş çanak ova",
+        "water_supply_status": "Yeterli (Çaldıran Deresi)",
+        "logistics_note": "Top arabaları zincirlendi, tabur cengi düzeni kuruldu. Muharebe 23 Ağustos Çarşamba günü kazanıldı.",
+        "historical_event": "Şah İsmail mağlup edildi, Safevi ordugahı ve hazinesi bütünüyle ele geçirildi.",
+        "primary_source_ref": "İbn Kemal IX. Defter, s. 190"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.3986, 39.1417]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-015",
+        "step_order": 15,
+        "name": "Hoy",
+        "historical_name": "Hûy",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-08-28",
+        "date_departed": "1514-08-30",
+        "stay_duration_days": 2,
+        "elevation_meters": 1140,
+        "terrain_type": "Tarımsal Vadi",
+        "water_supply_status": "Bol",
+        "logistics_note": "Safevilerin terk ettiği ambarlardan bol zahire ve meyve ele geçirildi.",
+        "historical_event": "Hoy kalesi anahtarları teslim edildi.",
+        "primary_source_ref": "Celâlzâde Selimnâme, s. 104"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.9500, 38.5500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-016",
+        "step_order": 16,
+        "name": "Merend",
+        "historical_name": "Merend",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-09-02",
+        "date_departed": "1514-09-03",
+        "stay_duration_days": 1,
+        "elevation_meters": 1330,
+        "terrain_type": "Yarı kurak vadi",
+        "water_supply_status": "Yeterli",
+        "logistics_note": "Tebriz eşrafı ve seyyidleri istikbal heyeti gönderdi.",
+        "historical_event": "Padişaha bağlılık ve aman dilekleri arz olundu.",
+        "primary_source_ref": "Haydar Çelebi Ruznâmesi, s. 70"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [45.7667, 38.4333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-017",
+        "step_order": 17,
+        "name": "Tebriz (Payitaht-ı Safevî)",
+        "historical_name": "Tebrîz",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-09-05",
+        "date_departed": "1514-09-13",
+        "stay_duration_days": 8,
+        "elevation_meters": 1360,
+        "terrain_type": "Büyük Şehir Havzası",
+        "water_supply_status": "Bol (Acıçay ve kanallar)",
+        "logistics_note": "Şah'ın sarayı (Heşt Behişt) teftiş edildi; binlerce sanatkar, nakkaş ve alim İstanbul'a davet edildi.",
+        "historical_event": "Cuma namazında Yavuz Sultan Selim adına hutbe okundu.",
+        "primary_source_ref": "İbn Kemal IX. Defter, s. 202-210"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.2919, 38.0800]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-018",
+        "step_order": 18,
+        "name": "Nahçıvan",
+        "historical_name": "Nahcivân",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-09-22",
+        "date_departed": "1514-09-24",
+        "stay_duration_days": 2,
+        "elevation_meters": 890,
+        "terrain_type": "Aras Vadisi",
+        "water_supply_status": "Bol (Aras Nehri)",
+        "logistics_note": "Kışın yaklaşması ve yeniçerilerin Karabağ kışlağına muhalefeti sebebiyle dönüş güzergahı açıldı.",
+        "historical_event": "Aras köprüleri tahkim edilerek ordu selametle geçirildi.",
+        "primary_source_ref": "Haydar Çelebi Ruznâmesi, s. 74"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [45.4122, 39.2089]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-019",
+        "step_order": 19,
+        "name": "Kars",
+        "historical_name": "Kârs",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-10-05",
+        "date_departed": "1514-10-07",
+        "stay_duration_days": 2,
+        "elevation_meters": 1750,
+        "terrain_type": "Yüksek Plato",
+        "water_supply_status": "Bol (Kars Çayı)",
+        "logistics_note": "Şiddetli soğuk ve kar yağışı başladı; at ve deve zayiatı arttı.",
+        "historical_event": "Kars kalesi muhafızları teftiş edildi.",
+        "primary_source_ref": "Celâlzâde Selimnâme, s. 118"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.0975, 40.6014]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-020",
+        "step_order": 20,
+        "name": "Bayburt",
+        "historical_name": "Baybûrd",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-10-18",
+        "date_departed": "1514-10-20",
+        "stay_duration_days": 2,
+        "elevation_meters": 1550,
+        "terrain_type": "Dağlık Çoruh Vadisi",
+        "water_supply_status": "Bol (Çoruh Nehri)",
+        "logistics_note": "Kalenin fethi tamamlandı; Bıyıklı Mehmed Paşa bölge beylerbeyi nasbedildi.",
+        "historical_event": "Güneydoğu ve Doğu Karadeniz emniyete alındı.",
+        "primary_source_ref": "İdris-i Bitlisî Selim-nâme, s. 155"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.2281, 40.2553]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-021",
+        "step_order": 21,
+        "name": "Amasya (Kışlak)",
+        "historical_name": "Amâsiyye",
+        "campaign_id": "CMP-1514-CALDIRAN",
+        "date_reached": "1514-11-20",
+        "date_departed": "1515-02-15",
+        "stay_duration_days": 87,
+        "elevation_meters": 410,
+        "terrain_type": "Yeşilırmak Kanyonu / Korumalı Vadi",
+        "water_supply_status": "Mükemmel",
+        "logistics_note": "Padişah kışı burada geçirip Kemah ve Dulkadiroğlu seferlerinin stratejisini hazırladı.",
+        "historical_event": "Dukakinoğlu Ahmed Paşa'nın yeniçeri isyanındaki rolü tespit edilerek idam edildi.",
+        "primary_source_ref": "İbn Kemal IX. Defter, s. 220-225"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.8333, 40.6500]
+      }
+    }
+  ]
+}

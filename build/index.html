@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>hadimul-harameyn :: Dijital Tarih & Sefer Portalı</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #0b0f17;
+      color: #e2e8f0;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      max-width: 900px;
+      width: 100%;
+    }
+    h1 {
+      font-family: 'Cinzel', serif;
+      color: #d4af37;
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #94a3b8;
+      font-size: 1rem;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: #141c28;
+      border: 1px solid #233044;
+      border-radius: 8px;
+      padding: 24px;
+      transition: all 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card:hover {
+      border-color: #d4af37;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+    }
+    .card h2 {
+      font-family: 'Cinzel', serif;
+      color: #fff;
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: #94a3b8;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      text-align: center;
+      background: #d4af37;
+      color: #0b0f17;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #e5c158;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>`hadimul-harameyn`</h1>
+    <div class="subtitle">I. Selim (Yavuz) Devri Askeri Sefer ve Lojistik Harita Portalı</div>
+    <div class="grid">
+      <div class="card">
+        <div>
+          <h2>Çaldıran Seferi (1514)</h2>
+          <p>İstanbul'dan Sivas büyük ordugahına, oradan Çaldıran sahrası ve Tebriz payitahtına uzanan 21 menzillik lojistik intikal güzergahı.</p>
+        </div>
+        <a href="caldiran-campaign-map.html" class="btn">İnteraktif Haritayı Aç →</a>
+      </div>
+      <div class="card">
+        <div>
+          <h2>Mısır & Suriye Fethi (1516-1517)</h2>
+          <p>Mercidabık'tan Şam'a, susuzluk çekilmeden geçilen 10 günlük efsanevi Sina Çölü intikalinden Ridaniye ve Kahire fethine uzanan 19 menzil.</p>
+        </div>
+        <a href="egypt-campaign-map.html" class="btn">İnteraktif Haritayı Aç →</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

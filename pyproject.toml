@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hadimul-harameyn"
+version = "1.0.0"
+description = "I. Selim (Yavuz) Dönemi Askeri Strateji, Menzil Lojistiği ve Birincil Kaynak Veri Arşivi"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Bahattin Yunus"}
+]
+keywords = [
+    "ottoman-history",
+    "yavuz-sultan-selim",
+    "historical-gis",
+    "caldiran",
+    "ridaniye",
+    "mercidabik",
+    "menzilnames",
+    "digital-humanities"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Sociology :: History",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+dependencies = [
+    "jsonschema>=4.20.0",
+    "folium>=0.15.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["."]

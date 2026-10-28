@@ -1,0 +1,4 @@
+# hadimul-harameyn - Dijital Tarih & Tarihsel Veri Mühendisliği Arşivi
+jsonschema>=4.20.0
+folium>=0.15.0
+pytest>=8.0.0

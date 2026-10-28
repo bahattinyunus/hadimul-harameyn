@@ -1,0 +1,138 @@
+{
+  "$schema": "../../schemas/campaign.schema.json",
+  "campaign_id": "CMP-1514-CALDIRAN",
+  "title": "Çaldıran Meydan Muharebesi ve Doğu Seferi",
+  "date": "1514-08-23",
+  "campaign_duration": {
+    "start": "1514-04-20",
+    "end": "1514-11-20"
+  },
+  "region": "Çaldıran Ovası, Maku / Doğu Anadolu - Safevi Sınırı",
+  "coordinates": {
+    "latitude": 39.1417,
+    "longitude": 44.3986
+  },
+  "belligerents": {
+    "ottoman": "Osmanlı İmparatorluğu",
+    "opponent": "Safevî Devleti (Kızılbaş Ordusu)"
+  },
+  "commanders": {
+    "ottoman": [
+      {
+        "name": "I. Selim (Yavuz Sultan Selim)",
+        "role": "Osmanlı Padişahı ve Başkomutan",
+        "casualty_status": "Sağ"
+      },
+      {
+        "name": "Hersekzâde Ahmed Paşa",
+        "role": "Vezîriâzam",
+        "casualty_status": "Sağ"
+      },
+      {
+        "name": "Dukakinoğlu Ahmed Paşa",
+        "role": "İkinci Vezir",
+        "casualty_status": "Sağ"
+      },
+      {
+        "name": "Sinan Paşa (Hadım)",
+        "role": "Anadolu Beylerbeyi (Sağ Kanat)",
+        "casualty_status": "Sağ"
+      },
+      {
+        "name": "Hasan Paşa",
+        "role": "Rumeli Beylerbeyi (Sol Kanat)",
+        "casualty_status": "Şehit"
+      }
+    ],
+    "safavid": [
+      {
+        "name": "Şah I. İsmail (Hatai)",
+        "role": "Safevî Şahı ve Başkomutan",
+        "casualty_status": "Yaralı olarak harp meydanından çekildi"
+      },
+      {
+        "name": "Ustaclu Muhammed Han",
+        "role": "Diyarbakır Valisi ve Sol Kanat Komutanı",
+        "casualty_status": "Maktul"
+      },
+      {
+        "name": "Saru Pire (Karahan)",
+        "role": "Sağ Kanat Komutanı",
+        "casualty_status": "Maktul"
+      },
+      {
+        "name": "Dürmiş Han Şamlu",
+        "role": "Şah'ın Baş Danışmanı",
+        "casualty_status": "Sağ"
+      }
+    ]
+  },
+  "forces_estimate": {
+    "ottoman": {
+      "total_estimate": "60.000 - 80.000 (Sivas yoklamasında 100.000, menzil zayiatı sonrası muharebe sahasında ~65.000)",
+      "janissaries_infantry": "12.000 tüfekli yeniçeri",
+      "cavalry_sipahi": "40.000 Rumeli ve Anadolu tımarlı sipahisi ile kapıkulu süvarileri",
+      "artillery_pieces": "150 - 200 sahra darpzen ve şakaloz topu"
+    },
+    "opponent": {
+      "total_estimate": "40.000 - 50.000 süvari ağırlıklı Kızılbaş kuvveti",
+      "cavalry": "35.000 - 45.000 zırhlı süvari (Türkmen aşiret boyları)",
+      "infantry": "Çok kısıtlı milis kuvveti",
+      "artillery_pieces": "Sahada ateşli silah ve topçu bulunmamaktaydı"
+    }
+  },
+  "tactical_breakdown": {
+    "tabur_cengi_defense": "Osmanlı ordusu, merkezde top arabalarını birbirine zincirlerle bağlayarak (tabur cengi) geçit vermez bir tahkimat ve ateş hattı kurdu.",
+    "feigned_retreat_and_artillery": "Geriye çekilme intibaı verilerek hücum eden Safevi süvarileri Osmanlı top menziline çekildi; açılan zincirlerin arasından salvo tüfek ve top atışlarıyla saf dışı bırakıldı.",
+    "scorched_earth_counter": "Şah İsmail'in Erzincan'dan itibaren uyguladığı yakıp yıkma (iaşesiz bırakma) taktiği, Trabzon limanı üzerinden deniz yoluyla sağlanan cephane ve zahire ikmal hattıyla bertaraf edildi.",
+    "cavalry_clash": "Osmanlı sol kanadı Rumeli sipahilerinin dağılması üzerine bizzat padişahın merkezden sevk ettiği kapıkulu süvarileri ve yeniçeriler karşı taarruzla dengeyi kurdu."
+  },
+  "battle_phases": [
+    {
+      "phase": 1,
+      "title": "İkmal Krizi ve Sivas Teftişi",
+      "description": "Ordu Sivas'ta toplanıp sayım yapıldı. Kayseri-Sivas hattında 40.000 kişilik ihtiyat geride bırakılarak çöl ve çorak arazilere doğru ilerlendi."
+    },
+    {
+      "phase": 2,
+      "title": "Kızılbaş Süvari Hücumu",
+      "description": "Şah İsmail sabah erken saatte Osmanlı sol kanadına (Rumeli kuvvetleri) Ustaclu Muhammed Han ile sert bir süvari darbesi vurdu; Hasan Paşa şehit düştü."
+    },
+    {
+      "phase": 3,
+      "title": "Top Arabalarının Açılması ve Karşı Ateş",
+      "description": "Sağ kanattaki Sinan Paşa kuvvetleri ve merkezdeki topların zincirleri indirilerek Safevi süvarileri çapraz ateş altına alındı. Ustaclu Han maktul düştü."
+    },
+    {
+      "phase": 4,
+      "title": "Şah İsmail'in Çekilmesi ve Tebriz Yolu",
+      "description": "Şah İsmail bizzat yaralanıp atı bataklığa saplanınca maiyeti tarafından kaçırıldı. Osmanlı ordusu 5 Eylül 1514'te kansız bir şekilde Tebriz'e girdi."
+    }
+  ],
+  "historical_significance": [
+    "Doğu Anadolu ve Tebriz yolu Osmanlı hakimiyetine açıldı; Safevîlerin Anadolu üzerindeki askeri tehdidi kesin biçimde kırıldı.",
+    "Ateşli silahların ve seyyar sahra topçuluğunun geleneksel göçebe süvari taktiklerine mutlak üstünlüğü kanıtlandı.",
+    "Diyarbakır, Bitlis, Mardin ve Güneydoğu beyleri İdris-i Bitlisî'nin diplomatik gayretleriyle Osmanlı tabiiyetini kabul etti.",
+    "Tebriz'deki bilginler, sanatkarlar ve ipek dokumacıları İstanbul'a nakledilerek Osmanlı saray sanatında Rönesans etkisi yaratıldı."
+  ],
+  "primary_source_references": [
+    {
+      "source_work": "Tevârih-i Âl-i Osmân, IX. Defter",
+      "author": "İbn Kemal (Kemalpaşazâde)",
+      "citation": "TTK Yayınları, s. 182-205",
+      "excerpt": "Ol gün meydân-ı cengde toplar öyle gürledi ki gûyâ rûz-ı cezâ koptu. Kızılbaşın zırhlı atlıları tûfân-ı âteşe mukâvemet idemeyüp perişan oldılar."
+    },
+    {
+      "source_work": "Selimnâme",
+      "author": "Celâlzâde Mustafa Çelebi",
+      "citation": "MEB Yayınları, Bölüm IV, s. 92-115",
+      "excerpt": "Hünkâr bizzat at üstünde kılıç çeküp 'Hücum vaktidir, er olan yüz çevirmez' deyu askeri gayrete getürdü."
+    },
+    {
+      "source_work": "Selim-nâme",
+      "author": "İdris-i Bitlisî",
+      "citation": "TTK Tercümesi, s. 140-165",
+      "excerpt": "Kürdistan ümerâsı ve halkı, Şah'ın zulmünden bîzâr olup Âl-i Osmân adaletine sığındı ve feth-i mübîne refik oldular."
+    }
+  ]
+}

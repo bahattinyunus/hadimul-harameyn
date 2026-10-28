@@ -1,0 +1,133 @@
+{
+  "$schema": "../../schemas/campaign.schema.json",
+  "campaign_id": "CMP-1516-MERCIDABIK",
+  "title": "Mercidâbık Meydan Muharebesi ve Suriye'nin Fethi",
+  "date": "1516-08-24",
+  "campaign_duration": {
+    "start": "1516-06-05",
+    "end": "1516-12-25"
+  },
+  "region": "Mercidâbık Ovası, Kilis - Halep arası / Suriye Sınırı",
+  "coordinates": {
+    "latitude": 36.5833,
+    "longitude": 37.2167
+  },
+  "belligerents": {
+    "ottoman": "Osmanlı İmparatorluğu",
+    "opponent": "Memlûk Sultanlığı (Çerkes Memlûkleri)"
+  },
+  "commanders": {
+    "ottoman": [
+      {
+        "name": "I. Selim (Yavuz Sultan Selim)",
+        "role": "Osmanlı Padişahı ve Başkomutan",
+        "casualty_status": "Sağ"
+      },
+      {
+        "name": "Hadım Sinan Paşa",
+        "role": "Vezîriâzam (Merkez Kuvvetleri)",
+        "casualty_status": "Sağ"
+      },
+      {
+        "name": "Zeynel Paşa",
+        "role": "Anadolu Beylerbeyi (Sağ Kanat)",
+        "casualty_status": "Sağ"
+      },
+      {
+        "name": "Küçük Sinan Paşa",
+        "role": "Rumeli Beylerbeyi (Sol Kanat)",
+        "casualty_status": "Sağ"
+      }
+    ],
+    "mamluk": [
+      {
+        "name": "Sultan Kansu Gavri",
+        "role": "Memlûk Sultanı ve Başkomutan",
+        "casualty_status": "Muharebe meydanında atından düşerek vefat etti"
+      },
+      {
+        "name": "Hayır Bey",
+        "role": "Halep Naibi (Sol Kanat Komutanı)",
+        "casualty_status": "Muharebe esnasında Osmanlı tarafına geçti"
+      },
+      {
+        "name": "Sibay Bey",
+        "role": "Şam Naibi (Sağ Kanat Komutanı)",
+        "casualty_status": "Maktul"
+      },
+      {
+        "name": "Canbirdi Gazâlî",
+        "role": "Memlûk Emiri ve Öncü Komutanı",
+        "casualty_status": "Sağ (Geri çekildi)"
+      }
+    ]
+  },
+  "forces_estimate": {
+    "ottoman": {
+      "total_estimate": "60.000 - 70.000 muntazam ordu",
+      "janissaries_infantry": "15.000 fitilli tüfekli yeniçeri",
+      "cavalry_sipahi": "35.000 Anadolu ve Rumeli sipahisi",
+      "artillery_pieces": "300 civarı araba üzeri hafif ve orta sahra topu"
+    },
+    "opponent": {
+      "total_estimate": "50.000 - 60.000 (Ağır zırhlı Memlûk süvarileri ve Bedevi müttefikler)",
+      "cavalry": "30.000 elit Memlûk atlısı (Hassa birlikleri)",
+      "infantry": "15.000 şehir milisi ve mızrakçı piyade",
+      "artillery_pieces": "Top ve ateşli silah kullanımı çok sınırlı ve arkaik düzeydeydi"
+    }
+  },
+  "tactical_breakdown": {
+    "field_fortification": "Osmanlı ordusu topları merkezde birbirine zincirlerle bağlayıp arkasına yeniçerileri yerleştirdi.",
+    "mamluk_charge_collapse": "Sibay Bey kumandasındaki Memlûk sağ kanadı başlangıçta Osmanlı sol kanadını sarssa da yeniçerilerin aralıksız salvo ateşi Memlûk süvarilerini kırdı.",
+    "political_division": "Halep Naibi Hayır Bey'in Sultan Kansu Gavri ile olan ihtilafı ve Osmanlı lehine sahadan çekilmesi Memlûk saflarında büyük bir panik ve çözülme başlattı.",
+    "rapid_pursuit": "Bozguna uğrayan Memlûk ordusu Halep ve Şam istikametine kovalanarak hiçbir toparlanma imkanı tanınmadı."
+  },
+  "battle_phases": [
+    {
+      "phase": 1,
+      "title": "Sabah Teşrifi ve Hilal Dizilişi",
+      "description": "Güneş doğarken Osmanlı ordusu klasik hilal nizamında konuşlandı. Kansu Gavri beyaz sancağı altında merkezde yer aldı."
+    },
+    {
+      "phase": 2,
+      "title": "Memlûk Süvari Saldırısı",
+      "description": "Memlûk ağır süvarileri Osmanlı kanatlarına şiddetli taarruz başlattı. Sibay Bey Osmanlı sol kanadını yardı."
+    },
+    {
+      "phase": 3,
+      "title": "Topçu Salvoları ve Hayır Bey'in Manevrası",
+      "description": "Sinan Paşa topçu bataryalarını devreye soktu. Hayır Bey 'Sultan öldü' nidasıyla askerini geri çekerek Memlûk merkezini çökertti."
+    },
+    {
+      "phase": 4,
+      "title": "Kansu Gavri'nin Düşüşü ve Zafer",
+      "description": "Kansu Gavri kalp krizi veya felç geçirerek atından düştü ve kargaşada kayboldu. İkindi vaktinde meydan tamamen Osmanlıların eline geçti."
+    }
+  ],
+  "historical_significance": [
+    "Suriye, Lübnan ve Filistin toprakları (Halep, Hama, Humus, Şam, Kudüs) bütünüyle Osmanlı hakimiyetine girdi.",
+    "Yavuz Sultan Selim Şam Emeviyye Camii'nde ilk defa 'Hâdimü'l-Haremeyni'ş-Şerîfeyn' unvanıyla anıldı.",
+    "Bin yılı aşkın süredir devam eden Suriye-Mısır Memlûk iktidarının omurgası kırıldı ve Mısır kapıları ardına kadar açıldı.",
+    "Güneydoğu Anadolu ve Fırat havzası güvenliği nihai olarak temin edildi."
+  ],
+  "primary_source_references": [
+    {
+      "source_work": "Bedâi'u'z-Zuhûr fî Vekâi'i'd-Duhûr",
+      "author": "İbn İyâs",
+      "citation": "Cilt V, s. 65-88",
+      "excerpt": "İbn Osman'ın ordusunda öyle toplar ve tüfekler vardı ki sesleri gök gürültüsünü andırır, attıkları kurşunlar demir zırhları delip geçerdi. Sultan Gavri orada helak oldu."
+    },
+    {
+      "source_work": "Tâcü't-Tevârih",
+      "author": "Hoca Sâdeddin Efendi",
+      "citation": "Kültür Bakanlığı Yayınları, Cilt IV, s. 240-265",
+      "excerpt": "Dâbık sahrası Çerakise leşleriyle doldu. Devlet-i Âliyye'nin kılıcı Şam diyarını adaletle nurlandırdı."
+    },
+    {
+      "source_work": "Münşeâtü's-Selâtîn",
+      "author": "Feridun Ahmed Bey",
+      "citation": "Cilt I, Mercidabık Fetihnâmesi, s. 441-447",
+      "excerpt": "Cenâb-ı Hakk'ın avn ve inâyetiyle Kansu Gavri makhûr ve münhezim kılınub Halep ve Şam mülkü taht-ı fermânımıza girdi."
+    }
+  ]
+}

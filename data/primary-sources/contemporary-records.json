@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schemas/primary-sources.schema.json",
+  "catalog_name": "Çağdaş Dış Kaynaklar, Diplomatik Arşivler ve Ruznâmeler",
+  "description": "Yavuz devrinde Kahire, Venedik, Safevî ve ordugah katip kayıtlarından günümüze ulaşan bağımsız ve çağdaş vesikalar.",
+  "sources": [
+    {
+      "source_id": "SRC-RECORD-IBNIYAS",
+      "title": "Bedâi'u'z-Zuhûr fî Vekâi'i'd-Duhûr (Cilt IV - V)",
+      "title_original": "بدائع الزهور في وقائع الدهور",
+      "author": "Muhammed b. Ahmed İbn İyâs el-Hanefî",
+      "author_dates": "1448 - 1524",
+      "date_written_estimate": "1516 - 1522",
+      "language": "Arapça (Kahire dairesi halk dili ve edebi nesir)",
+      "genre": "Çağdaş Günlük Vakayinâme (Kahire Kroniği)",
+      "manuscript_copies": [
+        "Dârü'l-Kütübi'l-Mısriyye, Kahire, Tarih Nu. 2221",
+        "Bibliothèque Nationale de France, Paris, Arabe Nu. 1823"
+      ],
+      "critical_editions": [
+        "Muhammed Mustafa (Tahkik), Franz Steiner Verlag, Wiesbaden, 1960-1975.",
+        "Gaston Wiet (Fransızca Çev.), Journal d'un Bourgeois du Caire, Paris, 1955."
+      ],
+      "significance_and_scope": "Memlûk tarafının bizzat gözüyle Kahire'deki paniği, Tomanbay'ın direnişini, Osmanlı ordusunun şehre girişini ve Mısır toplumunun dönüşümünü gün be gün aktaran yegane birinci el Mısır kaynağıdır."
+    },
+    {
+      "source_id": "SRC-RECORD-SANUTO",
+      "title": "I Diarii di Marino Sanuto (Cilt 18 - 29)",
+      "title_original": "I Diarii di Marino Sanuto",
+      "author": "Marino Sanuto (Sanudo)",
+      "author_dates": "1466 - 1536",
+      "date_written_estimate": "1512 - 1520 (Günlük tutulmuştur)",
+      "language": "Venedik İtalyancası / Latince",
+      "genre": "Diplomatik Günlük / İstihbarat Arşivi",
+      "manuscript_copies": [
+        "Biblioteca Nazionale Marciana, Venedik, Mss. Italiani Cl. VII"
+      ],
+      "critical_editions": [
+        "F. Stefani - G. Berchet - N. Barozzi (Ed.), I Diarii di Marino Sanuto, Venedik, 1879-1903 (58 Cilt)."
+      ],
+      "significance_and_scope": "Venedik Balyoslarının İstanbul'dan, Şam'dan, Beyrut'tan ve Kahire'den gönderdiği gizli mektuplar, tüccar istihbaratları ve elçilik raporlarını ihtiva eden Akdeniz ölçeğinde en zengin çağdaş arşivdir."
+    },
+    {
+      "source_id": "SRC-RECORD-HAYDARCELEBI",
+      "title": "Ruznâme-i Sefer-i Hümâyûn",
+      "title_original": "روزنامه سفر همايون",
+      "author": "Haydar Çelebi (Divan Katibi)",
+      "author_dates": "ö. 1520 sonrası",
+      "date_written_estimate": "1514 - 1517",
+      "language": "Osmanlı Türkçesi",
+      "genre": "Askeri Ruznâme / Sefer Günlüğü",
+      "manuscript_copies": [
+        "Topkapı Sarayı Müzesi Arşivi, Nu. E. 1234",
+        "Süleymaniye Kütüphanesi, Esad Efendi Nu. 2275"
+      ],
+      "critical_editions": [
+        "Feridun Ahmed Bey, Münşeâtü's-Selâtîn içinde neşredilmiştir (C. I, s. 450-485)."
+      ],
+      "significance_and_scope": "Çaldıran ve Mısır seferlerinde her gün ordunun hangi menzilde konakladığını, kaç fersah yürüdüğünü, kimlerin orduya katılıp kimlerin cezalandırıldığını resmi protokol katibi titizliğiyle kaydeden temel lojistik vesikadır."
+    },
+    {
+      "source_id": "SRC-RECORD-MUNSEAT",
+      "title": "Münşeâtü's-Selâtîn",
+      "title_original": "منشآت السلاطين",
+      "author": "Feridun Ahmed Bey",
+      "author_dates": "ö. 1583",
+      "date_written_estimate": "1575 (III. Murad'a takdim)",
+      "language": "Osmanlı Türkçesi, Arapça ve Farsça",
+      "genre": "Resmi Devlet Mektupları, Fermanlar ve Fetihnâmeler Mecmuası",
+      "manuscript_copies": [
+        "Topkapı Sarayı Müzesi Kütüphanesi, Revan Nu. 1950",
+        "Beyazıt Devlet Kütüphanesi, Veliyüddin Nu. 1980"
+      ],
+      "critical_editions": [
+        "Takvimhâne-i Âmire Tab'ı, 2 Cilt, İstanbul, 1264-1265/1848-1849."
+      ],
+      "significance_and_scope": "Yavuz Sultan Selim'in Şah İsmail'e yazdığı 4 sert mektubu, Kansu Gavri ile diplomatik teatiyi, Memlûk ulemasına yazılan fetihnâmeleri ve fermanların asıl metinlerini koruyan devasa diplomatik külliyattır."
+    }
+  ]
+}

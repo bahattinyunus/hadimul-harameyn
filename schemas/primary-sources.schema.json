@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PrimarySourcesCatalog",
+  "description": "Yavuz Sultan Selim dönemi birincil kaynak metinleri ve vakayinâmeleri şeması",
+  "type": "object",
+  "required": ["catalog_name", "sources"],
+  "properties": {
+    "catalog_name": { "type": "string" },
+    "description": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["source_id", "title", "author", "language", "genre"],
+        "properties": {
+          "source_id": { "type": "string" },
+          "title": { "type": "string" },
+          "title_original": { "type": "string" },
+          "author": { "type": "string" },
+          "author_dates": { "type": "string" },
+          "date_written_estimate": { "type": "string" },
+          "language": { "type": "string" },
+          "genre": { "type": "string" },
+          "manuscript_copies": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "critical_editions": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "significance_and_scope": { "type": "string" }
+        }
+      }
+    }
+  }
+}

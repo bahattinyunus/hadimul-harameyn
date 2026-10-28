@@ -1,0 +1,106 @@
+{
+  "$schema": "../../schemas/timeline.schema.json",
+  "version": "1.0.0",
+  "description": "Yavuz Sultan Selim Devri İdari, Diplomatik, Mali ve Dini Kırılma Hadiseleri",
+  "events": [
+    {
+      "id": "EVT-1512-001",
+      "date": "1512-04-24",
+      "hijri_date": "8 Safer 918",
+      "event_type": "administrative",
+      "title": "I. Selim'in Cülusu ve Cülus Bahşişi Tanzimi",
+      "description": "II. Bayezid'in feragati ve yeniçerilerin talebi üzerine Yavuz Sultan Selim tahta çıktı. Kapıkulu ocaklarına cülus bahşişi dağıtılarak asayiş sağlandı.",
+      "location": "İstanbul, Topkapı Sarayı",
+      "key_figures": ["I. Selim", "II. Bayezid", "Hersekzâde Ahmed Paşa"],
+      "primary_sources": ["Kemalpaşazâde Tevârih-i Âl-i Osmân IX. Defter", "Hoca Sâdeddin Tâcü't-Tevârih"]
+    },
+    {
+      "id": "EVT-1514-002",
+      "date": "1514-03-20",
+      "hijri_date": "23 Muharrem 920",
+      "event_type": "religious_symbolic",
+      "title": "Safevi Devleti Üzerine Sefer Fetvası",
+      "description": "Şeyhülislam Müfti'l-enâm Sarıgörez Nureddin Efendi ile Kemalpaşazâde'nin Safevi inanç ve siyasi faaliyetlerine karşı meşru cihat fetvaları tanzim edildi.",
+      "location": "Edirne",
+      "key_figures": ["Sarıgörez Nureddin Efendi", "Kemalpaşazâde"],
+      "primary_sources": ["Feridun Ahmed Bey Münşeâtü's-Selâtîn Cilt I"]
+    },
+    {
+      "id": "EVT-1515-003",
+      "date": "1515-09-15",
+      "hijri_date": "6 Şaban 921",
+      "event_type": "administrative",
+      "title": "Diyarbakır Beylerbeyliği'nin Teşkili ve Güneydoğu İttifakı",
+      "description": "Kürt beyleri ve yerel aşiretlerin İdris-i Bitlisî aracılığıyla Osmanlı'ya iltihakı sonrası Diyarbekir Eyaleti kuruldu; Bıyıklı Mehmed Paşa ilk beylerbeyi oldu. Yerel beylere 'yurtluk ve ocaklık' statüsü tanındı.",
+      "location": "Diyarbakır (Âmid)",
+      "key_figures": ["İdris-i Bitlisî", "Bıyıklı Mehmed Paşa", "Şeref Han (Bitlis Emiri)"],
+      "primary_sources": ["İdris-i Bitlisî Selim-nâme", "Celâlzâde Selimnâme"]
+    },
+    {
+      "id": "EVT-1516-004",
+      "date": "1516-09-27",
+      "hijri_date": "1 Ramazan 922",
+      "event_type": "religious_symbolic",
+      "title": "Hâdimü'l-Haremeyni'ş-Şerîfeyn Unvanının İlanı",
+      "description": "Şam Emeviyye Camii'ndeki Cuma hutbesinde hatip Yavuz Sultan Selim'e 'Hâkimü'l-Haremeyn' (Mekke ve Medine'nin Hakimi) diye hitap edince, padişah itiraz ederek ağlamış ve 'Ben oraların hâkimi değil ancak hâdimiyim (hizmetkârıyım)' diyerek bu unvanı mühürlerine kazıtmıştır.",
+      "location": "Şam, Emeviyye Camii",
+      "key_figures": ["I. Selim", "Şam Kadısı ve Hatibi"],
+      "primary_sources": ["Hoca Sâdeddin Tâcü't-Tevârih Cilt IV", "İbn İyâs Bedâi'u'z-Zuhûr"]
+    },
+    {
+      "id": "EVT-1517-005",
+      "date": "1517-07-06",
+      "hijri_date": "16 Cemaziyelahir 923",
+      "event_type": "religious_symbolic",
+      "title": "Hicaz'ın Osmanlı Tabiiyetine Girmesi ve Kutsal Emanetlerin Teslimi",
+      "description": "Mekke Emiri Şerif Berekat b. Muhammed, oğlu Şerif Ebu Numeyy başkanlığındaki heyetle Kabe'nin anahtarlarını, Hırka-i Saadet'i ve Peygamber Efendimiz'in (s.a.v.) mübarek emanetlerini Kahire'de Yavuz Sultan Selim'e takdim etti.",
+      "location": "Kahire, Nil Sahili Ordugâhı",
+      "key_figures": ["I. Selim", "Şerif Ebu Numeyy", "Şerif Berekat"],
+      "primary_sources": ["İbn İyâs Bedâi'u'z-Zuhûr", "Feridun Ahmed Bey Münşeât"]
+    },
+    {
+      "id": "EVT-1517-006",
+      "date": "1517-08-20",
+      "hijri_date": "2 Şevval 923",
+      "event_type": "administrative",
+      "title": "Mısır Kanunnâmesi ve Hayır Bey'in Vali Tayini",
+      "description": "Mısır'ın fethi sonrası Nil tarım havzası ve gümrük gelirlerini düzenleyen ilk tahrir ve kanunnâme hazırlandı. Eski Memlûk emiri Hayır Bey vezir rütbesiyle Mısır Valisi tayin edildi.",
+      "location": "Kahire",
+      "key_figures": ["I. Selim", "Hayır Bey", "Yunus Paşa"],
+      "primary_sources": ["Celâlzâde Selimnâme", "İbn İyâs Bedâi'u'z-Zuhûr"]
+    },
+    {
+      "id": "EVT-1518-007",
+      "date": "1518-07-25",
+      "hijri_date": "16 Recep 924",
+      "event_type": "religious_symbolic",
+      "title": "Hırka-i Saadet Dairesi ve Kutsal Hilafet İntikali",
+      "description": "Mısır'dan getirilen Kutsal Emanetler Topkapı Sarayı Has Oda'ya yerleştirildi. Yavuz Sultan Selim emanetlerin başında bizzat nöbet tutturmuş ve Kur'an-ı Kerim tilavetini 24 saat kesintisiz başlatan geleneği ihdas etmiştir.",
+      "location": "İstanbul, Topkapı Sarayı",
+      "key_figures": ["I. Selim", "Hafızlar ve Has Odabaşı"],
+      "primary_sources": ["Celâlzâde Selimnâme", "Kemalpaşazâde IX. Defter"]
+    },
+    {
+      "id": "EVT-1519-008",
+      "date": "1519-09-17",
+      "hijri_date": "22 Şevval 925",
+      "event_type": "diplomatic",
+      "title": "Venedik Cumhuriyeti Ahidnâmesi ve Kıbrıs Vergisinin Temini",
+      "description": "Venedik Doçu Leonardo Loredan elçisi Alvise Sagudino aracılığıyla Mısır'ın fethini tebrik edip Kıbrıs adası için eskiden Memlükler'e ödenen yıllık 8.000 duka altını haraç olarak Osmanlı Devleti'ne ödemeyi kabul etti.",
+      "location": "İstanbul",
+      "key_figures": ["I. Selim", "Alvise Sagudino", "Leonardo Loredan"],
+      "primary_sources": ["Marino Sanuto Diarii Cilt 27", "Feridun Bey Münşeât"]
+    },
+    {
+      "id": "EVT-1520-009",
+      "date": "1520-08-15",
+      "hijri_date": "1 Şevval 926",
+      "event_type": "administrative",
+      "title": "Osmanlı Hazine Mührü Vasiyeti",
+      "description": "Mısır, Suriye ve Doğu hazineleriyle saray kasasını ağzına kadar altınla dolduran Yavuz Sultan Selim ferman buyurdu: 'Benim altınla doldurduğum hazineyi bundan sonra her kimse torunlarımdan altınla doldurursa kendi mührüyle mühürlesin, hilaf-ı takdirde Hazine-i Hümayun benim mührümle mühürlensin!'. İmparatorluğun sonuna kadar hazine Yavuz mührüyle kapatılmıştır.",
+      "location": "İstanbul, Topkapı Sarayı Hazine-i Âmire",
+      "key_figures": ["I. Selim", "Başdefterdar"],
+      "primary_sources": ["Hoca Sâdeddin Tâcü't-Tevârih", "Celâlzâde Selimnâme"]
+    }
+  ]
+}

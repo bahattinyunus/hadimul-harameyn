@@ -1,0 +1,444 @@
+{
+  "type": "FeatureCollection",
+  "name": "Mısır ve Suriye Seferi Menzil Güzergâhı (1516-1517)",
+  "description": "İstanbul'dan Halep, Şam, Sina Çölü intikali ve Kahire fethine uzanan menzil menzil sefer koordinatları ve lojistik aşamaları.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-022",
+        "step_order": 1,
+        "name": "Üsküdar",
+        "historical_name": "Üsküdâr / Doğancılar",
+        "campaign_id": "CMP-1516-MERCIDABIK",
+        "date_reached": "1516-06-05",
+        "date_departed": "1516-06-08",
+        "stay_duration_days": 3,
+        "elevation_meters": 30,
+        "terrain_type": "Kıyı Ovası",
+        "water_supply_status": "Bol",
+        "logistics_note": "Mısır Seferi için ordugah kuruldu; zahire ve mühimmat gemilerle İskenderun'a sevk edildi.",
+        "historical_event": "Padişah I. Selim sefere hareket etti.",
+        "primary_source_ref": "Haydar Çelebi Ruznâmesi, s. 82"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.0233, 40.9972]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-023",
+        "step_order": 2,
+        "name": "Konya",
+        "historical_name": "Konyâ",
+        "campaign_id": "CMP-1516-MERCIDABIK",
+        "date_reached": "1516-07-01",
+        "date_departed": "1516-07-04",
+        "stay_duration_days": 3,
+        "elevation_meters": 1020,
+        "terrain_type": "Ova",
+        "water_supply_status": "Bol",
+        "logistics_note": "Anadolu eyaleti sipahileri orduya mülhak oldu.",
+        "historical_event": "Mevlânâ dergahında dualar okundu.",
+        "primary_source_ref": "Celâlzâde Selimnâme, s. 132"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.4932, 37.8714]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-024",
+        "step_order": 3,
+        "name": "Adana (Gülek Boğazı Geçişi)",
+        "historical_name": "Adana / Derbend-i Külek",
+        "campaign_id": "CMP-1516-MERCIDABIK",
+        "date_reached": "1516-07-16",
+        "date_departed": "1516-07-19",
+        "stay_duration_days": 3,
+        "elevation_meters": 25,
+        "terrain_type": "Çukurova / Toros Geçidi",
+        "water_supply_status": "Bol (Seyhan Nehri)",
+        "logistics_note": "Ağır toplar Gülek Boğazı kayalıklarından insan gücüyle indirildi.",
+        "historical_event": "Ramazanoğlu Mahmud Bey Padişahın huzuruna çıkıp sadakat arz etti.",
+        "primary_source_ref": "İbn Kemal IX. Defter, s. 235"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.3213, 37.0000]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-025",
+        "step_order": 4,
+        "name": "Gaziantep (Ayntâb)",
+        "historical_name": "Ayntâb",
+        "campaign_id": "CMP-1516-MERCIDABIK",
+        "date_reached": "1516-08-14",
+        "date_departed": "1516-08-17",
+        "stay_duration_days": 3,
+        "elevation_meters": 850,
+        "terrain_type": "Plato",
+        "water_supply_status": "Yeterli",
+        "logistics_note": "Memlûk ordusunun Halep'ten kuzeye hareket ettiği haberi alındı.",
+        "historical_event": "Ayntab kalesi anahtarları Yunus Paşa'ya teslim edildi.",
+        "primary_source_ref": "Haydar Çelebi Ruznâmesi, s. 88"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.3833, 37.0667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-026",
+        "step_order": 5,
+        "name": "Mercidâbık (Harp Sahası)",
+        "historical_name": "Merg-i Dâbık",
+        "campaign_id": "CMP-1516-MERCIDABIK",
+        "date_reached": "1516-08-23",
+        "date_departed": "1516-08-26",
+        "stay_duration_days": 3,
+        "elevation_meters": 450,
+        "terrain_type": "Düz Geniş Bozkır",
+        "water_supply_status": "Kuyu suları",
+        "logistics_note": "Memlûk ordusu hezimete uğratıldı; Kansu Gavri'nin otağı, hazinesi ve ağırlıkları ele geçirildi.",
+        "historical_event": "Mercidabık Zaferi kazanıldı; Suriye yolu açıldı.",
+        "primary_source_ref": "İbn İyâs, C. V, s. 72"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.2167, 36.5833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-027",
+        "step_order": 6,
+        "name": "Halep",
+        "historical_name": "Halebü'ş-Şehbâ",
+        "campaign_id": "CMP-1516-MERCIDABIK",
+        "date_reached": "1516-08-28",
+        "date_departed": "1516-09-15",
+        "stay_duration_days": 18,
+        "elevation_meters": 380,
+        "terrain_type": "Tarihi Şehir Havzası",
+        "water_supply_status": "Bol (Kuveik Çayı ve su kemerleri)",
+        "logistics_note": "Halep kalesi teslim alındı; Memlûk hazinesinden kalan altınlar orduya ulûfe dağıtıldı.",
+        "historical_event": "Ulemâ ve eşraf Yavuz Sultan Selim'i coşkuyla karşıladı; Cuma namazında hutbe okundu.",
+        "primary_source_ref": "Celâlzâde Selimnâme, s. 145"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.1612, 36.2021]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-028",
+        "step_order": 7,
+        "name": "Hama",
+        "historical_name": "Hamâ",
+        "campaign_id": "CMP-1516-MERCIDABIK",
+        "date_reached": "1516-09-19",
+        "date_departed": "1516-09-21",
+        "stay_duration_days": 2,
+        "elevation_meters": 310,
+        "terrain_type": "Asi Nehri Vadisi",
+        "water_supply_status": "Bol (Asi Nehri su dolapları)",
+        "logistics_note": "Şehir direnmeden teslim oldu; tahıl değirmenleri çalıştırıldı.",
+        "historical_event": "Şehir emini aman dileyip padişahın eteğini öptü.",
+        "primary_source_ref": "Haydar Çelebi Ruznâmesi, s. 92"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.7578, 35.1318]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-029",
+        "step_order": 8,
+        "name": "Humus",
+        "historical_name": "Hıms",
+        "campaign_id": "CMP-1516-MERCIDABIK",
+        "date_reached": "1516-09-23",
+        "date_departed": "1516-09-25",
+        "stay_duration_days": 2,
+        "elevation_meters": 500,
+        "terrain_type": "Plato",
+        "water_supply_status": "Yeterli",
+        "logistics_note": "Halid b. Velid türbesi ziyaret edilip fukaraya sadaka dağıtıldı.",
+        "historical_event": "Şam'a giden yollar temizlendi.",
+        "primary_source_ref": "İbn Kemal IX. Defter, s. 242"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.7136, 34.7324]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-030",
+        "step_order": 9,
+        "name": "Şam (Emeviye Camii & Unvanın Kabulü)",
+        "historical_name": "Dımışk / Şâm-ı Şerîf",
+        "campaign_id": "CMP-1516-MERCIDABIK",
+        "date_reached": "1516-09-27",
+        "date_departed": "1516-12-15",
+        "stay_duration_days": 79,
+        "elevation_meters": 680,
+        "terrain_type": "Guta Vahası",
+        "water_supply_status": "Bol (Berada Nehri)",
+        "logistics_note": "Sina Çölü intikali için yüzlerce deve satın alındı; su kırbaları, meşin tulumlar ve peksimet hazırlandı.",
+        "historical_event": "Cuma hutbesinde hatip 'Hâkimü'l-Haremeyn' deyince Yavuz itiraz edip 'Hâdimü'l-Haremeyn' (Hizmetkârı) unvanını aldı.",
+        "primary_source_ref": "Hoca Sâdeddin Tâcü't-Tevârih, C. IV, s. 260"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.2913, 33.5138]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-031",
+        "step_order": 10,
+        "name": "Kudüs",
+        "historical_name": "Kuds-i Şerîf",
+        "campaign_id": "CMP-1516-MERCIDABIK",
+        "date_reached": "1516-12-28",
+        "date_departed": "1516-12-31",
+        "stay_duration_days": 3,
+        "elevation_meters": 750,
+        "terrain_type": "Dağlık Şehir",
+        "water_supply_status": "Sarnıçlar",
+        "logistics_note": "Mescid-i Aksâ ve Kubbetü's-Sahra ziyaret edildi; Hristiyan ve Musevi ruhbanlara eman fermanı verildi.",
+        "historical_event": "Kudüs barış yoluyla Osmanlı idaresine girdi.",
+        "primary_source_ref": "Celâlzâde Selimnâme, s. 158"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.2137, 31.7683]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-032",
+        "step_order": 11,
+        "name": "Gazze",
+        "historical_name": "Gazze-i Hâşim",
+        "campaign_id": "CMP-1517-RIDANIYE",
+        "date_reached": "1517-01-04",
+        "date_departed": "1517-01-08",
+        "stay_duration_days": 4,
+        "elevation_meters": 30,
+        "terrain_type": "Kıyı Ovası / Çöl Kenarı",
+        "water_supply_status": "Kuyular",
+        "logistics_note": "Çöl öncesi son buğday ve arpa ambarları ikmali yapıldı.",
+        "historical_event": "Sinan Paşa Canbirdi Gazâlî komutasındaki Memlûk öncülerini dağıttı.",
+        "primary_source_ref": "Haydar Çelebi Ruznâmesi, s. 98"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.4667, 31.5000]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-033",
+        "step_order": 12,
+        "name": "Han Yûnus",
+        "historical_name": "Hân-ı Yûnus",
+        "campaign_id": "CMP-1517-RIDANIYE",
+        "date_reached": "1517-01-10",
+        "date_departed": "1517-01-12",
+        "stay_duration_days": 2,
+        "elevation_meters": 50,
+        "terrain_type": "Kumul ve vaha",
+        "water_supply_status": "Kuyu suları",
+        "logistics_note": "Sina Çölü intikali öncesi son su ve zahire ikmal üssü. Develere su tulumları yüklendi.",
+        "historical_event": "Ordu Sina sahrasını geçmek üzere nizama girdi.",
+        "primary_source_ref": "İbn İyâs, C. V, s. 128"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.3055, 31.3462]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-034",
+        "step_order": 13,
+        "name": "El-Ariş (Sina Çölü Girişi)",
+        "historical_name": "El-Arîş / Sahra-yı Tîh",
+        "campaign_id": "CMP-1517-RIDANIYE",
+        "date_reached": "1517-01-14",
+        "date_departed": "1517-01-15",
+        "stay_duration_days": 1,
+        "elevation_meters": 10,
+        "terrain_type": "Derin Kum Sahrası / Sahil Çölü",
+        "water_supply_status": "Tuzlu kuyu suları / Tulum suyu mecburi",
+        "logistics_note": "Akdeniz'den esen sert fırtına ve kum fırtınası; deve kervanları tek sıra halinde ilerledi.",
+        "historical_event": "İmkânsız görülen Tih Çölü geçişi başladı.",
+        "primary_source_ref": "Celâlzâde Selimnâme, s. 168"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [33.8000, 31.1333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-035",
+        "step_order": 14,
+        "name": "Katya",
+        "historical_name": "Katye",
+        "campaign_id": "CMP-1517-RIDANIYE",
+        "date_reached": "1517-01-17",
+        "date_departed": "1517-01-18",
+        "stay_duration_days": 1,
+        "elevation_meters": 15,
+        "terrain_type": "Çöl içi vahacık",
+        "water_supply_status": "Çok kıt (Önceden hazırlanan sarnıçlar)",
+        "logistics_note": "Asker susuzluk çekmedi; deve sırtında taşınan binlerce su kırbası dağıtıldı. İntikal hızı rekor kırdı.",
+        "historical_event": "Bedevi kabile liderleri padişaha rehberlik hizmeti sundu.",
+        "primary_source_ref": "İbn Kemal IX. Defter, s. 252"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.7500, 30.9667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-036",
+        "step_order": 15,
+        "name": "Salihiye (Sina Çıkışı)",
+        "historical_name": "Sâlihiyye",
+        "campaign_id": "CMP-1517-RIDANIYE",
+        "date_reached": "1517-01-19",
+        "date_departed": "1517-01-20",
+        "stay_duration_days": 1,
+        "elevation_meters": 20,
+        "terrain_type": "Nil Deltası Başlangıcı / Verimli Topraklar",
+        "water_supply_status": "Bol (Nil kanalları)",
+        "logistics_note": "Sina Çölü ordunun tek bir neferi susuzluktan helak olmadan mucizevi şekilde aşıldı.",
+        "historical_event": "Tomanbay Osmanlı ordusunun çölü geçtiğini öğrenince dehşete düştü.",
+        "primary_source_ref": "İbn İyâs, C. V, s. 135"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.9000, 30.7333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-037",
+        "step_order": 16,
+        "name": "Bilbays",
+        "historical_name": "Bilbeys",
+        "campaign_id": "CMP-1517-RIDANIYE",
+        "date_reached": "1517-01-20",
+        "date_departed": "1517-01-21",
+        "stay_duration_days": 1,
+        "elevation_meters": 25,
+        "terrain_type": "Alüvyon ova",
+        "water_supply_status": "Bol",
+        "logistics_note": "Kahire önlerindeki Memlûk tahkimatı ve top mevzileri hakkında istihbarat kesinleştirildi.",
+        "historical_event": "Yavuz Sultan Selim Mukattam Dağı arkasından çevirme planını onayladı.",
+        "primary_source_ref": "Haydar Çelebi Ruznâmesi, s. 102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.5600, 30.4200]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-038",
+        "step_order": 17,
+        "name": "Ridâniye (Meydan Muharebesi)",
+        "historical_name": "Ridâniyye Sahrası / El-Mukattam",
+        "campaign_id": "CMP-1517-RIDANIYE",
+        "date_reached": "1517-01-22",
+        "date_departed": "1517-01-25",
+        "stay_duration_days": 3,
+        "elevation_meters": 45,
+        "terrain_type": "Tepelik etek / Kumlu sahra",
+        "water_supply_status": "Yeterli",
+        "logistics_note": "Mukattam Dağı çevrilerek Memlûk sabit bataryaları etkisiz kılındı. Vezîriâzam Sinan Paşa şehit oldu.",
+        "historical_event": "Ridâniye Zaferi kazanıldı; Memlûk ordusu dağıtıldı.",
+        "primary_source_ref": "İbn Kemal IX. Defter, s. 265-275"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.2497, 30.0626]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-039",
+        "step_order": 18,
+        "name": "Kahire (Kutsal Emanetler & Hilafet)",
+        "historical_name": "Kāhire / Kal'atü'l-Cebel",
+        "campaign_id": "CMP-1517-RIDANIYE",
+        "date_reached": "1517-01-26",
+        "date_departed": "1517-09-10",
+        "stay_duration_days": 227,
+        "elevation_meters": 35,
+        "terrain_type": "Metropol / Nil kıyısı",
+        "water_supply_status": "Bol (Nil Nehri)",
+        "logistics_note": "Mısır idari teşkilatı kuruldu. Hazine, Kutsal Emanetler ve Abbasi Halifesi III. Mütevekkil İstanbul'a uğurlandı.",
+        "historical_event": "Yavuz Sultan Selim Kahire'ye muzaffer olarak girdi; Memlûk Sultanlığı resmen sona erdi.",
+        "primary_source_ref": "İbn İyâs, C. V, s. 150-210"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.2357, 30.0444]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-040",
+        "step_order": 19,
+        "name": "İskenderiye",
+        "historical_name": "İskenderiyye",
+        "campaign_id": "CMP-1517-RIDANIYE",
+        "date_reached": "1517-07-15",
+        "date_departed": "1517-07-22",
+        "stay_duration_days": 7,
+        "elevation_meters": 5,
+        "terrain_type": "Akdeniz Limanı",
+        "water_supply_status": "Bol",
+        "logistics_note": "Donanma kadırgaları teftiş edildi; Mısır zahiresinin deniz yoluyla İstanbul'a nakliyesi planlandı.",
+        "historical_event": "Padişah İskenderiye feneri ve tarihi surları ziyaret etti.",
+        "primary_source_ref": "Celâlzâde Selimnâme, s. 195"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.9187, 31.2001]
+      }
+    }
+  ]
+}

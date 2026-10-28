@@ -1,0 +1,129 @@
+{
+  "$schema": "../../schemas/campaign.schema.json",
+  "campaign_id": "CMP-1517-RIDANIYE",
+  "title": "Ridâniye Meydan Muharebesi ve Mısır'ın Fethi",
+  "date": "1517-01-22",
+  "campaign_duration": {
+    "start": "1516-12-15",
+    "end": "1517-04-15"
+  },
+  "region": "El-Mukattam & Ridâniye, Kahire / Mısır",
+  "coordinates": {
+    "latitude": 30.0626,
+    "longitude": 31.2497
+  },
+  "belligerents": {
+    "ottoman": "Osmanlı İmparatorluğu",
+    "opponent": "Memlûk Sultanlığı (Sultan Tomanbay İdaresi)"
+  },
+  "commanders": {
+    "ottoman": [
+      {
+        "name": "I. Selim (Yavuz Sultan Selim)",
+        "role": "Osmanlı Padişahı ve Başkomutan",
+        "casualty_status": "Sağ"
+      },
+      {
+        "name": "Hadım Sinan Paşa",
+        "role": "Vezîriâzam (Merkez / Tomanbay'ın fedai taarruzunu göğüsledi)",
+        "casualty_status": "Muharebede kahramanca şehit düştü"
+      },
+      {
+        "name": "Yunus Paşa",
+        "role": "İkinci Vezir (Mısır'ın ilk Osmanlı Beylerbeyi)",
+        "casualty_status": "Sağ"
+      },
+      {
+        "name": "Mustafa Paşa",
+        "role": "Üçüncü Vezir",
+        "casualty_status": "Sağ"
+      }
+    ],
+    "mamluk": [
+      {
+        "name": "Sultan Tomanbay (II. Tomanbay)",
+        "role": "Son Memlûk Sultanı ve Başkomutan",
+        "casualty_status": "Muharebe sonrası gerilla harbine devam etti, bilahare yakalandı ve Züveyle Kapısı'nda asıldı"
+      },
+      {
+        "name": "Kurtbay",
+        "role": "Memlûk Baş Süvari Kumandanı",
+        "casualty_status": "Maktul"
+      },
+      {
+        "name": "Alanbay",
+        "role": "Memlûk Süvari Kumandanı",
+        "casualty_status": "Maktul"
+      }
+    ]
+  },
+  "forces_estimate": {
+    "ottoman": {
+      "total_estimate": "55.000 - 65.000 (Sina Çölü intikali sonrasında zinde kalan kuvvet)",
+      "janissaries_infantry": "20.000 fitilli tüfekli yeniçeri ve azaplar",
+      "cavalry_sipahi": "30.000 Rumeli ve Anadolu süvarisi",
+      "artillery_pieces": "150 seyyar sahra ve darpzen topu"
+    },
+    "opponent": {
+      "total_estimate": "40.000 - 50.000 (Memlûk süvarileri, Arap kabileleri ve Sudanlı piyadeler)",
+      "cavalry": "25.000 ağır ve hafif zırhlı süvari",
+      "infantry": "20.000 hendek savunucusu ve tüfekçi milis",
+      "artillery_pieces": "Avrupa'dan (Venedik ve Fransa) temin edilen 100 civarında sabit mevzilenmiş ağır batarya"
+    }
+  },
+  "tactical_breakdown": {
+    "flanking_maneuver": "Memlûk ordusu Ridâniye köyü önünde hendekler kazarak Venedik menşeli ağır toplarını sabit yönlü gömdü. Yavuz Sultan Selim, Mukattam Dağı'nın güney eteğini geceden dolaşarak Memlûk tahkimatını arkadan ve yandan çevirdi.",
+    "artillery_neutralization": "Sabit Memlûk topları namluları döndürülemediği için tamamen işlevsiz kaldı; Osmanlı seyyar topları ise Memlûk ordugahını çapraz ateş altına aldı.",
+    "tomanbay_desperate_charge": "Tomanbay, seçkin süvarileriyle bizzat Padişahın otağına hücum etti; Padişah zannettiği Vezîriâzam Hadım Sinan Paşa'yı şehit etti fakat çemberi yaramadı.",
+    "urban_warfare_cairo": "Ridâniye zaferinden sonra Kahire içinde 3 gün 3 gece sokak çatışmaları ve gerilla direnişi sürdü; barikatlar top ateşiyle temizlendi."
+  },
+  "battle_phases": [
+    {
+      "phase": 1,
+      "title": "Sina Çölü İntikali ve Han Yûnus Ön Muharebesi",
+      "description": "Sinan Paşa kumandasındaki öncü kuvvet Han Yûnus'ta Canbirdi Gazâlî'yi mağlup etti. Ordu-yı Hümâyûn su kırbalarıyla Sina çölünü 10 günde aşarak Salihiye'ye vardı."
+    },
+    {
+      "phase": 2,
+      "title": "Mukattam Çevirme Manevrası",
+      "description": "Yavuz, casusları ve yerel Bedevilerden Memlûk topçu mevzilerini öğrenip cepheden saldırmak yerine Mukattam Dağı etrafından dolandı."
+    },
+    {
+      "phase": 3,
+      "title": "Ridâniye Hattının Kırılması",
+      "description": "22 Ocak sabahı Osmanlı sahra topları Memlûk sol kanadını vurdu. Memlûk süvarileri iki ateş arasında kalarak dağıldı."
+    },
+    {
+      "phase": 4,
+      "title": "Sinan Paşa'nın Şehadeti ve Kahire'ye Giriş",
+      "description": "Tomanbay fedaileriyle vezir çadırını bastı, Sinan Paşa şehit oldu. Yavuz 'Mısır'ı aldık lâkin Sinan'ı kaybettik' diyerek gözyaşı döktü. 26 Ocak'ta Kahire fethedildi."
+    }
+  ],
+  "historical_significance": [
+    "Memlûk Sultanlığı kesin olarak tarihe karıştı; Mısır bir Osmanlı eyaleti (Mısır Beylerbeyliği) haline geldi.",
+    "Hicaz (Mekke ve Medine) şerifliği Osmanlı hakimiyetini tanıdı; Kutsal Emanetler İstanbul Topkapı Sarayı'na intikal ettirildi.",
+    "Yavuz Sultan Selim, İslâm dünyasının tartışmasız lideri ve ilk Osmanlı Halifesi konumuna yükseldi.",
+    "Kızıldeniz ve Hint Okyanusu ticaret yolları Osmanlı denetimine girerek Portekiz sömürgeciliğine karşı set çekildi.",
+    "Mısır'ın zengin tarım ve hazine gelirleri Osmanlı maliyesini tarihin en yüksek rezervine ulaştırdı."
+  ],
+  "primary_source_references": [
+    {
+      "source_work": "Bedâi'u'z-Zuhûr fî Vekâi'i'd-Duhûr",
+      "author": "İbn İyâs",
+      "citation": "Cilt V, s. 140-195",
+      "excerpt": "Perşembe günü sabahleyin öyle bir kıyamet koptu ki gök dumanla doldu. İbn Osman arkadan dolanıp geldi. Tomanbay kahramanca savaştı lakin mukadderat tecelli etti."
+    },
+    {
+      "source_work": "Selimnâme",
+      "author": "Celâlzâde Mustafa Çelebi",
+      "citation": "MEB Yayınları, Bölüm VI, s. 165-192",
+      "excerpt": "Mukattam Dağı dolanılup küffar ve ehl-i tuğyan şaşkına çevrildi. Merhum Sinan Paşa canını din ü devlet uğruna feda kıldı."
+    },
+    {
+      "source_work": "Tevârih-i Âl-i Osmân, IX. Defter",
+      "author": "İbn Kemal (Kemalpaşazâde)",
+      "citation": "TTK Yayınları, s. 250-285",
+      "excerpt": "Hünkâr buyurdu: 'Mısır gibi bir iklim aldık velâkin koca Sinan gibi bir vezir-i bî-hemtâyı gâib eyledik. Mısır anın kadrine baha olamaz'."
+    }
+  ]
+}

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c77a6f931c047c836881f0ea1d56a8b0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c77a6f931c047c836881f0ea1d56a8b0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c77a6f931c047c836881f0ea1d56a8b0 = L.map(
+                "map_c77a6f931c047c836881f0ea1d56a8b0",
+                {
+                    center: [40.9972, 29.0233],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8d7ba1dffedbbea2f7a77a8678320ed0 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8d7ba1dffedbbea2f7a77a8678320ed0.addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+            var circle_marker_d90f3a03a8108eff9212397fb6b96ded = L.circleMarker(
+                [40.9972, 29.0233],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_f23571245e4e8154d46a562ffb634c40 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_41339ac642960ce19686c93a53d3e05b = $(`<div id="html_41339ac642960ce19686c93a53d3e05b" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#1 Üsküdar (Haydarpaşa Çayırı)</b><br>                 <i>Üsküdâr / Çayır-ı Haydarpâşâ</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-04-20<br>                 <b>Su Durumu:</b> Bol (Marmara kaynakları ve çeşmeler)<br>                 <b>Lojistik:</b> Ordu-yı Hümâyûn otağ-ı hümâyûnu kurdu; Rumeli ve Anadolu tımarlı sipahileri ile kapıkulu ocakları toplandı.<br>                 <small style="color: #666;">Haydar Çelebi Ruznâmesi, s. 45</small>             </div>             </div>`)[0];
+                popup_f23571245e4e8154d46a562ffb634c40.setContent(html_41339ac642960ce19686c93a53d3e05b);
+            
+        
+
+        circle_marker_d90f3a03a8108eff9212397fb6b96ded.bindPopup(popup_f23571245e4e8154d46a562ffb634c40)
+        ;
+
+        
+    
+    
+            var circle_marker_54b50c1048d6451aea6dbb8661732202 = L.circleMarker(
+                [40.8028, 29.4307],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_b55041772c30828b3b5102a98b6342b6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e4a747957d4cdcaa0d9559012bbee04a = $(`<div id="html_e4a747957d4cdcaa0d9559012bbee04a" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#2 Gebze</b><br>                 <i>Gekbûze</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-04-25<br>                 <b>Su Durumu:</b> Yeterli<br>                 <b>Lojistik:</b> Ağır yük arabaları ve mühimmat konvoyu tanzim edildi.<br>                 <small style="color: #666;">Celâlzâde Selimnâme, s. 74</small>             </div>             </div>`)[0];
+                popup_b55041772c30828b3b5102a98b6342b6.setContent(html_e4a747957d4cdcaa0d9559012bbee04a);
+            
+        
+
+        circle_marker_54b50c1048d6451aea6dbb8661732202.bindPopup(popup_b55041772c30828b3b5102a98b6342b6)
+        ;
+
+        
+    
+    
+            var circle_marker_74560d2a33d5dd47d3c7a83c03bd71fa = L.circleMarker(
+                [40.7667, 29.9167],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_0ea7384c3c2bfd7274f867110e6bf978 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_85e190aed04ae449c6c4d23a537ea0b1 = $(`<div id="html_85e190aed04ae449c6c4d23a537ea0b1" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#3 İzmit</b><br>                 <i>İznikmîd</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-04-28<br>                 <b>Su Durumu:</b> Bol<br>                 <b>Lojistik:</b> Tersaneden gelen deniz destekli erzak filikaları karşılandı.<br>                 <small style="color: #666;">Haydar Çelebi Ruznâmesi, s. 48</small>             </div>             </div>`)[0];
+                popup_0ea7384c3c2bfd7274f867110e6bf978.setContent(html_85e190aed04ae449c6c4d23a537ea0b1);
+            
+        
+
+        circle_marker_74560d2a33d5dd47d3c7a83c03bd71fa.bindPopup(popup_0ea7384c3c2bfd7274f867110e6bf978)
+        ;
+
+        
+    
+    
+            var circle_marker_e74e482d91bca74f63efb44c2bb2e491 = L.circleMarker(
+                [40.4286, 29.7189],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_c47191991e18444dc35d0c3ba3749254 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2760000e21a0f716db919a2c08c91e87 = $(`<div id="html_2760000e21a0f716db919a2c08c91e87" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#4 İznik</b><br>                 <i>İznîk</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-05-02<br>                 <b>Su Durumu:</b> Bol (İznik Gölü tatlı suyu)<br>                 <b>Lojistik:</b> At ve katırların nallanması ve zahire ambarlarının takviyesi.<br>                 <small style="color: #666;">İbn Kemal IX. Defter, s. 165</small>             </div>             </div>`)[0];
+                popup_c47191991e18444dc35d0c3ba3749254.setContent(html_2760000e21a0f716db919a2c08c91e87);
+            
+        
+
+        circle_marker_e74e482d91bca74f63efb44c2bb2e491.bindPopup(popup_c47191991e18444dc35d0c3ba3749254)
+        ;
+
+        
+    
+    
+            var circle_marker_f38b2e2a8cd4a771c519a75d4f4fac23 = L.circleMarker(
+                [39.4444, 30.6933],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_b5ada9c33f173948a39ad1aa1bcf9726 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_42b128b7d7da795330b4c489a03d1e04 = $(`<div id="html_42b128b7d7da795330b4c489a03d1e04" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#5 Eskişehir (Seyitgazi)</b><br>                 <i>Sultânönü / Seyyid Battal Gazi</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-05-11<br>                 <b>Su Durumu:</b> Orta (Porsuk ve kaynak suları)<br>                 <b>Lojistik:</b> İç Anadolu hububat alımı ve ordu zahiresine tahsis.<br>                 <small style="color: #666;">Celâlzâde Selimnâme, s. 79</small>             </div>             </div>`)[0];
+                popup_b5ada9c33f173948a39ad1aa1bcf9726.setContent(html_42b128b7d7da795330b4c489a03d1e04);
+            
+        
+
+        circle_marker_f38b2e2a8cd4a771c519a75d4f4fac23.bindPopup(popup_b5ada9c33f173948a39ad1aa1bcf9726)
+        ;
+
+        
+    
+    
+            var circle_marker_bffb8699352ff5753ad0aa417be4e209 = L.circleMarker(
+                [37.8714, 32.4932],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_9ebd912446c98eecacc39eb2516898cc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fd9bd232aa9fe9c47f68d4effa578d12 = $(`<div id="html_fd9bd232aa9fe9c47f68d4effa578d12" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#6 Konya</b><br>                 <i>Konyâ</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-05-22<br>                 <b>Su Durumu:</b> Yeterli<br>                 <b>Lojistik:</b> Karaman eyaleti tımarlı sipahileri ve mühimmat birleşimi sağlandı.<br>                 <small style="color: #666;">Haydar Çelebi Ruznâmesi, s. 52</small>             </div>             </div>`)[0];
+                popup_9ebd912446c98eecacc39eb2516898cc.setContent(html_fd9bd232aa9fe9c47f68d4effa578d12);
+            
+        
+
+        circle_marker_bffb8699352ff5753ad0aa417be4e209.bindPopup(popup_9ebd912446c98eecacc39eb2516898cc)
+        ;
+
+        
+    
+    
+            var circle_marker_1fa46c76f86ba055c3bc001cec6334fd = L.circleMarker(
+                [38.7205, 35.4853],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_1a5fe2e8ba977c483be4cd305ab93c61 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ccadcc050d64f72e46464b56c0f0fb38 = $(`<div id="html_ccadcc050d64f72e46464b56c0f0fb38" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#7 Kayseri</b><br>                 <i>Kayseriyye</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-06-03<br>                 <b>Su Durumu:</b> Bol<br>                 <b>Lojistik:</b> Dulkadiroğlu Alâüddevle Bey'e elçiler gönderilip zahire ve ittifak talep edildi.<br>                 <small style="color: #666;">İdris-i Bitlisî Selim-nâme, s. 112</small>             </div>             </div>`)[0];
+                popup_1a5fe2e8ba977c483be4cd305ab93c61.setContent(html_ccadcc050d64f72e46464b56c0f0fb38);
+            
+        
+
+        circle_marker_1fa46c76f86ba055c3bc001cec6334fd.bindPopup(popup_1a5fe2e8ba977c483be4cd305ab93c61)
+        ;
+
+        
+    
+    
+            var circle_marker_8ce064f1dd1f2b6da1eb81c3d297e7bf = L.circleMarker(
+                [39.7505, 37.015],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_3a6e5ba7e2dfd9fcf441ce56556139fd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9ee299d2ea69313ec28c456120c715f3 = $(`<div id="html_9ee299d2ea69313ec28c456120c715f3" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#8 Sivas (Büyük Yoklama Sahrası)</b><br>                 <i>Sîvâs</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-06-15<br>                 <b>Su Durumu:</b> Bol (Kızılırmak suları)<br>                 <b>Lojistik:</b> Büyük ordu teftişi ve nefer sayımı yapıldı (100.000 mevcud). 40.000 kişilik muhafız kuvvet geride ihtiyat olarak bırakıldı.<br>                 <small style="color: #666;">Feridun Bey Münşeât, C. I, s. 382</small>             </div>             </div>`)[0];
+                popup_3a6e5ba7e2dfd9fcf441ce56556139fd.setContent(html_9ee299d2ea69313ec28c456120c715f3);
+            
+        
+
+        circle_marker_8ce064f1dd1f2b6da1eb81c3d297e7bf.bindPopup(popup_3a6e5ba7e2dfd9fcf441ce56556139fd)
+        ;
+
+        
+    
+    
+            var circle_marker_7c2efc6c27a8d9d5bff5f0dcd2a75f7e = L.circleMarker(
+                [39.75, 39.49],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_e5be967cc8692a715fd4f2f33eec2075 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_46ecf2ba1651037552acd8bab9b19672 = $(`<div id="html_46ecf2ba1651037552acd8bab9b19672" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#9 Erzincan</b><br>                 <i>Erzincân</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-07-06<br>                 <b>Su Durumu:</b> Bol (Fırat Nehri)<br>                 <b>Lojistik:</b> Safevilerin tarlaları ve otlakları yaktığı görüldü; Trabzon limanından deve kervanlarıyla un ve barut sevk edildi.<br>                 <small style="color: #666;">Haydar Çelebi Ruznâmesi, s. 59</small>             </div>             </div>`)[0];
+                popup_e5be967cc8692a715fd4f2f33eec2075.setContent(html_46ecf2ba1651037552acd8bab9b19672);
+            
+        
+
+        circle_marker_7c2efc6c27a8d9d5bff5f0dcd2a75f7e.bindPopup(popup_e5be967cc8692a715fd4f2f33eec2075)
+        ;
+
+        
+    
+    
+            var circle_marker_fe4995a6aad5f289f48b283b1e7233bc = L.circleMarker(
+                [39.7833, 40.3833],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_2f113e3b64cede680b64278d6b856c22 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4a9a602f01b6871c4103e43f63b2c244 = $(`<div id="html_4a9a602f01b6871c4103e43f63b2c244" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#10 Tercan</b><br>                 <i>Tercân</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-07-15<br>                 <b>Su Durumu:</b> Orta<br>                 <b>Lojistik:</b> Aşırı sıcaklar ve çorak arazi sebebiyle at zayiatı arttı.<br>                 <small style="color: #666;">Celâlzâde Selimnâme, s. 86</small>             </div>             </div>`)[0];
+                popup_2f113e3b64cede680b64278d6b856c22.setContent(html_4a9a602f01b6871c4103e43f63b2c244);
+            
+        
+
+        circle_marker_fe4995a6aad5f289f48b283b1e7233bc.bindPopup(popup_2f113e3b64cede680b64278d6b856c22)
+        ;
+
+        
+    
+    
+            var circle_marker_577a8c5147125c0e7aa1165471b509d4 = L.circleMarker(
+                [39.9086, 41.2769],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_b5e8798b827d2d53d0457d70ad34482a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c843738dfe0ccd6a2f6a7d8cee34c863 = $(`<div id="html_c843738dfe0ccd6a2f6a7d8cee34c863" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#11 Erzurum</b><br>                 <i>Erzurûm</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-07-22<br>                 <b>Su Durumu:</b> Bol (Karasu pınarları)<br>                 <b>Lojistik:</b> Karasu boyunda konaklanıp sahra topları teftişten geçirildi.<br>                 <small style="color: #666;">İbn Kemal IX. Defter, s. 175</small>             </div>             </div>`)[0];
+                popup_b5e8798b827d2d53d0457d70ad34482a.setContent(html_c843738dfe0ccd6a2f6a7d8cee34c863);
+            
+        
+
+        circle_marker_577a8c5147125c0e7aa1165471b509d4.bindPopup(popup_b5e8798b827d2d53d0457d70ad34482a)
+        ;
+
+        
+    
+    
+            var circle_marker_35da167a49ac8112604609f2d09af1af = L.circleMarker(
+                [39.7833, 42.5833],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_c9b2b8df33e37bdec6bc69b9e6f262f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_843d480995bbc4c88171338698b16586 = $(`<div id="html_843d480995bbc4c88171338698b16586" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#12 Eleşkirt</b><br>                 <i>Alashkırd</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-08-04<br>                 <b>Su Durumu:</b> Kısıtlı<br>                 <b>Lojistik:</b> Açlık ve iaşe sıkıntısı sebebiyle yeniçeriler padişah çadırına ok attı.<br>                 <small style="color: #666;">Celâlzâde Selimnâme, s. 95-97</small>             </div>             </div>`)[0];
+                popup_c9b2b8df33e37bdec6bc69b9e6f262f1.setContent(html_843d480995bbc4c88171338698b16586);
+            
+        
+
+        circle_marker_35da167a49ac8112604609f2d09af1af.bindPopup(popup_c9b2b8df33e37bdec6bc69b9e6f262f1)
+        ;
+
+        
+    
+    
+            var circle_marker_859401d00281ee2d52e20faa52720063 = L.circleMarker(
+                [39.55, 43.6833],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_43303b3778723312270e20a827d1f2a5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_43fb0c995bae8d631ba98d482976d78a = $(`<div id="html_43fb0c995bae8d631ba98d482976d78a" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#13 Diyadin</b><br>                 <i>Diyâdîn</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-08-16<br>                 <b>Su Durumu:</b> Orta (Murat Nehri kanyon suyu)<br>                 <b>Lojistik:</b> Safevilerin Çaldıran ovasında ordugah kurduğu haberi keşif kolları tarafından teyit edildi.<br>                 <small style="color: #666;">Haydar Çelebi Ruznâmesi, s. 66</small>             </div>             </div>`)[0];
+                popup_43303b3778723312270e20a827d1f2a5.setContent(html_43fb0c995bae8d631ba98d482976d78a);
+            
+        
+
+        circle_marker_859401d00281ee2d52e20faa52720063.bindPopup(popup_43303b3778723312270e20a827d1f2a5)
+        ;
+
+        
+    
+    
+            var circle_marker_6424566d615c5f6bc4b16d14d2d26c9e = L.circleMarker(
+                [39.1417, 44.3986],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_fddf05ef85e8e91d62934fdda33b96f4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5aeb0d9a48064667f6e2a052dbe3e0ec = $(`<div id="html_5aeb0d9a48064667f6e2a052dbe3e0ec" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#14 Çaldıran Ovası (Harp Meydanı)</b><br>                 <i>Çâldırân Sahrası</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-08-22<br>                 <b>Su Durumu:</b> Yeterli (Çaldıran Deresi)<br>                 <b>Lojistik:</b> Top arabaları zincirlendi, tabur cengi düzeni kuruldu. Muharebe 23 Ağustos Çarşamba günü kazanıldı.<br>                 <small style="color: #666;">İbn Kemal IX. Defter, s. 190</small>             </div>             </div>`)[0];
+                popup_fddf05ef85e8e91d62934fdda33b96f4.setContent(html_5aeb0d9a48064667f6e2a052dbe3e0ec);
+            
+        
+
+        circle_marker_6424566d615c5f6bc4b16d14d2d26c9e.bindPopup(popup_fddf05ef85e8e91d62934fdda33b96f4)
+        ;
+
+        
+    
+    
+            var circle_marker_a3a4aee6b07589490ece2073bafc630a = L.circleMarker(
+                [38.55, 44.95],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_be610aa65c8416df85d75eac31588102 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cbe271f6ee18c57e5df7fc20118ecfec = $(`<div id="html_cbe271f6ee18c57e5df7fc20118ecfec" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#15 Hoy</b><br>                 <i>Hûy</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-08-28<br>                 <b>Su Durumu:</b> Bol<br>                 <b>Lojistik:</b> Safevilerin terk ettiği ambarlardan bol zahire ve meyve ele geçirildi.<br>                 <small style="color: #666;">Celâlzâde Selimnâme, s. 104</small>             </div>             </div>`)[0];
+                popup_be610aa65c8416df85d75eac31588102.setContent(html_cbe271f6ee18c57e5df7fc20118ecfec);
+            
+        
+
+        circle_marker_a3a4aee6b07589490ece2073bafc630a.bindPopup(popup_be610aa65c8416df85d75eac31588102)
+        ;
+
+        
+    
+    
+            var circle_marker_431e8d3efc79879dda6c1f3b97814600 = L.circleMarker(
+                [38.4333, 45.7667],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_25fd8442381a179ccc242866026db0d2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_257d604dca896b640511290f89247f7d = $(`<div id="html_257d604dca896b640511290f89247f7d" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#16 Merend</b><br>                 <i>Merend</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-09-02<br>                 <b>Su Durumu:</b> Yeterli<br>                 <b>Lojistik:</b> Tebriz eşrafı ve seyyidleri istikbal heyeti gönderdi.<br>                 <small style="color: #666;">Haydar Çelebi Ruznâmesi, s. 70</small>             </div>             </div>`)[0];
+                popup_25fd8442381a179ccc242866026db0d2.setContent(html_257d604dca896b640511290f89247f7d);
+            
+        
+
+        circle_marker_431e8d3efc79879dda6c1f3b97814600.bindPopup(popup_25fd8442381a179ccc242866026db0d2)
+        ;
+
+        
+    
+    
+            var circle_marker_9211ab2b679e791549c9f2637ebb76ef = L.circleMarker(
+                [38.08, 46.2919],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_332ad9e704f4f66a942b5096023903ce = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_937369b460a501beb09c6e95a63b52ef = $(`<div id="html_937369b460a501beb09c6e95a63b52ef" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#17 Tebriz (Payitaht-ı Safevî)</b><br>                 <i>Tebrîz</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-09-05<br>                 <b>Su Durumu:</b> Bol (Acıçay ve kanallar)<br>                 <b>Lojistik:</b> Şah'ın sarayı (Heşt Behişt) teftiş edildi; binlerce sanatkar, nakkaş ve alim İstanbul'a davet edildi.<br>                 <small style="color: #666;">İbn Kemal IX. Defter, s. 202-210</small>             </div>             </div>`)[0];
+                popup_332ad9e704f4f66a942b5096023903ce.setContent(html_937369b460a501beb09c6e95a63b52ef);
+            
+        
+
+        circle_marker_9211ab2b679e791549c9f2637ebb76ef.bindPopup(popup_332ad9e704f4f66a942b5096023903ce)
+        ;
+
+        
+    
+    
+            var circle_marker_527a4e1a0642859d89af20325db6b611 = L.circleMarker(
+                [39.2089, 45.4122],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_57cb980ddb5e650f381255cf83a6a095 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_451f6032808474f3ce39ed50d0260b0c = $(`<div id="html_451f6032808474f3ce39ed50d0260b0c" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#18 Nahçıvan</b><br>                 <i>Nahcivân</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-09-22<br>                 <b>Su Durumu:</b> Bol (Aras Nehri)<br>                 <b>Lojistik:</b> Kışın yaklaşması ve yeniçerilerin Karabağ kışlağına muhalefeti sebebiyle dönüş güzergahı açıldı.<br>                 <small style="color: #666;">Haydar Çelebi Ruznâmesi, s. 74</small>             </div>             </div>`)[0];
+                popup_57cb980ddb5e650f381255cf83a6a095.setContent(html_451f6032808474f3ce39ed50d0260b0c);
+            
+        
+
+        circle_marker_527a4e1a0642859d89af20325db6b611.bindPopup(popup_57cb980ddb5e650f381255cf83a6a095)
+        ;
+
+        
+    
+    
+            var circle_marker_33bc136b21101bd91c6e8d7dcdf32d85 = L.circleMarker(
+                [40.6014, 43.0975],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_622f45515fdf769168e983684922a8aa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_015b4dd9075b1480820f8ed89bf01406 = $(`<div id="html_015b4dd9075b1480820f8ed89bf01406" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#19 Kars</b><br>                 <i>Kârs</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-10-05<br>                 <b>Su Durumu:</b> Bol (Kars Çayı)<br>                 <b>Lojistik:</b> Şiddetli soğuk ve kar yağışı başladı; at ve deve zayiatı arttı.<br>                 <small style="color: #666;">Celâlzâde Selimnâme, s. 118</small>             </div>             </div>`)[0];
+                popup_622f45515fdf769168e983684922a8aa.setContent(html_015b4dd9075b1480820f8ed89bf01406);
+            
+        
+
+        circle_marker_33bc136b21101bd91c6e8d7dcdf32d85.bindPopup(popup_622f45515fdf769168e983684922a8aa)
+        ;
+
+        
+    
+    
+            var circle_marker_feac8cd7ff8241094eae45ec9ce5e532 = L.circleMarker(
+                [40.2553, 40.2281],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_cd5d3373267feae800f941507d07659d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_84e48aee6a62951a01922b8f5c19cc78 = $(`<div id="html_84e48aee6a62951a01922b8f5c19cc78" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#20 Bayburt</b><br>                 <i>Baybûrd</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-10-18<br>                 <b>Su Durumu:</b> Bol (Çoruh Nehri)<br>                 <b>Lojistik:</b> Kalenin fethi tamamlandı; Bıyıklı Mehmed Paşa bölge beylerbeyi nasbedildi.<br>                 <small style="color: #666;">İdris-i Bitlisî Selim-nâme, s. 155</small>             </div>             </div>`)[0];
+                popup_cd5d3373267feae800f941507d07659d.setContent(html_84e48aee6a62951a01922b8f5c19cc78);
+            
+        
+
+        circle_marker_feac8cd7ff8241094eae45ec9ce5e532.bindPopup(popup_cd5d3373267feae800f941507d07659d)
+        ;
+
+        
+    
+    
+            var circle_marker_03dc7c96a1aa85b3e2f8d6266006b6f3 = L.circleMarker(
+                [40.65, 35.8333],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+    
+        var popup_305d890d7e10579a4949fdf8918309f8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e3c4c440dbb5f9c0a25e51a4f0c9e110 = $(`<div id="html_e3c4c440dbb5f9c0a25e51a4f0c9e110" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#21 Amasya (Kışlak)</b><br>                 <i>Amâsiyye</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1514-11-20<br>                 <b>Su Durumu:</b> Mükemmel<br>                 <b>Lojistik:</b> Padişah kışı burada geçirip Kemah ve Dulkadiroğlu seferlerinin stratejisini hazırladı.<br>                 <small style="color: #666;">İbn Kemal IX. Defter, s. 220-225</small>             </div>             </div>`)[0];
+                popup_305d890d7e10579a4949fdf8918309f8.setContent(html_e3c4c440dbb5f9c0a25e51a4f0c9e110);
+            
+        
+
+        circle_marker_03dc7c96a1aa85b3e2f8d6266006b6f3.bindPopup(popup_305d890d7e10579a4949fdf8918309f8)
+        ;
+
+        
+    
+    
+            var poly_line_d15d265c5cf40556844e1f5f8d75db21 = L.polyline(
+                [[40.9972, 29.0233], [40.8028, 29.4307], [40.7667, 29.9167], [40.4286, 29.7189], [39.4444, 30.6933], [37.8714, 32.4932], [38.7205, 35.4853], [39.7505, 37.015], [39.75, 39.49], [39.7833, 40.3833], [39.9086, 41.2769], [39.7833, 42.5833], [39.55, 43.6833], [39.1417, 44.3986], [38.55, 44.95], [38.4333, 45.7667], [38.08, 46.2919], [39.2089, 45.4122], [40.6014, 43.0975], [40.2553, 40.2281], [40.65, 35.8333]],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "#e74c3c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_c77a6f931c047c836881f0ea1d56a8b0);
+        
+</script>
+</html>

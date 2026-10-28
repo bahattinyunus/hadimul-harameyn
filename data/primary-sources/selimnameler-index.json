@@ -1,0 +1,115 @@
+{
+  "$schema": "../../schemas/primary-sources.schema.json",
+  "catalog_name": "Selimnâmeler ve Çağdaş Osmanlı Vakayinâme Külliyatı",
+  "description": "Yavuz Sultan Selim'in şahsiyeti, askeri seferleri ve idari icraatlarını doğrudan veya birinci elden aktaran Selimnâme türü eserlerin bibliyografik fihristi.",
+  "sources": [
+    {
+      "source_id": "SRC-SELIMNAME-CELALZADE",
+      "title": "Selimnâme (Meâsir-i Selim Hânî)",
+      "title_original": "مآثر سليم خانى",
+      "author": "Celâlzâde Mustafa Çelebi (Koca Nişancı)",
+      "author_dates": "1490 - 1567",
+      "date_written_estimate": "1525 - 1530",
+      "language": "Osmanlı Türkçesi",
+      "genre": "Tarih / Biyografik Monografi (Selimnâme)",
+      "manuscript_copies": [
+        "Süleymaniye Kütüphanesi, Ayasofya Nu. 3369",
+        "Topkapı Sarayı Müzesi Kütüphanesi, Revan Nu. 1274",
+        "Millet Kütüphanesi, Ali Emîrî Tarih Nu. 182"
+      ],
+      "critical_editions": [
+        "Ahmet Uğur - Mustafa Çuhadar (Haz.), Selim-nâme, MEB Yayınları / TTK, Ankara, 1990."
+      ],
+      "significance_and_scope": "Dönemin divan katibi ve sonradan nişancısı olan Celâlzâde'nin bizzat katıldığı seferleri ve devlet divanındaki karar alma süreçlerini en canlı ve ayrıntılı şekilde aktaran şaheserdir."
+    },
+    {
+      "source_id": "SRC-SELIMNAME-IBNKEMAL",
+      "title": "Tevârih-i Âl-i Osmân, IX. Defter (Sultan Selim Devri)",
+      "title_original": "تواريخ آل عثمان - دفتر تاسع",
+      "author": "Kemalpaşazâde (Şemseddin Ahmed İbn Kemal)",
+      "author_dates": "1468 - 1534",
+      "date_written_estimate": "1520 - 1526",
+      "language": "Osmanlı Türkçesi (Ağdalı edebi üslup)",
+      "genre": "Hanedan Tarihi / Selimnâme",
+      "manuscript_copies": [
+        "Topkapı Sarayı Müzesi Kütüphanesi, Hazine Nu. 1421",
+        "İstanbul Üniversitesi Kütüphanesi, TY Nu. 2438"
+      ],
+      "critical_editions": [
+        "Şerafettin Turan (Haz.), Tevârih-i Âl-i Osmân, IX. Defter, Türk Tarih Kurumu (TTK), Ankara, 1996."
+      ],
+      "significance_and_scope": "Şeyhülislam ve allâme İbn Kemal'in Yavuz'un yakın musahibi ve kazaskeri sıfatıyla bizzat sefere iştirak ederek kaleme aldığı, felsefi ve hukuki analizlerle örülü en muteber birincil kaynaktır."
+    },
+    {
+      "source_id": "SRC-SELIMNAME-IDRIS",
+      "title": "Selim-nâme",
+      "title_original": "سليم نامه",
+      "author": "Mevlânâ Hakîmüddîn İdrîs-i Bitlisî",
+      "author_dates": "1457 - 1520",
+      "date_written_estimate": "1518 - 1520",
+      "language": "Farsça",
+      "genre": "Tarih ve Diplomatik Hatırat",
+      "manuscript_copies": [
+        "Süleymaniye Kütüphanesi, Esad Efendi Nu. 2140",
+        "Topkapı Sarayı Müzesi Kütüphanesi, Revan Nu. 1540"
+      ],
+      "critical_editions": [
+        "Hicabi Kırlangıç (Çev. ve Haz.), Selim Şahnâme, Kültür Bakanlığı Yayınları / TTK, Ankara, 2001."
+      ],
+      "significance_and_scope": "Doğu ve Güneydoğu aşiret ve beyliklerinin Osmanlı tabiiyetine kazandırılmasında baş müzakereci rolü oynayan müellifin diplomatik faaliyetlerini ve Çaldıran Seferi'nin perde arkasını anlatan benzersiz vesikadır."
+    },
+    {
+      "source_id": "SRC-SELIMNAME-TACUTTEVARIH",
+      "title": "Tâcü't-Tevârih (Cilt IV - V)",
+      "title_original": "تاج التواريخ",
+      "author": "Hoca Sâdeddin Efendi",
+      "author_dates": "1536 - 1599",
+      "date_written_estimate": "1574 - 1585",
+      "language": "Osmanlı Türkçesi (Klasik inşâ üslubu)",
+      "genre": "Genel Osmanlı Tarihi / Hoca Tarihi",
+      "manuscript_copies": [
+        "Süleymaniye Kütüphanesi, Hacı Beşir Ağa Nu. 450",
+        "Nuruosmaniye Kütüphanesi Nu. 3120"
+      ],
+      "critical_editions": [
+        "İsmet Parmaksızoğlu (Haz.), Tâcü't-Tevârih, Kültür Bakanlığı Yayınları, Ankara, 1979."
+      ],
+      "significance_and_scope": "Müellifin babası Hasan Can bizzat Yavuz Sultan Selim'in en yakın nedimi ve sırdaşı olduğu için, padişahın şahsi hayatına, vasiyetlerine ve son anlarına ait aktarımları doğrudan aile hafızasından kaydetmiştir."
+    },
+    {
+      "source_id": "SRC-SELIMNAME-SUKRI",
+      "title": "Selimnâme (Fütûhât-ı Selîmî)",
+      "title_original": "فتوحات سليمى",
+      "author": "Şükrî-i Bitlisî",
+      "author_dates": "16. yüzyıl başı",
+      "date_written_estimate": "1521 - 1524",
+      "language": "Osmanlı Türkçesi (Manzum mesnevi)",
+      "genre": "Manzum Destansı Tarih",
+      "manuscript_copies": [
+        "Topkapı Sarayı Müzesi Kütüphanesi, Hazine Nu. 1597-1598 (Minyatürlü)",
+        "Nuruosmaniye Kütüphanesi Nu. 3409"
+      ],
+      "critical_editions": [
+        "Mustafa Argunşah (Haz.), Şükrî-i Bitlisî Selim-nâme, Kayseri Erciyes Üniversitesi Yayınları, 1997."
+      ],
+      "significance_and_scope": "İdris-i Bitlisî'nin maiyetinde seferlere katılan şairin, savaş taktiklerini ve askeri psikolojiyi resimli ve vezinli dille anlatan erken dönem kaynağıdır."
+    },
+    {
+      "source_id": "SRC-SELIMNAME-KESFI",
+      "title": "Selimnâme",
+      "title_original": "سليم نامه",
+      "author": "Keşfî Mehmed Çelebi",
+      "author_dates": "ö. 1525 civarı",
+      "date_written_estimate": "1521",
+      "language": "Osmanlı Türkçesi",
+      "genre": "Monografik Tarih",
+      "manuscript_copies": [
+        "Süleymaniye Kütüphanesi, Esad Efendi Nu. 2147"
+      ],
+      "critical_editions": [
+        "Ahmet Uğur, 'Keşfî'nin Selim-nâmesi', DTCF Dergisi, Ankara, 1978."
+      ],
+      "significance_and_scope": "Çaldıran ve Mısır Seferleri menzillerini gün gün tutulan ruznâme notlarına paralel olarak aktaran kıymetli bir kaynaktır."
+    }
+  ]
+}
