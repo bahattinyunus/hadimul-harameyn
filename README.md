@@ -28,6 +28,11 @@
 [![Tarihsel Kelâm](https://img.shields.io/badge/Birincil%20Alıntılar-50%20Tarihsel%20Kelâm-purple.svg)](data/quotes/)
 [![Akademik Standart](https://img.shields.io/badge/Doğrulama-TTK%20%7C%20MEB%20%7C%20BOA-emerald.svg)](CONTRIBUTING.md)
 
+<div align="center" style="margin-top: 20px;">
+  <img src="assets/images/hadimul-harameyn-hero.jpg" alt="I. Selim (Yavuz Sultan Selim) - Hâdimü'l-Haremeyni'ş-Şerîfeyn" width="100%" style="border-radius: 10px; border: 1px solid #d4af37;" />
+  <p><em>«خادم الحرمين الشريفين» — Şam Emeviyye Camii ve Otağ-ı Hümâyûn Önünde I. Selim (1516–1517)</em></p>
+</div>
+
 </div>
 
 ---
@@ -324,6 +329,11 @@ Aşağıdaki metinler, [`data/quotes/historical-quotes.json`](data/quotes/histor
 
 ## 🗺️ 3. Seferler & Meydan Muharebeleri Matrisi
 
+<div align="center" style="margin-bottom: 24px;">
+  <img src="assets/images/caldiran-battle-1514.jpg" alt="Çaldıran Meydan Muharebesi (1514) - Tabur Cengi ve Sahra Topçusu" width="100%" style="border-radius: 10px; border: 1px solid #c0392b;" />
+  <p><em>Çaldıran Meydan Muharebesi (23 Ağustos 1514): Birbirine zincirlenen top arabaları (Tabur Cengi), seyyar darpzen bataryaları ve tüfekli yeniçeri savunma hattı</em></p>
+</div>
+
 Depoda şema (`schemas/campaign.schema.json`) doğrulamalı olarak kayıt altına alınan seferler:
 
 | Sefer ID | Tarih | Muharebe / Sefer | Bölge | Kuvvetler (Osmanlı vs Rakip) | Taktik Doktrin | Veri Dosyası |
@@ -338,6 +348,11 @@ Depoda şema (`schemas/campaign.schema.json`) doğrulamalı olarak kayıt altın
 ---
 
 ## 🐪 4. Sina Çölü İntikali Lojistik Boru Hattı
+
+<div align="center" style="margin-bottom: 24px;">
+  <img src="assets/images/sinai-desert-crossing-1517.jpg" alt="Sina Çölü İntikali (Ocak 1517) - Tih Sahrası Su İkmal Kervanı ve Yaya Yürüyüş" width="100%" style="border-radius: 10px; border: 1px solid #f59e0b;" />
+  <p><em>Tih Sahrası Geçişi (Ocak 1517): On günde geçilemez denilen Sina Çölü'nde meşin su kırbaları taşıyan deve kervanları ve ordusunun önünde hürmetle yaya yürüyen Yavuz Sultan Selim</em></p>
+</div>
 
 Sina Çölü intikali askeri tarihte eşi görülmemiş bir lojistik mühendislik başarısıdır:
 
@@ -379,6 +394,12 @@ hadimul-harameyn/
 ├── CONTRIBUTING.md                     # Akademik veri katkı ve doğrulama yönergeleri
 ├── pyproject.toml                      # Modern Python paket yapılandırması (PEP 621)
 ├── requirements.txt                    # jsonschema, folium, pytest bağımlılıkları
+│
+├── assets/                             # Proje görsel varlıkları ve tarihsel illüstrasyonlar
+│   └── images/
+│       ├── hadimul-harameyn-hero.jpg   # Yavuz Sultan Selim Şam otağı ana görseli
+│       ├── caldiran-battle-1514.jpg    # Çaldıran Meydan Muharebesi ve Tabur Cengi
+│       └── sinai-desert-crossing-1517.jpg # Sina Çölü intikali ve deve su kervanları
 │
 ├── data/
 │   ├── campaigns/                      # Sefer parametreleri, kuvvetler, taktikler ve harp kayıtları

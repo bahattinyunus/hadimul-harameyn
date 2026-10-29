@@ -1225,6 +1225,7 @@ class RouteMapGenerator:
     <div class="grid">
       <div class="card">
         <div>
+          <img src="../assets/images/caldiran-battle-1514.jpg" alt="Çaldıran Seferi (1514)" style="width:100%; height:180px; object-fit:cover; border-radius:8px; margin-bottom:16px; border:1px solid #243147;" />
           <div class="card-tag">DOĞU SEFERİ • 1514</div>
           <h2>Çaldıran Seferi ve Tebriz Menzil Hattı</h2>
           <p>
@@ -1240,6 +1241,7 @@ class RouteMapGenerator:
 
       <div class="card egypt">
         <div>
+          <img src="../assets/images/sinai-desert-crossing-1517.jpg" alt="Mısır Seferi (1516-1517)" style="width:100%; height:180px; object-fit:cover; border-radius:8px; margin-bottom:16px; border:1px solid #243147;" />
           <div class="card-tag">GÜNEY & MISIR SEFERİ • 1516-1517</div>
           <h2>Mısır ve Suriye Fethi Güzergâhı</h2>
           <p>
