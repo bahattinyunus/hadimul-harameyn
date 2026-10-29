@@ -1,0 +1,217 @@
+{
+  "type": "FeatureCollection",
+  "name": "Turnadağı Seferi Güzergâhı (1515)",
+  "description": "Yavuz Sultan Selim ve Hadım Sinan Paşa kumandasındaki Osmanlı ordusunun Kayseri'den Göksun, Turnadağı, Elbistan ve Maraş'a uzanan intikal menzilleri.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-041",
+        "step_order": 1,
+        "name": "Kayseri Ordugâhı",
+        "historical_name": "Kayseriyye Sahrası",
+        "campaign_id": "CMP-1515-TURNADAGI",
+        "date_reached": "1515-05-05",
+        "stay_duration_days": 4,
+        "elevation_meters": 1050,
+        "terrain_type": "Ova / İkmal Üssü",
+        "water_supply_status": "Bol (Karasu ve pınarlar)",
+        "logistics_note": "Kemah'ın fethinden sonra Dulkadir seferi için toplanma ve mühimmat teftişi yapıldı.",
+        "primary_source_ref": "Celâlzâde Selimnâme s. 121"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.4853, 38.7205]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-042",
+        "step_order": 2,
+        "name": "Develi Etekleri",
+        "historical_name": "Develü Karahisârı",
+        "campaign_id": "CMP-1515-TURNADAGI",
+        "date_reached": "1515-05-11",
+        "stay_duration_days": 1,
+        "elevation_meters": 1200,
+        "terrain_type": "Volkanik Platonun Etekleri",
+        "water_supply_status": "Yeterli",
+        "logistics_note": "Erciyes dağının güney geçidinden kervan ve mühimmat sevki sağlandı.",
+        "primary_source_ref": "Haydar Çelebi Ruznâmesi s. 78"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.4912, 38.3908]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-043",
+        "step_order": 3,
+        "name": "Pınarbaşı",
+        "historical_name": "Azîziyye Çimenliği",
+        "campaign_id": "CMP-1515-TURNADAGI",
+        "date_reached": "1515-05-18",
+        "stay_duration_days": 2,
+        "elevation_meters": 1500,
+        "terrain_type": "Yüksek Yayla",
+        "water_supply_status": "Mükemmel (Zamantı ırmağı)",
+        "logistics_note": "Ordu atları ve develeri otlatıldı; Şehsuvaroğlu Ali Bey öncülerle orduya iltihak etti.",
+        "primary_source_ref": "İbn Kemal IX. Defter s. 144"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.3931, 38.7228]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-044",
+        "step_order": 4,
+        "name": "Sarız Yaylası",
+        "historical_name": "Sârız Menzili",
+        "campaign_id": "CMP-1515-TURNADAGI",
+        "date_reached": "1515-05-25",
+        "stay_duration_days": 1,
+        "elevation_meters": 1580,
+        "terrain_type": "Dağlık Geçit",
+        "water_supply_status": "Bol pınar suyu",
+        "logistics_note": "Dağ topları sökülerek katır sırtında intikal ettirildi.",
+        "primary_source_ref": "Hoca Sâdeddin C. IV s. 222"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.5028, 38.4811]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-045",
+        "step_order": 5,
+        "name": "Göksun Sahrası",
+        "historical_name": "Yalak Sahrâsı",
+        "campaign_id": "CMP-1515-TURNADAGI",
+        "date_reached": "1515-06-02",
+        "stay_duration_days": 3,
+        "elevation_meters": 1350,
+        "terrain_type": "Vadi ve Dağ Eteği",
+        "water_supply_status": "Bol",
+        "logistics_note": "Alâüddevle Bozkurt Bey'in kuvvetleri dağ geçitlerinde tespit edildi; harp meclisi toplandı.",
+        "primary_source_ref": "Celâlzâde Selimnâme s. 124"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.4950, 38.0210]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-046",
+        "step_order": 6,
+        "name": "Turnadağı Meydanı",
+        "historical_name": "Turnadağı / Ördekli Mevkii",
+        "campaign_id": "CMP-1515-TURNADAGI",
+        "date_reached": "1515-06-12",
+        "stay_duration_days": 2,
+        "elevation_meters": 1750,
+        "terrain_type": "Sarp Dağ Yamacı",
+        "water_supply_status": "Kısıtlı dağ suları",
+        "logistics_note": "Turnadağı Meydan Muharebesi kazanıldı; Alâüddevle Bozkurt Bey maktul düştü.",
+        "primary_source_ref": "İbn Kemal IX. Defter s. 148"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.5000, 38.0167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-047",
+        "step_order": 7,
+        "name": "Afşin",
+        "historical_name": "Efsus Kalesi",
+        "campaign_id": "CMP-1515-TURNADAGI",
+        "date_reached": "1515-06-16",
+        "stay_duration_days": 1,
+        "elevation_meters": 1230,
+        "terrain_type": "Ova Girişi",
+        "water_supply_status": "İyi",
+        "logistics_note": "Dulkadir kalıntıları teslim oldu; zahire depoları Osmanlı ordusuna devredildi.",
+        "primary_source_ref": "Hoca Sâdeddin C. IV s. 226"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.9142, 38.2464]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-048",
+        "step_order": 8,
+        "name": "Elbistan",
+        "historical_name": "Elbistân (Dulkadir Başkenti)",
+        "campaign_id": "CMP-1515-TURNADAGI",
+        "date_reached": "1515-06-19",
+        "stay_duration_days": 3,
+        "elevation_meters": 1150,
+        "terrain_type": "Geniş Ova ve Nehir Havzası",
+        "water_supply_status": "Mükemmel (Ceyhan nehri)",
+        "logistics_note": "Dulkadir saray hazinesi teslim alındı; Şehsuvaroğlu Ali Bey bölge serdarı nasbedildi.",
+        "primary_source_ref": "Celâlzâde Selimnâme s. 126"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.1894, 38.2044]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-049",
+        "step_order": 9,
+        "name": "Kahramanmaraş",
+        "historical_name": "Mar'aş Kalesi",
+        "campaign_id": "CMP-1515-TURNADAGI",
+        "date_reached": "1515-06-25",
+        "stay_duration_days": 2,
+        "elevation_meters": 568,
+        "terrain_type": "Kale ve Şehir Merkezi",
+        "water_supply_status": "Bol",
+        "logistics_note": "Maraş Kalesi'ne Osmanlı muhafızları ve topçuları yerleştirilerek sancak teşkilatı kuruldu.",
+        "primary_source_ref": "İbn Kemal IX. Defter s. 152"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.9228, 37.5858]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-050",
+        "step_order": 10,
+        "name": "Malatya",
+        "historical_name": "Malatıyye Sancağı",
+        "campaign_id": "CMP-1515-TURNADAGI",
+        "date_reached": "1515-07-02",
+        "stay_duration_days": 2,
+        "elevation_meters": 950,
+        "terrain_type": "Fırat Havzası",
+        "water_supply_status": "Mükemmel",
+        "logistics_note": "Tohma ve Fırat geçitleri tahkim edilerek sefer tamamlandı; Anadolu Türk birliği mühürlendi.",
+        "primary_source_ref": "Haydar Çelebi Ruznâmesi s. 80"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [38.3552, 38.3554]
+      }
+    }
+  ]
+}

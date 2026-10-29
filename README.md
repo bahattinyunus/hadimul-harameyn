@@ -22,7 +22,7 @@
 [![CI Validation](https://github.com/bahattinyunus/hadimul-harameyn/actions/workflows/ci.yml/badge.svg)](https://github.com/bahattinyunus/hadimul-harameyn/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-gold.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](pyproject.toml)
-[![Menziller](https://img.shields.io/badge/Menzil%20Dizini-40%20WGS84%20Noktası-crimson.svg)](data/routes/)
+[![Menziller](https://img.shields.io/badge/Menzil%20Dizini-60%20WGS84%20Noktası-crimson.svg)](data/routes/)
 [![Seferler](https://img.shields.io/badge/Meydan%20Muharebeleri-6%20Büyük%20Harp-darkred.svg)](data/campaigns/)
 [![Birincil Eserler](https://img.shields.io/badge/Vakayinâme%20Külliyatı-18%20Eser%20&%20Arşiv-darkblue.svg)](data/primary-sources/)
 [![Tarihsel Kelâm](https://img.shields.io/badge/Birincil%20Alıntılar-50%20Tarihsel%20Kelâm-purple.svg)](data/quotes/)
@@ -410,9 +410,11 @@ hadimul-harameyn/
 │   │   ├── 1516-hanyunus.json          # Han Yûnus Muharebesi ve Sina kapısı
 │   │   └── 1517-ridaniye.json          # Sina intikali, Ridâniye ve Mısır'ın fethi
 │   │
-│   ├── routes/                         # Coğrafi Bilgi Sistemleri (GIS / GeoJSON)
-│   │   ├── caldiran-expedition.geojson # İstanbul -> Sivas -> Tebriz menzil koordinatları (21 menzil)
-│   │   └── egypt-conquest.geojson      # Halep -> Şam -> Gazze -> Sina -> Kahire hattı (19 menzil)
+│   ├── routes/                         # Coğrafi Bilgi Sistemleri (GIS / GeoJSON - 60 Menzil)
+│   │   ├── caldiran-expedition.geojson # İstanbul -> Sivas -> Tebriz hattı (21 menzil • 2.831 km)
+│   │   ├── turnadagi-expedition.geojson# Kayseri -> Göksun -> Maraş hattı (10 menzil • 497 km)
+│   │   ├── kochisir-expedition.geojson # Diyarbakır -> Mardin -> Urfa hattı (10 menzil • 395 km)
+│   │   └── egypt-conquest.geojson      # Halep -> Şam -> Gazze -> Sina -> Kahire (19 menzil • 2.155 km)
 │   │
 │   ├── timeline/                       # Standartlaştırılmış kronoloji verisi
 │   │   ├── selim-i-chronology.csv      # 1512-1520 arası 39 kritik hadise
@@ -432,20 +434,27 @@ hadimul-harameyn/
 │   ├── primary-sources.schema.json     # Birincil kaynak fihrist şeması
 │   └── quotes.schema.json              # Tarihsel alıntılar şeması
 │
-├── tools/                              # Veri işleme, test ve haritalama scriptleri
+├── tools/                              # Veri işleme, analitik ve haritalama scriptleri
 │   ├── validate_data.py                # Schema & GeoJSON bütünlük denetim motoru
-│   └── generate_route_map.py           # GeoJSON -> Leaflet / Folium interaktif harita üretici
+│   ├── generate_route_map.py           # GeoJSON -> Leaflet / Folium interaktif harita üretici
+│   ├── analyze_campaigns.py            # Lojistik, mesafe, irtifa ve menzil analiz motoru
+│   └── search_corpus.py                # Külliyat içi hızlı arama ve terminal renklendirme
 │
-├── tests/                              # Pytest birim ve entegrasyon testleri
+├── tests/                              # Pytest birim ve entegrasyon testleri (16 test)
 │   ├── conftest.py
 │   ├── test_validation.py
 │   ├── test_routes.py
-│   └── test_maps.py
+│   ├── test_maps.py
+│   └── test_analysis.py
 │
 └── build/                              # Üretilen HTML haritaları ve web portalı
     ├── index.html                      # Sefer haritaları ana portalı ve alıntı vitrini
     ├── caldiran-campaign-map.html      # Çaldıran interaktif Leaflet haritası
     ├── caldiran-folium.html            # Çaldıran Folium katmanı
+    ├── turnadagi-campaign-map.html     # Turnadağı interaktif Leaflet haritası
+    ├── turnadagi-folium.html           # Turnadağı Folium katmanı
+    ├── kochisir-campaign-map.html      # Koçhisar interaktif Leaflet haritası
+    ├── kochisir-folium.html            # Koçhisar Folium katmanı
     ├── egypt-campaign-map.html         # Mısır interaktif Leaflet haritası
     └── egypt-folium.html               # Mısır Folium katmanı
 ```
@@ -475,9 +484,38 @@ python tools/validate_data.py
 pytest tests/ -v
 ```
 
-### 5. İnteraktif Haritaları ve Portalı Derleyin
+### 5. Lojistik ve Mesafe Analiz Motorunu Çalıştırın
 ```bash
+# Terminalde özet lojistik ve menzil tablosunu görüntüleyin:
+python tools/analyze_campaigns.py
+
+# JSON veya Markdown formatında dışa aktarın:
+python tools/analyze_campaigns.py --format markdown
+```
+
+### 6. Tarihsel Külliyatta Hızlı Arama Yapın
+```bash
+# Külliyatın tamamında terim arayın:
+python tools/search_corpus.py "Sinan Paşa"
+
+# Yalnızca birincil alıntılarda arayın:
+python tools/search_corpus.py "Tih Sahrası" --type quotes
+
+# Yalnızca menzil ve GIS koordinatlarında arayın:
+python tools/search_corpus.py "Diyarbakır" --type routes
+```
+
+### 7. İnteraktif Haritaları ve Portalı Derleyin
+```bash
+# 4 büyük seferin tüm haritalarını ve portalı derle:
 python tools/generate_route_map.py --campaign all
+
+# Çıktılar:
+# build/index.html                     -> Sefer portalı & interaktif alıntı vitrini
+# build/caldiran-campaign-map.html     -> Çaldıran interaktif Leaflet haritası (21 menzil)
+# build/turnadagi-campaign-map.html    -> Turnadağı interaktif Leaflet haritası (10 menzil)
+# build/kochisir-campaign-map.html     -> Koçhisar interaktif Leaflet haritası (10 menzil)
+# build/egypt-campaign-map.html        -> Mısır interaktif Leaflet haritası (19 menzil)
 ```
 
 Derlenen `build/index.html` dosyasını doğrudan herhangi bir tarayıcıda açarak menzil simülasyonlarını izleyebilir, menzil kartlarını tetkik edebilir ve birincil kaynak alıntı vitrinini deneyimleyebilirsiniz.

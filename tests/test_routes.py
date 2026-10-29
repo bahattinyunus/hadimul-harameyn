@@ -50,6 +50,34 @@ class TestRoutesData(unittest.TestCase):
         self.assertTrue(any("Sina" in n or "Ariş" in n or "Katya" in n or "Salihiye" in n for n in names))
         self.assertTrue(any("Ridâniye" in n or "Kahire" in n for n in names))
 
+    def test_turnadagi_route(self):
+        turnadagi_file = self.routes_dir / "turnadagi-expedition.geojson"
+        self.assertTrue(turnadagi_file.exists(), "turnadagi-expedition.geojson bulunamadı!")
+
+        with open(turnadagi_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        features = data.get("features", [])
+        self.assertEqual(len(features), 10, "Turnadağı seferinde 10 menzil olmalı")
+        names = [f["properties"]["name"] for f in features]
+        self.assertIn("Kayseri Ordugâhı", names[0])
+        self.assertTrue(any("Turnadağı" in n for n in names))
+        self.assertTrue(any("Elbistan" in n for n in names))
+
+    def test_kochisir_route(self):
+        kochisir_file = self.routes_dir / "kochisir-expedition.geojson"
+        self.assertTrue(kochisir_file.exists(), "kochisir-expedition.geojson bulunamadı!")
+
+        with open(kochisir_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        features = data.get("features", [])
+        self.assertEqual(len(features), 10, "Koçhisar seferinde 10 menzil olmalı")
+        names = [f["properties"]["name"] for f in features]
+        self.assertIn("Diyarbakır", names[0])
+        self.assertTrue(any("Hanik" in n or "Koçhisar" in n for n in names))
+        self.assertTrue(any("Mardin" in n for n in names))
+
 
 if __name__ == "__main__":
     unittest.main()

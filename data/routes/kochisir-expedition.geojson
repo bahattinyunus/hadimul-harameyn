@@ -1,0 +1,217 @@
+{
+  "type": "FeatureCollection",
+  "name": "Koçhisar Seferi Güzergâhı (1516)",
+  "description": "Bıyıklı Mehmed Paşa ve Mevlânâ İdrîs-i Bitlisî komutasındaki Osmanlı-Kürt müttefik kuvvetlerinin Diyarbakır'dan Koçhisar, Mardin ve Urfa'ya uzanan intikal menzilleri.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-051",
+        "step_order": 1,
+        "name": "Diyarbakır İçkale",
+        "historical_name": "Âmid-i Siyah",
+        "campaign_id": "CMP-1516-KOCHISAR",
+        "date_reached": "1516-04-10",
+        "stay_duration_days": 4,
+        "elevation_meters": 660,
+        "terrain_type": "Sur İçi / Dicle Kıyısı",
+        "water_supply_status": "Mükemmel (Dicle ve kaynaklar)",
+        "logistics_note": "Bir yıllık Safevî muhasarasından kurtulan kale ikmal edildi; Bıyıklı Mehmed Paşa serdar tayin olundu.",
+        "primary_source_ref": "İdris-i Bitlisî Selim-nâme s. 185"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.2306, 37.9144]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-052",
+        "step_order": 2,
+        "name": "Çınar Menzili",
+        "historical_name": "Göksu Suyu Boyu",
+        "campaign_id": "CMP-1516-KOCHISAR",
+        "date_reached": "1516-04-16",
+        "stay_duration_days": 1,
+        "elevation_meters": 630,
+        "terrain_type": "Nehir Boyu Düzlük",
+        "water_supply_status": "Bol (Göksu Çayı)",
+        "logistics_note": "Aşiret süvarileri ile yeniçeri tüfekçi taburları burada birleşti.",
+        "primary_source_ref": "Celâlzâde Selimnâme s. 130"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.4136, 37.7222]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-053",
+        "step_order": 3,
+        "name": "Mazıdağı Geçidi",
+        "historical_name": "Şamrah / Mazıdağı",
+        "campaign_id": "CMP-1516-KOCHISAR",
+        "date_reached": "1516-04-20",
+        "stay_duration_days": 2,
+        "elevation_meters": 1020,
+        "terrain_type": "Kayalık Dağ Geçidi",
+        "water_supply_status": "Kısıtlı dağ suları",
+        "logistics_note": "Mardin ovasına inen stratejik boğaz tutularak Safevi keşif kolları püskürtüldü.",
+        "primary_source_ref": "Hoca Sâdeddin C. IV s. 236"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.4858, 37.4981]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-054",
+        "step_order": 4,
+        "name": "Derik",
+        "historical_name": "Kantara / Derik",
+        "campaign_id": "CMP-1516-KOCHISAR",
+        "date_reached": "1516-04-24",
+        "stay_duration_days": 1,
+        "elevation_meters": 780,
+        "terrain_type": "Dağ Eteği",
+        "water_supply_status": "İyi",
+        "logistics_note": "Zahire ve su tulumları ikmal edilerek Koçhisar ovasına doğru inildi.",
+        "primary_source_ref": "İdris-i Bitlisî Selim-nâme s. 192"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.2722, 37.3622]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-055",
+        "step_order": 5,
+        "name": "Hanik Sahrâsı",
+        "historical_name": "Hanik Çayı & Koçhisar Meydanı",
+        "campaign_id": "CMP-1516-KOCHISAR",
+        "date_reached": "1516-04-28",
+        "stay_duration_days": 3,
+        "elevation_meters": 490,
+        "terrain_type": "Mezopotamya Ovası / Çay Kenarı",
+        "water_supply_status": "Zergan Deresi",
+        "logistics_note": "Koçhisar Meydan Muharebesi kazanıldı; Ustaclu Karahan maktul düştü; Safevî ordusu imha edildi.",
+        "primary_source_ref": "Celâlzâde Selimnâme s. 134"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.5878, 37.1944]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-056",
+        "step_order": 6,
+        "name": "Kızıltepe",
+        "historical_name": "Tel Ermen / Dunaysır",
+        "campaign_id": "CMP-1516-KOCHISAR",
+        "date_reached": "1516-05-02",
+        "stay_duration_days": 2,
+        "elevation_meters": 495,
+        "terrain_type": "Ticaret Yolu Kavşağı",
+        "water_supply_status": "Bol kuyu suyu",
+        "logistics_note": "Zafer sonrası yaralılar tedavi edildi; Safevi ganimetleri tahrir olundu.",
+        "primary_source_ref": "İbn Kemal IX. Defter s. 160"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.5861, 37.1942]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-057",
+        "step_order": 7,
+        "name": "Mardin Kalesi",
+        "historical_name": "Kal'a-i Mardin",
+        "campaign_id": "CMP-1516-KOCHISAR",
+        "date_reached": "1516-05-06",
+        "stay_duration_days": 4,
+        "elevation_meters": 1083,
+        "terrain_type": "Sarp Kartal Yuvası Kale",
+        "water_supply_status": "Sarnıçlar",
+        "logistics_note": "Müstahkem Mardin Kalesi teslim alındı; şehir halkına adalet ahidnâmesi verildi.",
+        "primary_source_ref": "Hoca Sâdeddin C. IV s. 240"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.7364, 37.3131]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-058",
+        "step_order": 8,
+        "name": "Nusaybin",
+        "historical_name": "Nusaybîn Menzili",
+        "campaign_id": "CMP-1516-KOCHISAR",
+        "date_reached": "1516-05-13",
+        "stay_duration_days": 2,
+        "elevation_meters": 480,
+        "terrain_type": "Cezire Ovası",
+        "water_supply_status": "Çağ-çağ Deresi",
+        "logistics_note": "Musul ve Sincar beyleri itaat mektuplarını İdris-i Bitlisî vasıtasıyla sundular.",
+        "primary_source_ref": "İdris-i Bitlisî Selim-nâme s. 202"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [41.2167, 37.0750]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-059",
+        "step_order": 9,
+        "name": "Viranşehir",
+        "historical_name": "Vîrânşehr",
+        "campaign_id": "CMP-1516-KOCHISAR",
+        "date_reached": "1516-05-20",
+        "stay_duration_days": 1,
+        "elevation_meters": 600,
+        "terrain_type": "Bozkır / Su Başı",
+        "water_supply_status": "Yeterli",
+        "logistics_note": "Urfa kervan güzergâhı emniyete alındı; yerel kabilelerin güvenliği sağlandı.",
+        "primary_source_ref": "Celâlzâde Selimnâme s. 138"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.7667, 37.2333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "MNZ-060",
+        "step_order": 10,
+        "name": "Şanlıurfa Kalesi",
+        "historical_name": "Ruha / Urfa Kalesi",
+        "campaign_id": "CMP-1516-KOCHISAR",
+        "date_reached": "1516-05-27",
+        "stay_duration_days": 3,
+        "elevation_meters": 515,
+        "terrain_type": "Tarihi Vaha ve Kale",
+        "water_supply_status": "Mükemmel (Halilürrahman)",
+        "logistics_note": "Urfa anahtarları teslim alındı; Güneydoğu'nun fethi tamamlanarak Fırat hattı güvene alındı.",
+        "primary_source_ref": "İbn Kemal IX. Defter s. 165"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [38.7959, 37.1674]
+      }
+    }
+  ]
+}

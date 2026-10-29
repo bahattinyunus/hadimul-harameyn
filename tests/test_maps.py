@@ -31,6 +31,22 @@ class TestRouteMapGenerator(unittest.TestCase):
         self.assertIn("leaflet.js", content)
         self.assertIn("Ridâniye", content)
 
+    def test_generate_turnadagi_html(self):
+        out = self.generator.generate_interactive_html("turnadagi")
+        self.assertTrue(out.exists())
+        content = out.read_text(encoding="utf-8")
+        self.assertIn("Turnadağı Seferi", content)
+        self.assertIn("leaflet.js", content)
+        self.assertIn("MNZ-041", content)
+
+    def test_generate_kochisir_html(self):
+        out = self.generator.generate_interactive_html("kochisir")
+        self.assertTrue(out.exists())
+        content = out.read_text(encoding="utf-8")
+        self.assertIn("Koçhisar Seferi", content)
+        self.assertIn("leaflet.js", content)
+        self.assertIn("MNZ-051", content)
+
     def test_portal_index(self):
         self.generator.generate_portal_index()
         index_file = self.output_dir / "index.html"

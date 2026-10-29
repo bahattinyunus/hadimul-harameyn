@@ -82,6 +82,18 @@ class RouteMapGenerator:
             out_filename = "caldiran-campaign-map.html"
             theme_color = "#c0392b"  # Kırmızı/Yakut Safevî-Osmanlı
             title = "Çaldıran Seferi ve Tebriz Menzil Güzergâhı (1514)"
+        elif campaign_key in ("turnadagi", "turnadagi-1515", "1515"):
+            geojson_file = "turnadagi-expedition.geojson"
+            campaign_file = "1515-turnadagi.json"
+            out_filename = "turnadagi-campaign-map.html"
+            theme_color = "#e67e22"  # Turuncu Dulkadir & Anadolu
+            title = "Turnadağı Seferi ve Dulkadir İntikali (1515)"
+        elif campaign_key in ("kochisir", "kochisir-1516", "1516"):
+            geojson_file = "kochisir-expedition.geojson"
+            campaign_file = "1516-kochisir.json"
+            out_filename = "kochisir-campaign-map.html"
+            theme_color = "#2980b9"  # Mavi Cezire & Fırat/Dicle
+            title = "Koçhisar Seferi ve Mardin/Cezire İntikali (1516)"
         else:
             geojson_file = "egypt-conquest.geojson"
             campaign_file = "1517-ridaniye.json"
@@ -717,6 +729,14 @@ class RouteMapGenerator:
             geojson_file = "caldiran-expedition.geojson"
             out_filename = "caldiran-folium.html"
             line_color = "#e74c3c"
+        elif campaign_key in ("turnadagi", "turnadagi-1515", "1515"):
+            geojson_file = "turnadagi-expedition.geojson"
+            out_filename = "turnadagi-folium.html"
+            line_color = "#e67e22"
+        elif campaign_key in ("kochisir", "kochisir-1516", "1516"):
+            geojson_file = "kochisir-expedition.geojson"
+            out_filename = "kochisir-folium.html"
+            line_color = "#3498db"
         else:
             geojson_file = "egypt-conquest.geojson"
             out_filename = "egypt-folium.html"
@@ -1172,7 +1192,7 @@ class RouteMapGenerator:
     <!-- Stats Dashboard -->
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-num">40</div>
+        <div class="stat-num">60</div>
         <div class="stat-label">Doğrulanmış Menzil (WGS84)</div>
       </div>
       <div class="stat-card">
@@ -1188,7 +1208,7 @@ class RouteMapGenerator:
         <div class="stat-label">Birincil Tarihsel Alıntı</div>
       </div>
       <div class="stat-card">
-        <div class="stat-num">3.800+</div>
+        <div class="stat-num">5.800+</div>
         <div class="stat-label">Kilometre Lojistik Güzergâh</div>
       </div>
     </div>
@@ -1226,7 +1246,7 @@ class RouteMapGenerator:
       <div class="card">
         <div>
           <img src="../assets/images/caldiran-battle-1514.jpg" alt="Çaldıran Seferi (1514)" style="width:100%; height:180px; object-fit:cover; border-radius:8px; margin-bottom:16px; border:1px solid #243147;" />
-          <div class="card-tag">DOĞU SEFERİ • 1514</div>
+          <div class="card-tag">DOĞU SEFERİ • 1514 (21 MENZİL • 2.831 KM)</div>
           <h2>Çaldıran Seferi ve Tebriz Menzil Hattı</h2>
           <p>
             Üsküdar ordugâhından Sivas büyük teftiş merkezine, Erzurum ve Çaldıran sahrasından Safevî payitahtı Tebriz'e 
@@ -1239,10 +1259,40 @@ class RouteMapGenerator:
         </div>
       </div>
 
+      <div class="card">
+        <div>
+          <div class="card-tag" style="color: #e67e22;">ANADOLU SEFERİ • 1515 (10 MENZİL • 497 KM)</div>
+          <h2>Turnadağı Seferi & Dulkadir İntikali</h2>
+          <p>
+            Kayseri'den Develi, Pınarbaşı ve Göksun geçitlerine; sarp Turnadağı yamaçlarından Elbistan ve Maraş'a 
+            uzanan 10 menzillik dağ harekâtı. Anadolu Türk siyasi birliğinin kesinleştiği stratejik intikal.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="turnadagi-campaign-map.html" class="btn" style="background: #e67e22;">İnteraktif Haritayı Aç →</a>
+          <a href="turnadagi-folium.html" class="btn btn-secondary">Folium Katmanı</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-tag" style="color: #3498db;">GÜNEYDOĞU SEFERİ • 1516 (10 MENZİL • 395 KM)</div>
+          <h2>Koçhisar Seferi & Mardin/Cezire Hattı</h2>
+          <p>
+            Diyarbakır İçkale'den Mazıdağı ve Derik geçitlerine, Koçhisar (Hanik) zafer sahasından Mardin, Nusaybin 
+            ve Urfa kalelerine uzanan 10 menzillik Güneydoğu feth-i mübîni.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="kochisir-campaign-map.html" class="btn" style="background: #2980b9;">İnteraktif Haritayı Aç →</a>
+          <a href="kochisir-folium.html" class="btn btn-secondary">Folium Katmanı</a>
+        </div>
+      </div>
+
       <div class="card egypt">
         <div>
           <img src="../assets/images/sinai-desert-crossing-1517.jpg" alt="Mısır Seferi (1516-1517)" style="width:100%; height:180px; object-fit:cover; border-radius:8px; margin-bottom:16px; border:1px solid #243147;" />
-          <div class="card-tag">GÜNEY & MISIR SEFERİ • 1516-1517</div>
+          <div class="card-tag">GÜNEY & MISIR SEFERİ • 1516-1517 (19 MENZİL • 2.155 KM)</div>
           <h2>Mısır ve Suriye Fethi Güzergâhı</h2>
           <p>
             Mercidâbık zaferiyle açılan Suriye kapılarından Şam'a, su kervanlarıyla zayiatsız geçilen 10 günlük 
@@ -1381,7 +1431,10 @@ def main():
         "--campaign",
         type=str,
         default="all",
-        choices=["caldiran-1514", "egypt-1517", "all", "caldiran", "egypt"],
+        choices=[
+            "caldiran-1514", "turnadagi-1515", "kochisir-1516", "egypt-1517",
+            "all", "caldiran", "turnadagi", "kochisir", "egypt"
+        ],
         help="Üretilecek sefer haritası"
     )
     parser.add_argument(
@@ -1398,6 +1451,14 @@ def main():
     if args.campaign in ("caldiran-1514", "caldiran", "all"):
         generator.generate_interactive_html("caldiran")
         generator.generate_folium_map("caldiran")
+
+    if args.campaign in ("turnadagi-1515", "turnadagi", "all"):
+        generator.generate_interactive_html("turnadagi")
+        generator.generate_folium_map("turnadagi")
+
+    if args.campaign in ("kochisir-1516", "kochisir", "all"):
+        generator.generate_interactive_html("kochisir")
+        generator.generate_folium_map("kochisir")
 
     if args.campaign in ("egypt-1517", "egypt", "all"):
         generator.generate_interactive_html("egypt")

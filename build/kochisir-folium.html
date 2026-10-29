@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6f7a6f90d0151fda40e637f7476bb8f5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6f7a6f90d0151fda40e637f7476bb8f5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6f7a6f90d0151fda40e637f7476bb8f5 = L.map(
+                "map_6f7a6f90d0151fda40e637f7476bb8f5",
+                {
+                    center: [37.9144, 40.2306],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3bf92ccb09238bd5bffba237bb8016cd = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3bf92ccb09238bd5bffba237bb8016cd.addTo(map_6f7a6f90d0151fda40e637f7476bb8f5);
+        
+    
+            var circle_marker_8ac98619d2b2449ed7979854c1b7a3f6 = L.circleMarker(
+                [37.9144, 40.2306],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6f7a6f90d0151fda40e637f7476bb8f5);
+        
+    
+        var popup_75a5f0a17b4a2f5aff121514f38e0a4e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dde3e597131ea8b991e775dd0278d599 = $(`<div id="html_dde3e597131ea8b991e775dd0278d599" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#1 Diyarbakır İçkale</b><br>                 <i>Âmid-i Siyah</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1516-04-10<br>                 <b>Su Durumu:</b> Mükemmel (Dicle ve kaynaklar)<br>                 <b>Lojistik:</b> Bir yıllık Safevî muhasarasından kurtulan kale ikmal edildi; Bıyıklı Mehmed Paşa serdar tayin olundu.<br>                 <small style="color: #666;">İdris-i Bitlisî Selim-nâme s. 185</small>             </div>             </div>`)[0];
+                popup_75a5f0a17b4a2f5aff121514f38e0a4e.setContent(html_dde3e597131ea8b991e775dd0278d599);
+            
+        
+
+        circle_marker_8ac98619d2b2449ed7979854c1b7a3f6.bindPopup(popup_75a5f0a17b4a2f5aff121514f38e0a4e)
+        ;
+
+        
+    
+    
+            var circle_marker_5b71576b3e66e0871ee76a8a3f484668 = L.circleMarker(
+                [37.7222, 40.4136],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6f7a6f90d0151fda40e637f7476bb8f5);
+        
+    
+        var popup_da5927ea405eaa81cc6423f188d40c45 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ea719ba027a9d934606ebca7cb68e77d = $(`<div id="html_ea719ba027a9d934606ebca7cb68e77d" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#2 Çınar Menzili</b><br>                 <i>Göksu Suyu Boyu</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1516-04-16<br>                 <b>Su Durumu:</b> Bol (Göksu Çayı)<br>                 <b>Lojistik:</b> Aşiret süvarileri ile yeniçeri tüfekçi taburları burada birleşti.<br>                 <small style="color: #666;">Celâlzâde Selimnâme s. 130</small>             </div>             </div>`)[0];
+                popup_da5927ea405eaa81cc6423f188d40c45.setContent(html_ea719ba027a9d934606ebca7cb68e77d);
+            
+        
+
+        circle_marker_5b71576b3e66e0871ee76a8a3f484668.bindPopup(popup_da5927ea405eaa81cc6423f188d40c45)
+        ;
+
+        
+    
+    
+            var circle_marker_b7ac7a11b31956b623c7a65f3f773d18 = L.circleMarker(
+                [37.4981, 40.4858],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6f7a6f90d0151fda40e637f7476bb8f5);
+        
+    
+        var popup_703e948b9bd5a27498adcb7cff800d82 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7caa5a4743deec2acdd74fda92b881e7 = $(`<div id="html_7caa5a4743deec2acdd74fda92b881e7" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#3 Mazıdağı Geçidi</b><br>                 <i>Şamrah / Mazıdağı</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1516-04-20<br>                 <b>Su Durumu:</b> Kısıtlı dağ suları<br>                 <b>Lojistik:</b> Mardin ovasına inen stratejik boğaz tutularak Safevi keşif kolları püskürtüldü.<br>                 <small style="color: #666;">Hoca Sâdeddin C. IV s. 236</small>             </div>             </div>`)[0];
+                popup_703e948b9bd5a27498adcb7cff800d82.setContent(html_7caa5a4743deec2acdd74fda92b881e7);
+            
+        
+
+        circle_marker_b7ac7a11b31956b623c7a65f3f773d18.bindPopup(popup_703e948b9bd5a27498adcb7cff800d82)
+        ;
+
+        
+    
+    
+            var circle_marker_e7e5abdb737d862e23565ac27c6f16e2 = L.circleMarker(
+                [37.3622, 40.2722],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6f7a6f90d0151fda40e637f7476bb8f5);
+        
+    
+        var popup_fee6ca48e61ce17ed3710ef37a2dcaf2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6a420f818b7fb128df0596ed248632f0 = $(`<div id="html_6a420f818b7fb128df0596ed248632f0" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#4 Derik</b><br>                 <i>Kantara / Derik</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1516-04-24<br>                 <b>Su Durumu:</b> İyi<br>                 <b>Lojistik:</b> Zahire ve su tulumları ikmal edilerek Koçhisar ovasına doğru inildi.<br>                 <small style="color: #666;">İdris-i Bitlisî Selim-nâme s. 192</small>             </div>             </div>`)[0];
+                popup_fee6ca48e61ce17ed3710ef37a2dcaf2.setContent(html_6a420f818b7fb128df0596ed248632f0);
+            
+        
+
+        circle_marker_e7e5abdb737d862e23565ac27c6f16e2.bindPopup(popup_fee6ca48e61ce17ed3710ef37a2dcaf2)
+        ;
+
+        
+    
+    
+            var circle_marker_d80c02fca4a6b10e477a2a9699003784 = L.circleMarker(
+                [37.1944, 40.5878],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6f7a6f90d0151fda40e637f7476bb8f5);
+        
+    
+        var popup_f23468bccfe697dc934d34fd4694a64d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e75a56a74dd240481f6656adb09d7d5d = $(`<div id="html_e75a56a74dd240481f6656adb09d7d5d" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#5 Hanik Sahrâsı</b><br>                 <i>Hanik Çayı & Koçhisar Meydanı</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1516-04-28<br>                 <b>Su Durumu:</b> Zergan Deresi<br>                 <b>Lojistik:</b> Koçhisar Meydan Muharebesi kazanıldı; Ustaclu Karahan maktul düştü; Safevî ordusu imha edildi.<br>                 <small style="color: #666;">Celâlzâde Selimnâme s. 134</small>             </div>             </div>`)[0];
+                popup_f23468bccfe697dc934d34fd4694a64d.setContent(html_e75a56a74dd240481f6656adb09d7d5d);
+            
+        
+
+        circle_marker_d80c02fca4a6b10e477a2a9699003784.bindPopup(popup_f23468bccfe697dc934d34fd4694a64d)
+        ;
+
+        
+    
+    
+            var circle_marker_1cb40ea68145024a236f930d16dc875b = L.circleMarker(
+                [37.1942, 40.5861],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6f7a6f90d0151fda40e637f7476bb8f5);
+        
+    
+        var popup_606a18cb8af3cb400c04c0ab7c2e8e48 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a6e4402d85a0b64bd86df5d90956d083 = $(`<div id="html_a6e4402d85a0b64bd86df5d90956d083" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#6 Kızıltepe</b><br>                 <i>Tel Ermen / Dunaysır</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1516-05-02<br>                 <b>Su Durumu:</b> Bol kuyu suyu<br>                 <b>Lojistik:</b> Zafer sonrası yaralılar tedavi edildi; Safevi ganimetleri tahrir olundu.<br>                 <small style="color: #666;">İbn Kemal IX. Defter s. 160</small>             </div>             </div>`)[0];
+                popup_606a18cb8af3cb400c04c0ab7c2e8e48.setContent(html_a6e4402d85a0b64bd86df5d90956d083);
+            
+        
+
+        circle_marker_1cb40ea68145024a236f930d16dc875b.bindPopup(popup_606a18cb8af3cb400c04c0ab7c2e8e48)
+        ;
+
+        
+    
+    
+            var circle_marker_0bdf8291fe167a26ae87c6dbeaf448e2 = L.circleMarker(
+                [37.3131, 40.7364],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6f7a6f90d0151fda40e637f7476bb8f5);
+        
+    
+        var popup_ec5accd873de42228c9ac860492cc46d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_616bb30c38ec0186a8f93abd6575d0a3 = $(`<div id="html_616bb30c38ec0186a8f93abd6575d0a3" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#7 Mardin Kalesi</b><br>                 <i>Kal'a-i Mardin</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1516-05-06<br>                 <b>Su Durumu:</b> Sarnıçlar<br>                 <b>Lojistik:</b> Müstahkem Mardin Kalesi teslim alındı; şehir halkına adalet ahidnâmesi verildi.<br>                 <small style="color: #666;">Hoca Sâdeddin C. IV s. 240</small>             </div>             </div>`)[0];
+                popup_ec5accd873de42228c9ac860492cc46d.setContent(html_616bb30c38ec0186a8f93abd6575d0a3);
+            
+        
+
+        circle_marker_0bdf8291fe167a26ae87c6dbeaf448e2.bindPopup(popup_ec5accd873de42228c9ac860492cc46d)
+        ;
+
+        
+    
+    
+            var circle_marker_66558fa8726610541a2a4243d754e65c = L.circleMarker(
+                [37.075, 41.2167],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6f7a6f90d0151fda40e637f7476bb8f5);
+        
+    
+        var popup_5b1ff6cfb0e6572c56c51828c13d4a59 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_966235a45f9710fb79ac956c172659e0 = $(`<div id="html_966235a45f9710fb79ac956c172659e0" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#8 Nusaybin</b><br>                 <i>Nusaybîn Menzili</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1516-05-13<br>                 <b>Su Durumu:</b> Çağ-çağ Deresi<br>                 <b>Lojistik:</b> Musul ve Sincar beyleri itaat mektuplarını İdris-i Bitlisî vasıtasıyla sundular.<br>                 <small style="color: #666;">İdris-i Bitlisî Selim-nâme s. 202</small>             </div>             </div>`)[0];
+                popup_5b1ff6cfb0e6572c56c51828c13d4a59.setContent(html_966235a45f9710fb79ac956c172659e0);
+            
+        
+
+        circle_marker_66558fa8726610541a2a4243d754e65c.bindPopup(popup_5b1ff6cfb0e6572c56c51828c13d4a59)
+        ;
+
+        
+    
+    
+            var circle_marker_c19b6de487382e78a5819c4dcf767c6c = L.circleMarker(
+                [37.2333, 39.7667],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6f7a6f90d0151fda40e637f7476bb8f5);
+        
+    
+        var popup_de0f246c2d99f1b8031566814eb99c3a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_13f3fc824045012fb767f27923379b87 = $(`<div id="html_13f3fc824045012fb767f27923379b87" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#9 Viranşehir</b><br>                 <i>Vîrânşehr</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1516-05-20<br>                 <b>Su Durumu:</b> Yeterli<br>                 <b>Lojistik:</b> Urfa kervan güzergâhı emniyete alındı; yerel kabilelerin güvenliği sağlandı.<br>                 <small style="color: #666;">Celâlzâde Selimnâme s. 138</small>             </div>             </div>`)[0];
+                popup_de0f246c2d99f1b8031566814eb99c3a.setContent(html_13f3fc824045012fb767f27923379b87);
+            
+        
+
+        circle_marker_c19b6de487382e78a5819c4dcf767c6c.bindPopup(popup_de0f246c2d99f1b8031566814eb99c3a)
+        ;
+
+        
+    
+    
+            var circle_marker_533450c0d97111020f431ba3b1487f97 = L.circleMarker(
+                [37.1674, 38.7959],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6f7a6f90d0151fda40e637f7476bb8f5);
+        
+    
+        var popup_4e5743294f771563f428e3e7fba3e601 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d59d05f7176ec82e0bbc4ebd0de92049 = $(`<div id="html_d59d05f7176ec82e0bbc4ebd0de92049" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px; width: 220px;">                 <b style="color: #b78103;">#10 Şanlıurfa Kalesi</b><br>                 <i>Ruha / Urfa Kalesi</i><hr style="margin: 4px 0;">                 <b>Tarih:</b> 1516-05-27<br>                 <b>Su Durumu:</b> Mükemmel (Halilürrahman)<br>                 <b>Lojistik:</b> Urfa anahtarları teslim alındı; Güneydoğu'nun fethi tamamlanarak Fırat hattı güvene alındı.<br>                 <small style="color: #666;">İbn Kemal IX. Defter s. 165</small>             </div>             </div>`)[0];
+                popup_4e5743294f771563f428e3e7fba3e601.setContent(html_d59d05f7176ec82e0bbc4ebd0de92049);
+            
+        
+
+        circle_marker_533450c0d97111020f431ba3b1487f97.bindPopup(popup_4e5743294f771563f428e3e7fba3e601)
+        ;
+
+        
+    
+    
+            var poly_line_b623d2209f5bb4e45718410d737f8cc5 = L.polyline(
+                [[37.9144, 40.2306], [37.7222, 40.4136], [37.4981, 40.4858], [37.3622, 40.2722], [37.1944, 40.5878], [37.1942, 40.5861], [37.3131, 40.7364], [37.075, 41.2167], [37.2333, 39.7667], [37.1674, 38.7959]],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "#3498db", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_6f7a6f90d0151fda40e637f7476bb8f5);
+        
+</script>
+</html>
