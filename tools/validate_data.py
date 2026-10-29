@@ -290,6 +290,31 @@ class DataValidator:
             except Exception as e:
                 self.log_error(f"{json_path.name} okuma hatası: {e}")
 
+    def validate_quotes(self):
+        """data/quotes/ altındaki alıntı ve tarihsel kelâm JSON dosyalarını denetler."""
+        quotes_dir = self.data_dir / "quotes"
+        if not quotes_dir.exists():
+            self.log_error("data/quotes dizini bulunamadı!")
+            return
+
+        print(f"\n{Colors.BOLD}🔍 Birincil Kaynak Alıntıları ve Kelâm Külliyatı Denetleniyor (data/quotes/)...{Colors.ENDC}")
+        for json_path in sorted(quotes_dir.glob("*.json")):
+            try:
+                with open(json_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                self.validate_json_schema(data, "quotes.schema.json", json_path.name)
+                quotes = data.get("quotes", [])
+                seen_qids = set()
+                for q in quotes:
+                    qid = q.get("quote_id")
+                    if qid in seen_qids:
+                        self.log_error(f"{json_path.name}: Tekrarlanan quote_id: {qid}")
+                    else:
+                        seen_qids.add(qid)
+                self.log_success(f"{json_path.name}: Toplam {len(quotes)} tarihsel alıntı ve kaynak referansı doğrulandı.")
+            except Exception as e:
+                self.log_error(f"{json_path.name} okuma hatası: {e}")
+
     def run_all(self) -> bool:
         """Tüm doğrulama testlerini baştan sona çalıştırır."""
         print(f"\n{Colors.HEADER}{Colors.BOLD}======================================================{Colors.ENDC}")
@@ -301,6 +326,7 @@ class DataValidator:
         self.validate_routes()
         self.validate_timeline()
         self.validate_primary_sources()
+        self.validate_quotes()
 
         print(f"\n{Colors.BOLD}=================== DOĞRULAMA ÖZETİ ==================={Colors.ENDC}")
         print(f"Başarılı Denetimler: {Colors.GREEN}{self.passed_checks}{Colors.ENDC}")

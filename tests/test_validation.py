@@ -21,7 +21,8 @@ class TestDataValidation(unittest.TestCase):
             "campaign.schema.json",
             "route-node.schema.json",
             "timeline.schema.json",
-            "primary-sources.schema.json"
+            "primary-sources.schema.json",
+            "quotes.schema.json"
         }
         loaded = set(self.validator.schemas.keys())
         self.assertTrue(expected_schemas.issubset(loaded), f"Eksik şemalar: {expected_schemas - loaded}")

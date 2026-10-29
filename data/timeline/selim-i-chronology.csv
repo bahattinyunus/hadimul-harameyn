@@ -4,25 +4,37 @@ date,hijri_date,event_type,location,title,summary,primary_source
 1513-04-15,919-Safer-09,military,Yenişehir / Bursa,Şehzade Ahmed Vakası,Taht iddiasında bulunan Şehzade Ahmed Yenişehir sahrasındaki muharebede mağlup ve esir edildi.,Celâlzâde Selimnâme s. 52
 1514-03-20,920-Muharrem-23,diplomatic,Edirne,Safevi Seferi İlanı ve Fetvalar,Şeyhülislam Sarıgörez Nureddin Efendi'den Safevi Devleti üzerine sefere dair fetvalar alındı.,Feridun Bey Münşeât C. I s. 370
 1514-04-20,920-Safer-25,military,Üsküdar,Doğu Seferi Harekatı,Yavuz Sultan Selim Üsküdar ordugahından Çaldıran'a doğru harekete geçti.,Haydar Çelebi Ruznâmesi s. 45
+1514-05-22,920-Rebiülahir-28,diplomatic,Konya,Şah İsmail'e Birinci Mektup,Padişah Konya menzilinde iken Şah İsmail'e meydan savaşına davet eden sert mektubu gönderdi.,Feridun Bey Münşeât C. I s. 378
 1514-06-15,920-Cemaziyelevvel-22,military,Sivas,Sivas Büyük Ordu Yoklaması,Ordu teftişten geçirildi; mevcudun 100.000 olduğu belirlenip 40.000 ihtiyat Kayseri-Sivas hattında bırakıldı.,Celâlzâde Selimnâme s. 82
-1514-08-23,920-Recep-02,military,Çaldıran Ovası,Çaldıran Zaferi,Osmanlı ateş gücü ve tabur cengi ile Şah İsmail mağlup edildi.,İbn Kemal IX. Defter s. 190
-1514-09-05,920-Recep-15,military,Tebriz,Tebriz'e Giriş ve Hutbe,Yavuz Sultan Selim Tebriz'e girdi; Cuma namazında adına hutbe okundu, sanatkar ve bilginler İstanbul'a sevk edildi.,Haydar Çelebi Ruznâmesi s. 70
-1515-05-19,921-Rebiülahir-05,military,Kemah,Kemah Kalesinin Fethi,Fırat boyundaki sarp Kemah Kalesi Bıyıklı Mehmed Paşa kumandasında fethedildi.,Celâlzâde Selimnâme s. 124
-1515-06-12,921-Cemaziyelevvel-29,military,Turnadağı / Göksun,Turnadağı Zaferi,Dulkadiroğlu Alâüddevle Bey mağlup edildi; Dulkadir Beyliği Osmanlı topraklarına katıldı.,Hoca Sâdeddin C. IV s. 220
-1515-09-15,921-Şaban-06,administrative,Diyarbakır,Diyarbakır'ın İlhakı,İdris-i Bitlisî'nin diplomatik gayretleriyle Doğu ve Güneydoğu beyleri Osmanlı idaresine girdi; Bıyıklı Mehmed Paşa ilk Beylerbeyi oldu.,İdris-i Bitlisî Selim-nâme s. 180
-1516-04-28,922-Rebiülevvel-25,military,Koçhisar / Mardin,Koçhisar Meydan Muharebesi,Safevi kumandanı Karahan öldürüldü; Mardin ve Cezire tamamen Osmanlı hakimiyetine geçti.,Celâlzâde Selimnâme s. 129
+1514-07-28,920-Cemaziyelahir-05,military,Erzincan,Erzincan Menzili ve İkmal Krizi,Safevilerin yakıp yıkma taktiği sebebiyle kıtlık baş gösterdi; Trabzon limanından zahire nakli sağlandı.,Haydar Çelebi Ruznâmesi s. 58
+1514-08-13,920-Cemaziyelahir-21,military,Eleşkirt,Yeniçeri İsyan Teşebbüsü ve Yavuz'un Hitabı,Geri dönmek isteyen yeniçerilerin otağı kurşunlaması üzerine Yavuz tek başına kalsa da döneceğini haykırdı.,Celâlzâde Selimnâme s. 98
+1514-08-23,920-Recep-02,military,Çaldıran Ovası,Çaldıran Zaferi,Osmanlı seyyar topçusu ve tabur cengi ateş gücü ile Şah İsmail'in süvari ordusu kesin yenilgiye uğratıldı.,İbn Kemal IX. Defter s. 190
+1514-09-05,920-Recep-15,military,Tebriz,Tebriz'e Giriş ve Hutbe,Yavuz Sultan Selim Safevi başkenti Tebriz'e girdi; Cuma namazında adına hutbe okundu; bilgin ve sanatkarlar payitahta sevk edildi.,Haydar Çelebi Ruznâmesi s. 70
+1514-09-15,920-Recep-25,military,Karabağ,Tebriz'den Ayrılış ve Karabağ İntikali,Kış mevsimi yaklaşırken ordunun Amasya kışlağına çekilmesi kararlaştırıldı.,Celâlzâde Selimnâme s. 108
+1514-11-20,920-Şevval-03,military,Amasya,Amasya Kışlağına Giriş,Padişah kışı geçirmek üzere Amasya Sarayı'na yerleşti; sefer hazırlıkları devam etti.,Haydar Çelebi Ruznâmesi s. 76
+1515-05-19,921-Rebiülahir-05,military,Kemah,Kemah Kalesinin Fethi,Fırat boyundaki müstahkem Kemah Kalesi Bıyıklı Mehmed Paşa kumandasında fethedildi.,Celâlzâde Selimnâme s. 124
+1515-06-12,921-Cemaziyelevvel-29,military,Turnadağı / Göksun,Turnadağı Zaferi,Dulkadiroğlu Alâüddevle Bozkurt Bey mağlup ve maktul edildi; beylik toprakları Osmanlı'ya ilhak oldu.,Hoca Sâdeddin C. IV s. 220
+1515-09-15,921-Şaban-06,administrative,Diyarbakır,Diyarbakır'ın İlhakı ve Yurtluk-Ocaklık Nizamı,İdris-i Bitlisî'nin diplomatik gayretleriyle bölge beyleri Osmanlı'ya katıldı; Diyarbekir Eyaleti kuruldu.,İdris-i Bitlisî Selim-nâme s. 180
+1516-04-28,922-Rebiülevvel-25,military,Koçhisar / Mardin,Koçhisar Meydan Muharebesi,Safevi kumandanı Ustaclu Karahan maktul düştü; Mardin, Urfa ve Musul kesin olarak fethedildi.,Celâlzâde Selimnâme s. 129
 1516-06-05,922-Cemaziyelevvel-04,military,Üsküdar,Mısır ve Suriye Seferi Başlangıcı,Padişah Memlûk Sultanlığı üzerine ikinci büyük şark seferine çıktı.,Haydar Çelebi Ruznâmesi s. 82
-1516-08-24,922-Recep-25,military,Mercidâbık,Mercidâbık Zaferi,Sultan Kansu Gavri sahrada mağlup oldu ve vefat etti; Suriye ve Filistin Osmanlı'ya katıldı.,İbn İyâs C. V s. 72
-1516-08-29,922-Şaban-01,military,Halep,Halep'in Fethi,Yavuz Sultan Selim törenle Halep'e girdi; Memlûk saray hazineleri teslim alındı.,Celâlzâde Selimnâme s. 145
+1516-07-23,922-Cemaziyelahir-23,diplomatic,Malatya,Kansu Gavri'ye Son Mektubun İrsali,Suriye sınırında Memlûk Sultanı'na ikili tutumunu terk etmesini isteyen nihai ültimatom gönderildi.,Feridun Bey Münşeât C. I s. 438
+1516-08-24,922-Recep-25,military,Mercidâbık,Mercidâbık Zaferi,Sultan Kansu Gavri sahrada mağlup oldu ve vefat etti; Suriye, Lübnan ve Filistin Osmanlı'ya katıldı.,İbn İyâs C. V s. 72
+1516-08-28,922-Recep-29,military,Halep,Halep Ulu Camii Hutbesi,Yavuz Sultan Selim törenle Halep'e girdi; Memlûk saray hazineleri teslim alındı.,Celâlzâde Selimnâme s. 145
 1516-09-27,922-Ramazan-01,religious_symbolic,Şam,Şam Emeviye Camii & Hâdimü'l-Haremeyn Hutbesi,Cuma hutbesinde Yavuz Sultan Selim Mekke ve Medine'nin Hizmetkârı unvanını kabul etti.,Hoca Sâdeddin C. IV s. 260
 1516-12-21,922-Zilkade-26,military,Han Yûnus,Han Yûnus Muharebesi,Vezîriâzam Hadım Sinan Paşa Memlûk öncü kumandanı Canbirdi Gazâlî'yi hezimete uğrattı.,Haydar Çelebi Ruznâmesi s. 98
+1516-12-30,922-Zilhicce-06,religious_symbolic,Kudüs,Kudüs Ziyareti ve Kubbetü's-Sahra İhyası,Yavuz Sultan Selim Kudüs-i Şerif'i ziyaret edip Mescid-i Aksa ve Harem-i Şerif kandillerini yaktırdı.,İbn İyâs C. V s. 128
+1517-01-10,922-Zilhicce-16,military,Han Yûnus,Sina Çölü Su ve Zahire Tanzimi,Tih Sahrası'nı aşacak ordu için develere su kırbaları ve meşin tulumlar yüklendi.,Celâlzâde Selimnâme s. 165
 1517-01-14,922-Zilhicce-20,military,El-Ariş,Sina Çölü İntikali,Ordu-yı Hümâyûn su tulumları ve deve kervanlarıyla Tih Sahrasını 10 günde susuzluk zayiatı vermeden geçti.,Celâlzâde Selimnâme s. 168
 1517-01-22,922-Zilhicce-28,military,Ridâniye,Ridâniye Zaferi,Mukattam Dağı çevrilerek Memlûk tahkimatı çökerildi; Hadım Sinan Paşa şehit düştü.,İbn Kemal IX. Defter s. 265
 1517-01-26,923-Muharrem-03,military,Kahire,Kahire'nin Fethi ve Sokak Muharebeleri,Osmanlı ordusu Kahire'ye girdi; Tomanbay'ın gerilla direnişi 3 günde bastırıldı.,İbn İyâs C. V s. 150
 1517-04-13,923-Rebiülevvel-21,administrative,Kahire,Sultan Tomanbay'ın İdamı,Son Memlûk Sultanı Tomanbay Bab Züveyle'de idam edildi; Memlûk saltanatı resmen son buldu.,İbn İyâs C. V s. 175
 1517-07-06,923-Cemaziyelahir-16,religious_symbolic,Kahire,Hicaz Şerifliği Biati ve Kutsal Emanetler,Mekke Şerifi Ebu'l-Berekat'ın oğlu Şerif Ebu Numeyy Kabe anahtarlarını ve Kutsal Emanetleri teslim etti.,Feridun Bey Münşeât C. I s. 480
-1517-09-10,923-Şaban-23,administrative,Kahire,Kahire'den Ayrılış ve İstanbul'a Dönüş,Mısır Beylerbeyliği tanzim edildi; Hayır Bey vali tayin edildi.,Haydar Çelebi Ruznâmesi s. 108
+1517-08-20,923-Şaban-02,administrative,Kahire,Mısır Kanunnâmesi ve Hayır Bey'in Tayini,Mısır tarım ve gümrük gelirlerini düzenleyen tahrir yapıldı; Hayır Bey vali tayin edildi.,İbn İyâs C. V s. 205
+1517-09-10,923-Şaban-23,administrative,Kahire,Kahire'den Ayrılış ve Şam Yolculuğu,Yavuz Sultan Selim Mısır idaresini tanzim ettikten sonra Şam'a hareket etti.,Haydar Çelebi Ruznâmesi s. 108
+1518-02-10,924-Muharrem-28,religious_symbolic,Şam,İbnü'l-Arabî Külliyesi İnşası,Şam Salihiyye'de Muhyiddin İbnü'l-Arabî türbesi ve camii yaptırıldı.,Hoca Sâdeddin C. IV s. 302
 1518-07-25,924-Recep-16,administrative,İstanbul,Kutsal Emanetlerin Topkapı'ya Nakli,Hilafet alametleri ve mukaddes emanetler Topkapı Sarayı Hırka-i Saadet Dairesi'ne yerleştirildi.,Celâlzâde Selimnâme s. 210
 1519-04-12,925-Rebiülahir-11,military,Yozgat / Tokat,Bozoklu Celâl İsyanı,Bozoklu Şeyh Celâl'in ayaklanması Şehsuvaroğlu Ali Bey tarafından bastırıldı.,Hoca Sâdeddin C. IV s. 310
 1519-09-17,925-Şevval-22,diplomatic,İstanbul,Venedik Ahidnâmesi Yenilenmesi,Venedik Cumhuriyeti Mısır ve Kıbrıs haracını Osmanlı'ya ödemeyi taahhüt eden ahidnâmeyi imzaladı.,Marino Sanuto Diarii C. 27
-1520-09-22,926-Şevval-09,administrative,Çorlu / Sırtköy,Yavuz Sultan Selim'in Vefatı,Padişah Edirne seferi esnasında sırtındaki şirpençe (karbunkül) sebebiyle vefat etti; oğlu Kanuni Sultan Süleyman tahta geçti.,Kemalpaşazâde IX. Defter s. 312
+1519-11-05,925-Zilkade-12,administrative,İstanbul,Haliç Tersanesi'nin Büyütülmesi Fermanı,Haliç'te 300 gözlü büyük tersane inşası başlatılarak Akdeniz deniz hakimiyeti vizyonu çizildi.,Lutfi Paşa Tevârih s. 280
+1520-08-15,926-Şevval-01,administrative,İstanbul,Hazine Mührü Vasiyeti,Yavuz hazineyi altınla doldurup kendi mührüyle mühürletti ve vasiyetini ferman eyledi.,Celâlzâde Selimnâme s. 238
+1520-09-22,926-Şevval-09,administrative,Çorlu / Sırtköy,Yavuz Sultan Selim'in Vefatı,Padişah Edirne seferi esnasında sırtındaki şirpençe sebebiyle vefat etti; oğlu Kanuni Sultan Süleyman tahta geçti.,Kemalpaşazâde IX. Defter s. 312

@@ -92,6 +92,28 @@
       "primary_sources": ["Marino Sanuto Diarii Cilt 27", "Feridun Bey Münşeât"]
     },
     {
+      "id": "EVT-1518-010",
+      "date": "1518-02-10",
+      "hijri_date": "28 Muharrem 924",
+      "event_type": "religious_symbolic",
+      "title": "Muhyiddin İbnü'l-Arabî Külliyesi ve Türbesi'nin İhyası",
+      "description": "Şam'da ikamet eden Yavuz Sultan Selim, Şeyh-i Ekber Muhyiddin İbnü'l-Arabî'nin Sâlihiyye kabristanındaki kayıp kabrini keşfettirip üzerine muazzam bir türbe, cami ve imaret inşa ettirmiş, 'Şin'in (Selim) Şın'a (Şam) girmesiyle Sin'in (İbnü'l-Arabi) sırrı zuhur etti' beşaretini tescillemiştir.",
+      "location": "Şam, Sâlihiyye",
+      "key_figures": ["I. Selim", "Kemalpaşazâde", "Şam Uleması"],
+      "primary_sources": ["Hoca Sâdeddin Tâcü't-Tevârih Cilt IV", "İbn Kemal IX. Defter"]
+    },
+    {
+      "id": "EVT-1519-011",
+      "date": "1519-11-05",
+      "hijri_date": "12 Zilkade 925",
+      "event_type": "administrative",
+      "title": "Haliç Tersane-i Âmire'sinin 300 Gözlü Büyütülmesi Fermanı",
+      "description": "Akdeniz'de Rodos şövalyelerine ve İspanyol-Portekiz tehdidine karşı koymak üzere Haliç Tersanesi'nin Hasköy'e kadar genişletilerek 300 gözlü devasa bir donanma imalat üssü yapılması ferman buyuruldu; Kanuni döneminde Akdeniz'i Türk gölü yapacak filolar bu tezgahlarda hazırlandı.",
+      "location": "İstanbul, Kasımpaşa / Haliç",
+      "key_figures": ["I. Selim", "Kaptanıderya Cafer Bey", "Lutfi Paşa"],
+      "primary_sources": ["Lutfi Paşa Tevârih-i Âl-i Osmân", "Celâlzâde Selimnâme"]
+    },
+    {
       "id": "EVT-1520-009",
       "date": "1520-08-15",
       "hijri_date": "1 Şevval 926",

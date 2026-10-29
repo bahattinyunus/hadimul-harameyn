@@ -777,111 +777,592 @@ class RouteMapGenerator:
         return out_path
 
     def generate_portal_index(self):
-        """Tüm haritaları ve seferleri tek bir ana sayfada sunan index.html portalı üretir."""
-        index_html = """<!DOCTYPE html>
+        """Tüm haritaları, seferleri ve birincil kaynak alıntılarını sunan zengin index.html portalı üretir."""
+        quotes_path = self.root_dir / "data" / "quotes" / "historical-quotes.json"
+        quotes_data = []
+        if quotes_path.exists():
+            try:
+                with open(quotes_path, "r", encoding="utf-8") as f:
+                    q_json = json.load(f)
+                    quotes_data = q_json.get("quotes", [])
+            except Exception:
+                pass
+
+        quotes_json_str = json.dumps(quotes_data, ensure_ascii=False)
+
+        index_html = f"""<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>hadimul-harameyn :: Dijital Tarih & Sefer Portalı</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hadimul-harameyn :: I. Selim Devri Dijital Tarih & Sefer Portalı</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      background: #0b0f17;
-      color: #e2e8f0;
-      font-family: 'Inter', sans-serif;
+    :root {{
+      --gold-primary: #d4af37;
+      --gold-light: #f3e5ab;
+      --gold-dark: #997f24;
+      --ruby-red: #c0392b;
+      --bg-dark: #0a0e17;
+      --card-bg: #131926;
+      --card-hover: #182234;
+      --border-color: #243147;
+      --text-main: #e2e8f0;
+      --text-muted: #94a3b8;
+    }}
+    * {{
+      box-sizing: border-box;
       margin: 0;
-      padding: 40px 20px;
+      padding: 0;
+    }}
+    body {{
+      background: var(--bg-dark);
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 80% 80%, rgba(192, 57, 43, 0.05) 0%, transparent 50%);
+      color: var(--text-main);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-    .container {
-      max-width: 900px;
+      padding: 50px 20px 80px 20px;
+    }}
+    .container {{
+      max-width: 1140px;
       width: 100%;
-    }
-    h1 {
+    }}
+    .header-badge {{
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 16px;
+      padding: 6px 18px;
+      border-radius: 30px;
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      background: rgba(212, 175, 55, 0.08);
+      color: var(--gold-primary);
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }}
+    .header {{
+      text-align: center;
+      margin-bottom: 48px;
+    }}
+    h1.main-title {{
       font-family: 'Cinzel', serif;
-      color: #d4af37;
-      font-size: 2.2rem;
-      text-align: center;
+      color: #ffffff;
+      font-size: 2.8rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    }}
+    h1.main-title span {{
+      color: var(--gold-primary);
+    }}
+    .arabic-epigraph {{
+      font-family: 'Amiri', serif;
+      font-size: 1.6rem;
+      color: var(--gold-light);
+      direction: rtl;
       margin-bottom: 8px;
-    }
-    .subtitle {
-      text-align: center;
-      color: #94a3b8;
-      font-size: 1rem;
-      margin-bottom: 40px;
-    }
-    .grid {
+    }}
+    .subtitle {{
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 760px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }}
+    
+    /* Stats Bar */
+    .stats-grid {{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-      gap: 24px;
-    }
-    .card {
-      background: #141c28;
-      border: 1px solid #233044;
-      border-radius: 8px;
-      padding: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 48px;
+    }}
+    .stat-card {{
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.25s ease;
+    }}
+    .stat-card:hover {{
+      border-color: var(--gold-primary);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }}
+    .stat-num {{
+      font-family: 'Cinzel', serif;
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+      margin-bottom: 4px;
+    }}
+    .stat-label {{
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }}
+
+    /* Quotes Showcase Section */
+    .quote-section {{
+      background: linear-gradient(145deg, #121927 0%, #0d131e 100%);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 12px;
+      padding: 36px 40px;
+      margin-bottom: 48px;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }}
+    .quote-badge {{
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: rgba(192, 57, 43, 0.2);
+      color: #ff7675;
+      border: 1px solid rgba(192, 57, 43, 0.4);
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }}
+    .quote-original {{
+      font-family: 'Amiri', serif;
+      font-size: 1.4rem;
+      color: var(--gold-light);
+      margin-bottom: 14px;
+      line-height: 1.8;
+    }}
+    .quote-turkish {{
+      font-size: 1.15rem;
+      font-style: italic;
+      color: #ffffff;
+      line-height: 1.7;
+      margin-bottom: 18px;
+      font-weight: 400;
+    }}
+    .quote-meta {{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 16px;
+    }}
+    .quote-speaker {{
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+    }}
+    .quote-source {{
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }}
+    .quote-nav {{
+      display: flex;
+      gap: 10px;
+    }}
+    .quote-btn {{
+      background: #1a2334;
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 600;
       transition: all 0.2s;
+    }}
+    .quote-btn:hover {{
+      background: var(--gold-primary);
+      color: #000;
+      border-color: var(--gold-primary);
+    }}
+
+    /* Campaign Cards */
+    .section-title {{
+      font-family: 'Cinzel', serif;
+      font-size: 1.6rem;
+      color: #ffffff;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }}
+    .section-title::after {{
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border-color);
+    }}
+    .grid {{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }}
+    .card {{
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 30px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-    }
-    .card:hover {
-      border-color: #d4af37;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
-    }
-    .card h2 {
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }}
+    .card::before {{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold-primary), transparent);
+    }}
+    .card.egypt::before {{
+      background: linear-gradient(90deg, var(--ruby-red), var(--gold-primary));
+    }}
+    .card:hover {{
+      border-color: var(--gold-primary);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    }}
+    .card-tag {{
+      display: inline-block;
+      font-size: 0.72rem;
+      color: var(--gold-primary);
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }}
+    .card h2 {{
       font-family: 'Cinzel', serif;
       color: #fff;
-      font-size: 1.25rem;
-      margin-bottom: 10px;
-    }
-    .card p {
-      color: #94a3b8;
-      font-size: 0.88rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-    .btn {
+      font-size: 1.45rem;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }}
+    .card p {{
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }}
+    .card-footer {{
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }}
+    .btn {{
       display: inline-block;
       text-align: center;
-      background: #d4af37;
+      background: var(--gold-primary);
       color: #0b0f17;
       text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 4px;
+      padding: 11px 20px;
+      border-radius: 6px;
       font-weight: 700;
-      font-size: 0.85rem;
-      transition: background 0.2s;
-    }
-    .btn:hover {
-      background: #e5c158;
-    }
+      font-size: 0.88rem;
+      transition: all 0.2s;
+    }}
+    .btn:hover {{
+      background: var(--gold-light);
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
+    }}
+    .btn-secondary {{
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+    }}
+    .btn-secondary:hover {{
+      background: rgba(255, 255, 255, 0.06);
+      border-color: var(--gold-primary);
+      color: var(--gold-primary);
+    }}
+
+    /* Battles Table */
+    .table-container {{
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      overflow-x: auto;
+      margin-bottom: 48px;
+    }}
+    table {{
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      text-align: left;
+    }}
+    th {{
+      background: #182234;
+      color: var(--gold-primary);
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border-color);
+      letter-spacing: 0.5px;
+    }}
+    td {{
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(36, 49, 71, 0.6);
+      color: var(--text-main);
+    }}
+    tr:last-child td {{
+      border-bottom: none;
+    }}
+    tr:hover td {{
+      background: rgba(212, 175, 55, 0.03);
+    }}
+    .badge-year {{
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold-primary);
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.78rem;
+    }}
+
+    /* Footer */
+    footer {{
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      padding-top: 30px;
+      border-top: 1px solid var(--border-color);
+    }}
+    footer a {{
+      color: var(--gold-primary);
+      text-decoration: none;
+    }}
+    footer a:hover {{
+      text-decoration: underline;
+    }}
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>`hadimul-harameyn`</h1>
-    <div class="subtitle">I. Selim (Yavuz) Devri Askeri Sefer ve Lojistik Harita Portalı</div>
+    
+    <div class="header">
+      <div class="header-badge">Açık Kaynak Dijital Tarih & GIS Arşivi</div>
+      <div class="arabic-epigraph">خادم الحرمين الشريفين السلطان سليم خان الأول</div>
+      <h1 class="main-title">hadimul-<span>harameyn</span></h1>
+      <p class="subtitle">
+        I. Selim (Yavuz) dönemine (1512–1520) ait askeri sefer lojistiğini, WGS84 menzil koordinatlarını, 
+        dönüm noktası meydan muharebelerini ve birincil kaynak vakayinâmelerini buluşturan akademik araştırma arşivi.
+      </p>
+    </div>
+
+    <!-- Stats Dashboard -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">40</div>
+        <div class="stat-label">Doğrulanmış Menzil (WGS84)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">6</div>
+        <div class="stat-label">Kayıtlı Meydan Muharebesi</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">18</div>
+        <div class="stat-label">Çağdaş Vakayinâme & Vesika</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">25</div>
+        <div class="stat-label">Birincil Tarihsel Alıntı</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3.800+</div>
+        <div class="stat-label">Kilometre Lojistik Güzergâh</div>
+      </div>
+    </div>
+
+    <!-- Quotes Showcase -->
+    <div class="quote-section" id="quoteSection">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <span class="quote-badge" id="quoteCategory">HADİMÜ'L-HAREMEYN & HİLAFET</span>
+        <div class="quote-nav">
+          <button class="quote-btn" onclick="prevQuote()">← Önceki</button>
+          <button class="quote-btn" onclick="nextQuote()">Sonraki →</button>
+        </div>
+      </div>
+      <div class="quote-original" id="quoteOriginal">
+        لا تقل حاكم الحرمين الشريفين، بل خادم الحرمين الشريفين
+      </div>
+      <div class="quote-turkish" id="quoteTurkish">
+        "Bana Mekke ve Medine'nin Hâkimi demeyiniz; bilakis o iki mübarek mukaddes beldenin Hizmetkârı deyiniz!"
+      </div>
+      <div class="quote-meta">
+        <div>
+          <span class="quote-speaker" id="quoteSpeaker">I. Selim (Yavuz Sultan Selim)</span>
+          <span style="color:#64748b; margin: 0 8px;">•</span>
+          <span class="quote-source" id="quoteContext">Şam Emeviyye Camii Hutbesi (1516)</span>
+        </div>
+        <div class="quote-source" id="quoteSourceWork">
+          Kaynak: Hoca Sâdeddin Efendi, Tâcü't-Tevârih
+        </div>
+      </div>
+    </div>
+
+    <!-- Maps Cards -->
+    <div class="section-title">İnteraktif Coğrafi Sefer Haritaları</div>
     <div class="grid">
       <div class="card">
         <div>
-          <h2>Çaldıran Seferi (1514)</h2>
-          <p>İstanbul'dan Sivas büyük ordugahına, oradan Çaldıran sahrası ve Tebriz payitahtına uzanan 21 menzillik lojistik intikal güzergahı.</p>
+          <div class="card-tag">DOĞU SEFERİ • 1514</div>
+          <h2>Çaldıran Seferi ve Tebriz Menzil Hattı</h2>
+          <p>
+            Üsküdar ordugâhından Sivas büyük teftiş merkezine, Erzurum ve Çaldıran sahrasından Safevî payitahtı Tebriz'e 
+            uzanan 21 menzillik devasa lojistik intikal. Tabur cengi, topçu tahkimatı ve Trabzon ikmal hattı.
+          </p>
         </div>
-        <a href="caldiran-campaign-map.html" class="btn">İnteraktif Haritayı Aç →</a>
+        <div class="card-footer">
+          <a href="caldiran-campaign-map.html" class="btn">İnteraktif Haritayı Aç →</a>
+          <a href="caldiran-folium.html" class="btn btn-secondary">Folium Katmanı</a>
+        </div>
       </div>
-      <div class="card">
+
+      <div class="card egypt">
         <div>
-          <h2>Mısır & Suriye Fethi (1516-1517)</h2>
-          <p>Mercidabık'tan Şam'a, susuzluk çekilmeden geçilen 10 günlük efsanevi Sina Çölü intikalinden Ridaniye ve Kahire fethine uzanan 19 menzil.</p>
+          <div class="card-tag">GÜNEY & MISIR SEFERİ • 1516-1517</div>
+          <h2>Mısır ve Suriye Fethi Güzergâhı</h2>
+          <p>
+            Mercidâbık zaferiyle açılan Suriye kapılarından Şam'a, su kervanlarıyla zayiatsız geçilen 10 günlük 
+            efsanevi Sina Çölü intikalinden Ridâniye ve Kahire'ye uzanan 19 menzillik feth-i mübîn.
+          </p>
         </div>
-        <a href="egypt-campaign-map.html" class="btn">İnteraktif Haritayı Aç →</a>
+        <div class="card-footer">
+          <a href="egypt-campaign-map.html" class="btn">İnteraktif Haritayı Aç →</a>
+          <a href="egypt-folium.html" class="btn btn-secondary">Folium Katmanı</a>
+        </div>
       </div>
     </div>
+
+    <!-- Battles Table -->
+    <div class="section-title">I. Selim Devri Seferleri & Meydan Muharebeleri Külliyatı</div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Yıl</th>
+            <th>Muharebe / Sefer</th>
+            <th>Bölge</th>
+            <th>Komutanlar</th>
+            <th>Taktik Dönüm Noktası</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="badge-year">1514</span></td>
+            <td><strong>Çaldıran Meydan Muharebesi</strong></td>
+            <td>Çaldıran Ovası, Doğu Anadolu</td>
+            <td>Yavuz Sultan Selim vs Şah I. İsmail</td>
+            <td>Top arabalarının zincirlenmesi (Tabur Cengi), salvo tüfek ateşi</td>
+          </tr>
+          <tr>
+            <td><span class="badge-year">1515</span></td>
+            <td><strong>Kemah Kalesi Fethi</strong></td>
+            <td>Kemah, Fırat Boyu</td>
+            <td>Bıyıklı Mehmed Paşa</td>
+            <td>Sarp burçların kuşatılması, Doğu Anadolu lojistiğinin güvenceye alınması</td>
+          </tr>
+          <tr>
+            <td><span class="badge-year">1515</span></td>
+            <td><strong>Turnadağı Muharebesi</strong></td>
+            <td>Turnadağı / Göksun, Maraş</td>
+            <td>Hadım Sinan Paşa vs Alâüddevle Bozkurt</td>
+            <td>Sarp dağ geçidi çevirmesi, Anadolu Türk siyasi birliğinin kesinleşmesi</td>
+          </tr>
+          <tr>
+            <td><span class="badge-year">1516</span></td>
+            <td><strong>Koçhisar (Hanik) Muharebesi</strong></td>
+            <td>Kızıltepe / Mardin Civarı</td>
+            <td>Bıyıklı Mehmed Paşa & İdris-i Bitlisî vs Karahan</td>
+            <td>Tüfek pususu ve Kürt aşiret süvari kıskacı, Güneydoğu'nun nihai fethi</td>
+          </tr>
+          <tr>
+            <td><span class="badge-year">1516</span></td>
+            <td><strong>Mercidâbık Meydan Muharebesi</strong></td>
+            <td>Mercidâbık Ovası, Halep Kuzeyi</td>
+            <td>Yavuz Sultan Selim vs Sultan Kansu Gavri</td>
+            <td>Hafif sahra topları salvosu, Suriye ve Filistin'in fethi</td>
+          </tr>
+          <tr>
+            <td><span class="badge-year">1516</span></td>
+            <td><strong>Han Yûnus (Gazze) Muharebesi</strong></td>
+            <td>Han Yûnus, Güney Filistin</td>
+            <td>Hadım Sinan Paşa vs Canbirdi Gazâlî</td>
+            <td>Çöl eşiğinde öncü pusu kırma manevrası, Sina ikmal kapısının açılması</td>
+          </tr>
+          <tr>
+            <td><span class="badge-year">1517</span></td>
+            <td><strong>Ridâniye Meydan Muharebesi</strong></td>
+            <td>El-Mukattam & Ridâniye, Kahire</td>
+            <td>Yavuz Sultan Selim vs Sultan Tomanbay</td>
+            <td>Mukattam Dağı çevirmesiyle Memlûk sabit top bataryalarının arkalanması</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      <p>
+        <strong>hadimul-harameyn</strong> • Dijital Tarih & Tarihsel GIS Mühendisliği Projesi • MIT Lisansı<br>
+        <a href="https://github.com/bahattinyunus/hadimul-harameyn" target="_blank">GitHub Deposu</a> • 
+        Kemalpaşazâde, Celâlzâde Mustafa, İdrîs-i Bitlisî, Hoca Sâdeddin, İbn İyâs ve Marino Sanuto kaynaklarıyla doğrulanmıştır.
+      </p>
+    </footer>
+
   </div>
+
+  <script>
+    const quotes = {quotes_json_str};
+    let currentIndex = 0;
+
+    function renderQuote(idx) {{
+      if (!quotes || quotes.length === 0) return;
+      const q = quotes[idx];
+      document.getElementById('quoteCategory').textContent = (q.category || 'TARİHSEL KELÂM').replace(/_/g, ' ').toUpperCase();
+      document.getElementById('quoteOriginal').textContent = q.original_text || q.transcription || '';
+      document.getElementById('quoteTurkish').textContent = '"' + (q.modern_turkish || '') + '"';
+      document.getElementById('quoteSpeaker').textContent = q.speaker + (q.speaker_title ? ' (' + q.speaker_title + ')' : '');
+      document.getElementById('quoteContext').textContent = q.event_or_context || (q.year ? q.year.toString() : '');
+      document.getElementById('quoteSourceWork').textContent = 'Kaynak: ' + (q.source_work || '') + (q.author ? ' (' + q.author + ')' : '');
+    }}
+
+    function nextQuote() {{
+      if (!quotes || quotes.length === 0) return;
+      currentIndex = (currentIndex + 1) % quotes.length;
+      renderQuote(currentIndex);
+    }}
+
+    function prevQuote() {{
+      if (!quotes || quotes.length === 0) return;
+      currentIndex = (currentIndex - 1 + quotes.length) % quotes.length;
+      renderQuote(currentIndex);
+    }}
+
+    if (quotes && quotes.length > 0) {{
+      renderQuote(0);
+      setInterval(nextQuote, 12000); // 12 saniyede bir otomatik geçiş
+    }}
+  </script>
 </body>
 </html>
 """
@@ -889,6 +1370,7 @@ class RouteMapGenerator:
         with open(index_path, "w", encoding="utf-8") as f:
             f.write(index_html)
         print(f"  ✓ Portal Ana Sayfası Üretildi: {index_path.resolve()}")
+
 
 
 def main():

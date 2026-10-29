@@ -1,0 +1,107 @@
+{
+  "$schema": "../../schemas/campaign.schema.json",
+  "campaign_id": "CMP-1516-HANYUNUS",
+  "title": "Han Yûnus (Gazze) Meydan Muharebesi ve Sina Kapısı",
+  "date": "1516-12-21",
+  "campaign_duration": {
+    "start": "1516-12-01",
+    "end": "1516-12-28"
+  },
+  "region": "Han Yûnus & Gazze Ovası, Güney Filistin - Sina Çölü Girişi",
+  "coordinates": {
+    "latitude": 31.3462,
+    "longitude": 34.3055
+  },
+  "belligerents": {
+    "ottoman": "Osmanlı İmparatorluğu (Öncü Kuvvetler)",
+    "opponent": "Memlûk Sultanlığı (Mısır Savunma Öncüsü)"
+  },
+  "commanders": {
+    "ottoman": [
+      {
+        "name": "Hadım Sinan Paşa",
+        "role": "Vezîriâzam ve Öncü Ordu Serdarı",
+        "casualty_status": "Sağ"
+      },
+      {
+        "name": "Zeynel Paşa",
+        "role": "Anadolu Beylerbeyi",
+        "casualty_status": "Sağ"
+      }
+    ],
+    "opponent": [
+      {
+        "name": "Canbirdi Gazâlî",
+        "role": "Memlûk Başemiri ve Şam Eski Naibi",
+        "casualty_status": "Yaralı olarak Mısır içlerine kaçtı"
+      }
+    ]
+  },
+  "forces_estimate": {
+    "ottoman": {
+      "total_estimate": "20.000 - 25.000 (Tüfekli yeniçeri öncüleri ve Rumeli süvarileri)",
+      "janissaries_infantry": "5.000 fitilli tüfekli yeniçeri",
+      "cavalry_sipahi": "15.000 tımarlı sipahi ve kapıkulu süvarisi",
+      "artillery_pieces": "40 seyyar sahra ve araba topu"
+    },
+    "opponent": {
+      "total_estimate": "15.000 - 20.000 elit Memlûk süvarisi ve Bedevi müttefikler",
+      "cavalry": "12.000 zırhlı Memlûk atlısı",
+      "infantry": "5.000 Bedevi yardımcı kuvveti",
+      "artillery_pieces": "Ateşli silah bulunmamaktaydı"
+    }
+  },
+  "tactical_breakdown": {
+    "desert_ambush_counter": "Canbirdi Gazâlî'nin Gazze vadisinde kum tepelerine kurduğu pusu, Osmanlı istihbaratı ve öncü keşif kolları tarafından vaktinde tespit edildi.",
+    "artillery_wagon_barrier": "Sinan Paşa sahra toplarını hızla hilal biçiminde mevzilendirip kum fırtınası altında hücum eden Memlûk süvarilerini top ve tüfek salvolarıyla püskürttü.",
+    "pursuit_to_sinai": "Dağılan Memlûk birlikleri El-Ariş istikametine kovalanarak Sina Çölü intikali öncesi Osmanlı ordusunun ikmal ve toplanma hattı garanti altına alındı."
+  },
+  "battle_phases": [
+    {
+      "phase": 1,
+      "title": "Şam'dan Gazze'ye İntikal",
+      "description": "Yavuz Sultan Selim Şam'da ana orduyla beklerken Vezîriâzam Sinan Paşa'yı Gazze ve Sina eşiğini tutmak üzere sevk etti."
+    },
+    {
+      "phase": 2,
+      "title": "Han Yûnus Ovasında Karşılaşma",
+      "description": "Canbirdi Gazâlî Kahire'den aldığı taze kuvvetlerle Han Yûnus bahçeleri önünde Osmanlı öncülerine ansızın yüklendi."
+    },
+    {
+      "phase": 3,
+      "title": "Yeniçeri Tüfek Ateşi ve Dağılma",
+      "description": "Sinan Paşa'nın soğukkanlı manevrasıyla yeniçeriler düzenli hat kurup salvo ateşi başlattı; Memlûk atlıları zırhlarına rağmen kırıldı."
+    },
+    {
+      "phase": 4,
+      "title": "Gazze'nin Emniyete Alınması ve Sina Hazırlığı",
+      "description": "Canbirdi Gazâlî hezimete uğrayarak Kahire'ye kaçtı. Han Yûnus ve Gazze tamamen fethedildi; develere su tulumları yüklenmeye başlandı."
+    }
+  ],
+  "historical_significance": [
+    "Memlûk Devleti'nin Mısır dışındaki son askeri direnç noktası tamamen imha edildi.",
+    "Sina Çölü geçişi için hayati önem taşıyan Han Yûnus su kuyuları ve zahire ambarları emniyete alındı.",
+    "Kahire'deki yeni sultan Tomanbay'a karşı psikolojik üstünlük sağlandı.",
+    "Ana ordunun (Yavuz Sultan Selim'in) Şam'dan Kudüs'e ve oradan Gazze'ye tehlikesizce intikali mümkün kılındı."
+  ],
+  "primary_source_references": [
+    {
+      "source_work": "Bedâi'u'z-Zuhûr fî Vekâi'i'd-Duhûr",
+      "author": "İbn İyâs",
+      "citation": "Cilt V, s. 115-122",
+      "excerpt": "Gazâlî Gazze'den bozguna uğrayıp geldiğinde Kahire'yi bir korku kapladı. İbn Osman'ın veziri Sinan Paşa Memlûk askerini kırıp geçirmişti."
+    },
+    {
+      "source_work": "Ruznâme-i Sefer-i Hümâyûn",
+      "author": "Haydar Çelebi",
+      "citation": "TSMA E. 1234, s. 98-102",
+      "excerpt": "Vezir Sinan Paşa Han Yûnus'ta düşmana rûzigâr gibi esüp zafer-i azîm kazandı. Gazze ve havalisi pâdişâh-ı âlem mülküne dahil oldu."
+    },
+    {
+      "source_work": "Selimnâme",
+      "author": "Celâlzâde Mustafa Çelebi",
+      "citation": "MEB Neşri, s. 160-168",
+      "excerpt": "Gazze sahrasında Memlûk ordusu perişan kılınup Sina çölü intikali içün cümle esbab müheyya kılındı."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HistoricalQuotesCatalog",
+  "description": "I. Selim (Yavuz Sultan Selim) dönemi birincil kaynak alıntıları, tarihsel epiraflar ve vecizeler şeması",
+  "type": "object",
+  "required": ["catalog_name", "description", "total_quotes", "quotes"],
+  "properties": {
+    "catalog_name": { "type": "string" },
+    "description": { "type": "string" },
+    "total_quotes": { "type": "integer", "minimum": 1 },
+    "quotes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "quote_id",
+          "speaker",
+          "category",
+          "original_text",
+          "transcription",
+          "modern_turkish",
+          "source_work",
+          "author",
+          "citation_reference"
+        ],
+        "properties": {
+          "quote_id": {
+            "type": "string",
+            "pattern": "^QTE-[0-9]{3}$"
+          },
+          "speaker": { "type": "string" },
+          "speaker_title": { "type": "string" },
+          "year": { "type": ["integer", "string"] },
+          "event_or_context": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": [
+              "cihan_hakimiyeti",
+              "hadimul_harameyn_ve_hilafet",
+              "sefer_ve_meydan_cengi",
+              "adalet_ve_kanun",
+              "devlet_akli_ve_vezaret",
+              "tasavvuf_ve_siir",
+              "diplomasi_ve_nameler",
+              "cagdas_gozlemciler"
+            ]
+          },
+          "original_text": { "type": "string" },
+          "transcription": { "type": "string" },
+          "modern_turkish": { "type": "string" },
+          "source_work": { "type": "string" },
+          "author": { "type": "string" },
+          "citation_reference": { "type": "string" },
+          "philosophical_commentary": { "type": "string" }
+        }
+      }
+    }
+  }
+}

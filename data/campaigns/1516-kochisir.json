@@ -1,0 +1,117 @@
+{
+  "$schema": "../../schemas/campaign.schema.json",
+  "campaign_id": "CMP-1516-KOCHISAR",
+  "title": "Koçhisar Meydan Muharebesi ve Güneydoğu'nun Fethi",
+  "date": "1516-04-28",
+  "campaign_duration": {
+    "start": "1516-03-15",
+    "end": "1516-05-10"
+  },
+  "region": "Koçhisar / Kızıltepe Ovası (Hanik Mevkii), Mardin Civarı",
+  "coordinates": {
+    "latitude": 37.1944,
+    "longitude": 40.5878
+  },
+  "belligerents": {
+    "ottoman": "Osmanlı İmparatorluğu & Güneydoğu Müttefik Kürt Aşiretleri",
+    "opponent": "Safevî Devleti (Ustaclu Ordusu)"
+  },
+  "commanders": {
+    "ottoman": [
+      {
+        "name": "Bıyıklı Mehmed Paşa",
+        "role": "Diyarbekir Beylerbeyi ve Serdar",
+        "casualty_status": "Sağ"
+      },
+      {
+        "name": "Mevlânâ İdrîs-i Bitlisî",
+        "role": "Diplomatik Müşavir ve Müttefik Aşiret Koordinatörü",
+        "casualty_status": "Sağ"
+      },
+      {
+        "name": "Şeref Han",
+        "role": "Bitlis Hâkimi ve Aşiret Serdarı",
+        "casualty_status": "Sağ"
+      }
+    ],
+    "opponent": [
+      {
+        "name": "Ustaclu Karahan Bey",
+        "role": "Safevî Başkumandanı (Ustaclu Muhammed Han'ın Kardeşi)",
+        "casualty_status": "Muharebede boynu vurularak maktul düştü"
+      },
+      {
+        "name": "Kıgılı Mustafa Bey",
+        "role": "Safevî Sağ Kanat Kumandanı",
+        "casualty_status": "Maktul"
+      }
+    ]
+  },
+  "forces_estimate": {
+    "ottoman": {
+      "total_estimate": "25.000 - 30.000 (Osmanlı düzenli birlikleri ve yerel aşiret süvarileri)",
+      "janissaries_infantry": "4.000 tüfekli yeniçeri",
+      "cavalry_sipahi": "15.000 tımarlı sipahi ve 10.000 mahalli Kürt aşiret atlısı",
+      "artillery_pieces": "60 adet seyyar hafif top ve darpzen"
+    },
+    "opponent": {
+      "total_estimate": "20.000 - 25.000 zırhlı Kızılbaş süvarisi",
+      "cavalry": "22.000 zırhlı Türkmen süvari",
+      "infantry": "Çok sınırlı milis gücü",
+      "artillery_pieces": "Ateşli silah ve top bulunmamaktaydı"
+    }
+  },
+  "tactical_breakdown": {
+    "fire_curtain_and_ambush": "Bıyıklı Mehmed Paşa, yeniçeri tüfekçilerini derenin arkasındaki çalılık sahaya gizleyerek hücum eden Safevi süvarilerini çapraz yaylım ateşine aldı.",
+    "tribal_cavalry_pincer": "İdris-i Bitlisî koordinasyonundaki yerel Kürt süvari kuvvetleri Karahan'ın çekilme hatlarını keserek çift taraflı kıskaç manevrası uyguladı.",
+    "decapitation_strike": "Karahan bizzat tüfek mermisiyle vurulup atından düşünce başı kesildi; başsız kalan Safevi ordusu tam bir çözülmeyle dağıldı."
+  },
+  "battle_phases": [
+    {
+      "phase": 1,
+      "title": "Diyarbakır Kuşatması ve Yardım Seferi",
+      "description": "Safevi kumandanı Karahan bir yıldır Osmanlı kontrolündeki Diyarbakır (Âmid) kalesini muhasara altında tutmaktaydı. Bıyıklı Mehmed Paşa yardım ordusuyla intikal etti."
+    },
+    {
+      "phase": 2,
+      "title": "Koçhisar Ovasında Karşılaşma",
+      "description": "Kuşatmayı kaldırıp güneye çekilen Karahan Mardin yakınlarındaki Koçhisar (Hanik) ovasında Osmanlı kuvvetlerini karşıladı."
+    },
+    {
+      "phase": 3,
+      "title": "Kızılbaş Süvari Taarruzu ve Tüfek Salvoları",
+      "description": "Karahan tüm süvari gücüyle Osmanlı sağ kanadına yüklendi; ancak gizlenen yeniçeri taburunun aralıksız tüfek ateşi süvari saflarını biçti."
+    },
+    {
+      "phase": 4,
+      "title": "Karahan'ın Katli ve Kesin Zafer",
+      "description": "Karahan vurularak atından düştü ve maktul oldu. Safevi ordusundan kurtulanlar İran içlerine kaçtı; Mardin, Urfa ve Hasankeyf kapılarını açtı."
+    }
+  ],
+  "historical_significance": [
+    "Safevîlerin Doğu ve Güneydoğu Anadolu'daki askeri ve siyasi varlığı nihai olarak sona erdirildi.",
+    "Mardin, Urfa, Sincar, Musul ve Kerkük hattı Osmanlı hakimiyetine girdi.",
+    "Kürt aşiretleri ile Osmanlı merkezi yönetimi arasındaki ittifak sarsılmaz biçimde tescillendi.",
+    "Fırat ve Dicle havzası bütünüyle emniyete alınarak yaklaşan Mısır Seferi'nin doğu kanadı güvenceye bağlandı."
+  ],
+  "primary_source_references": [
+    {
+      "source_work": "Selim-nâme",
+      "author": "İdris-i Bitlisî",
+      "citation": "TTK Yayınları, s. 188-215",
+      "excerpt": "Karahan ol mevkide can virüp leşi hâke serildi. Cümle Kürdistan vilâyetleri ebediyyen Safevî şerrinden halâs bulup Âl-i Osmân sancağı altında birleşti."
+    },
+    {
+      "source_work": "Selimnâme (Meâsir-i Selim Hânî)",
+      "author": "Celâlzâde Mustafa Çelebi",
+      "citation": "MEB Neşri, s. 132-140",
+      "excerpt": "Bıyıklı Mehmed Paşa merdâne cenk idüp Karahan'ın kellesini pâdişâh-ı âlem-penâha irsâl eyledi."
+    },
+    {
+      "source_work": "Tâcü't-Tevârih",
+      "author": "Hoca Sâdeddin Efendi",
+      "citation": "Cilt IV, s. 235-242",
+      "excerpt": "Koçhisar sahrası kâfir ve mülhid kanıyla lâlezâra döndü. Mardin kalesi fetholunup halkı şâdümân oldu."
+    }
+  ]
+}

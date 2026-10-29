@@ -110,6 +110,96 @@
         "Ahmet Uğur, 'Keşfî'nin Selim-nâmesi', DTCF Dergisi, Ankara, 1978."
       ],
       "significance_and_scope": "Çaldıran ve Mısır Seferleri menzillerini gün gün tutulan ruznâme notlarına paralel olarak aktaran kıymetli bir kaynaktır."
+    },
+    {
+      "source_id": "SRC-SELIMNAME-SUZI",
+      "title": "Selimnâme / Gazavatnâme-i Sultan Selim",
+      "title_original": "غزواتنامه سلطان سليم",
+      "author": "Sûzî Çelebi (Prizrenli)",
+      "author_dates": "ö. 1524",
+      "date_written_estimate": "1520 - 1522",
+      "language": "Osmanlı Türkçesi (Mesnevi)",
+      "genre": "Manzum Gazavatnâme",
+      "manuscript_copies": [
+        "Berlin Kraliyet Kütüphanesi Nu. Ms. Or. Oct. 1588",
+        "Millet Kütüphanesi, Ali Emîrî Manzum Nu. 740"
+      ],
+      "critical_editions": [
+        "Agâh Sırrı Levend, Gazavatnâmeler ve Mihaloğlu Ali Bey'in Gazavatnâmesi, TTK, Ankara, 1956."
+      ],
+      "significance_and_scope": "Akıncı beylerinin ve Rumeli sipahilerinin Çaldıran ve Mercidabık cephelerindeki kahramanlıklarını canlı, destansı bir dille kaydeden manzum birincil kaynaktır."
+    },
+    {
+      "source_id": "SRC-SELIMNAME-ISHAK",
+      "title": "Selimnâme",
+      "title_original": "سليم نامه",
+      "author": "İshak Çelebi (Üsküplü)",
+      "author_dates": "1484 - 1537",
+      "date_written_estimate": "1522 - 1525",
+      "language": "Osmanlı Türkçesi",
+      "genre": "Biyografik Tarih",
+      "manuscript_copies": [
+        "Topkapı Sarayı Müzesi Kütüphanesi, Revan Nu. 1279",
+        "Süleymaniye Kütüphanesi, Halet Efendi Nu. 614"
+      ],
+      "critical_editions": [
+        "Mehmet İpşirli, 'İshak Çelebi ve Selimnâmesi', İÜ Edebiyat Fakültesi Tarih Dergisi, 1983."
+      ],
+      "significance_and_scope": "Müderris ve kadı olan İshak Çelebi'nin padişahın ilmi meclislerini, fıkhi münazaralarını ve Şeyhülislam İbn Kemal ile olan yakın dostluğunu aktaran entelektüel biyografisidir."
+    },
+    {
+      "source_id": "SRC-SELIMNAME-SADI",
+      "title": "Selimnâme (Feth-i Diyâr-ı Mısr)",
+      "title_original": "فتح ديار مصر",
+      "author": "Sa'dî b. Tevfîk",
+      "author_dates": "ö. 1525 sonrası",
+      "date_written_estimate": "1518 - 1521",
+      "language": "Osmanlı Türkçesi",
+      "genre": "Fetihnâme / Sefername",
+      "manuscript_copies": [
+        "Topkapı Sarayı Müzesi Kütüphanesi, Bağdat Nu. 285",
+        "Nuruosmaniye Kütüphanesi Nu. 3218"
+      ],
+      "critical_editions": [
+        "Ahmet Uğur, 'Sa'dî-i Tevfîk'in Selim-nâme'si', Ankara Üniversitesi İlahiyat Fakültesi Yayınları, 1980."
+      ],
+      "significance_and_scope": "Mısır Seferi'ne bizzat katılıp Sina çölü intikalini ve Nil vadisi sokak çatışmalarını en ince askeri detaylarıyla günü gününe kaydeden mühim bir görgü tanıklığıdır."
+    },
+    {
+      "source_id": "SRC-SELIMNAME-LUTFIPASA",
+      "title": "Tevârih-i Âl-i Osmân (Sultan Selim Fihristi)",
+      "title_original": "تواريخ آل عثمان",
+      "author": "Lutfi Paşa (Osmanlı Vezîriâzamı)",
+      "author_dates": "1488 - 1564",
+      "date_written_estimate": "1542 - 1553",
+      "language": "Osmanlı Türkçesi",
+      "genre": "Hanedan Tarihi ve Devlet Adamı Hatıratı",
+      "manuscript_copies": [
+        "Topkapı Sarayı Müzesi Kütüphanesi, Hazine Nu. 1385",
+        "Viyana Milli Kütüphanesi Nu. H.O. 12"
+      ],
+      "critical_editions": [
+        "Âlî Bey Neşri, İstanbul, 1341; Kayhan Atik (Haz.), Kültür Bakanlığı, Ankara, 2001."
+      ],
+      "significance_and_scope": "Yavuz devrinde mutfak katibi ve ardından çavuşbaşı olarak hem Çaldıran hem Mısır seferine bizzat katılan, daha sonra Kanuni döneminde veziriazamlığa yükselen Lutfi Paşa'nın askeri ve idari perde arkası tanıklığıdır."
+    },
+    {
+      "source_id": "SRC-SELIMNAME-MUHYI",
+      "title": "Menâkıb-ı İbrâhîm-i Gülşenî",
+      "title_original": "مناقب ابراهيم گلشنى",
+      "author": "Muhyî-i Gülşenî",
+      "author_dates": "1528 - 1604",
+      "date_written_estimate": "1580 civarı",
+      "language": "Osmanlı Türkçesi",
+      "genre": "Tasavvufi Menâkıbnâme ve Biyografi",
+      "manuscript_copies": [
+        "Süleymaniye Kütüphanesi, Şehit Ali Paşa Nu. 1250",
+        "Topkapı Sarayı Müzesi Kütüphanesi, Emanet Hazinesi Nu. 1215"
+      ],
+      "critical_editions": [
+        "Tahsin Yazıcı (Haz.), Türk Tarih Kurumu (TTK), Ankara, 1982."
+      ],
+      "significance_and_scope": "Yavuz Sultan Selim'in Kahire fethinden sonra Mısır'ın büyük mutasavvıfı Şeyh İbrahim Gülşenî ile kubbe altındaki gizli ve sır dolu mülakatını, aralarındaki manevi münasebeti anlatan eşsiz tasavvufi kaynaktır."
     }
   ]
 }

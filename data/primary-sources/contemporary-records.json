@@ -74,6 +74,59 @@
         "Takvimhâne-i Âmire Tab'ı, 2 Cilt, İstanbul, 1264-1265/1848-1849."
       ],
       "significance_and_scope": "Yavuz Sultan Selim'in Şah İsmail'e yazdığı 4 sert mektubu, Kansu Gavri ile diplomatik teatiyi, Memlûk ulemasına yazılan fetihnâmeleri ve fermanların asıl metinlerini koruyan devasa diplomatik külliyattır."
+    },
+    {
+      "source_id": "SRC-RECORD-ZENO",
+      "title": "A Narrative of Italian Travels in Persia and Ottoman Frontiers",
+      "title_original": "Viaggi in Persia e all'Impero Ottomano",
+      "author": "Caterino Zeno & Giovanni Maria Angiolello",
+      "author_dates": "15. - 16. Yüzyıl",
+      "date_written_estimate": "1515 - 1524",
+      "language": "İtalyanca / Venedik Lehçesi",
+      "genre": "Seyahatnâme / Diplomatik İstihbarat Raporu",
+      "manuscript_copies": [
+        "Biblioteca Marciana, Venedik, It. VII, 203"
+      ],
+      "critical_editions": [
+        "Charles Grey (Ed. and Transl.), A Narrative of Italian Travels in Persia, Hakluyt Society, Londra 1873."
+      ],
+      "significance_and_scope": "Safevî ordusunun taktik yapısını, Şah İsmail'in ordugahını ve Çaldıran Meydan Muharebesi'ndeki topçu dehşetini tarafsız bir Avrupalı gözlemcinin gözünden aktaran nadir kaynaktır."
+    },
+    {
+      "source_id": "SRC-RECORD-TSMA-SEFER",
+      "title": "Topkapı Sarayı Müzesi Arşivi Sefer Defterleri ve Menzil İrsaliyeleri",
+      "title_original": "دفاتر مصارفات سفر همايون و ايرسالات منازل",
+      "author": "Divan-ı Hümâyûn Maliye ve İaşe Katipleri",
+      "author_dates": "1514 - 1517",
+      "date_written_estimate": "1514 - 1517",
+      "language": "Osmanlı Türkçesi (Siyakat ve Rika)",
+      "genre": "Resmi Maliye, Zahire ve Lojistik Defterleri (Birincil Arşiv Vesikası)",
+      "manuscript_copies": [
+        "TSMA Nu. E. 5452, E. 6689, D. 9612",
+        "Başbakanlık Osmanlı Arşivi (BOA), Maliyeden Müdevver (MAD) Nu. 12"
+      ],
+      "critical_editions": [
+        "Halil Sahillioğlu, 'On Beşinci Yüzyıl Sonunda Osmanlı Darphane Mukataaları ve Sefer Masrafları', İktisat Fakültesi Mecmuası, 1968."
+      ],
+      "significance_and_scope": "Çaldıran ve Mısır Seferlerinde her bir menzilde harcanan buğday, arpa, un, deve sayısı, mekkari kiraları ve nakit akışını kuruşu kuruşuna gösteren resmi arşiv kütükleridir."
+    },
+    {
+      "source_id": "SRC-RECORD-HUNERNAME",
+      "title": "Hünernâme ve Şehnâme-i Âl-i Osmân (Sultan Selim Bölümü)",
+      "title_original": "هنرنامه - جلد ثانى",
+      "author": "Seyyid Lokman b. Hüseyin el-Aşûrî (Resmi Saray Şehnâmecisi)",
+      "author_dates": "ö. 1601 civarı",
+      "date_written_estimate": "1584 - 1588",
+      "language": "Osmanlı Türkçesi",
+      "genre": "Resmi Saray Şehnâmesi ve Minyatürlü Teşrifat Tarihi",
+      "manuscript_copies": [
+        "Topkapı Sarayı Müzesi Kütüphanesi, Hazine Nu. 1524 (Nakkaş Osman Minyatürlü)",
+        "Topkapı Sarayı Müzesi Kütüphanesi, Revan Nu. 1540"
+      ],
+      "critical_editions": [
+        "Esin Atıl, 'The Art of the Book: Hünername', Topkapı Sarayı Müzesi Yıllığı, İstanbul 1986."
+      ],
+      "significance_and_scope": "Yavuz Sultan Selim'in Çaldıran'daki tabur cengini, Sina Çölü geçişini ve Ridâniye topçu manevralarını Nakkaş Osman ve saray atölyesinin fırçasından günümüze taşıyan görsel şaheserdir."
     }
   ]
 }

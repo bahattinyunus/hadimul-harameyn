@@ -1,0 +1,117 @@
+{
+  "$schema": "../../schemas/campaign.schema.json",
+  "campaign_id": "CMP-1515-TURNADAGI",
+  "title": "Turnadağı Meydan Muharebesi ve Anadolu Türk Birliğinin Sağlanması",
+  "date": "1515-06-12",
+  "campaign_duration": {
+    "start": "1515-05-01",
+    "end": "1515-06-25"
+  },
+  "region": "Turnadağı / Göksun - Elbistan Dağlık Bölgesi (Kahramanmaraş)",
+  "coordinates": {
+    "latitude": 38.0167,
+    "longitude": 36.5000
+  },
+  "belligerents": {
+    "ottoman": "Osmanlı İmparatorluğu",
+    "opponent": "Dulkadiroğulları Beyliği"
+  },
+  "commanders": {
+    "ottoman": [
+      {
+        "name": "Hadım Sinan Paşa",
+        "role": "Rumeli Beylerbeyi ve Serdar",
+        "casualty_status": "Sağ"
+      },
+      {
+        "name": "Şehsuvaroğlu Ali Bey",
+        "role": "Dulkadiroğlu Hanedan Mensubu ve Osmanlı Müttefiki",
+        "casualty_status": "Sağ"
+      },
+      {
+        "name": "I. Selim (Yavuz Sultan Selim)",
+        "role": "Osmanlı Padişahı (Genel Sefer Sevk ve İdarecisi)",
+        "casualty_status": "Sağ (Kayseri / Göksun gerisinde ordugah kurdu)"
+      }
+    ],
+    "opponent": [
+      {
+        "name": "Alâüddevle Bozkurt Bey",
+        "role": "Dulkadiroğulları Hükümdarı",
+        "casualty_status": "Muharebede maktul düştü"
+      },
+      {
+        "name": "Şehzade Süleyman Bey",
+        "role": "Alâüddevle Bey'in Oğlu ve Veliahdı",
+        "casualty_status": "Maktul"
+      }
+    ]
+  },
+  "forces_estimate": {
+    "ottoman": {
+      "total_estimate": "30.000 - 40.000 (Tüfekli yeniçeriler ve Rumeli sipahileri)",
+      "janissaries_infantry": "6.000 tüfekli yeniçeri",
+      "cavalry_sipahi": "25.000 Anadolu ve Rumeli tımarlı sipahisi",
+      "artillery_pieces": "50 adet hafif dağ darpzeni"
+    },
+    "opponent": {
+      "total_estimate": "25.000 - 30.000 dağlık araziye alışkın Türkmen süvarisi",
+      "cavalry": "20.000 Türkmen atlısı",
+      "infantry": "8.000 dağ piyadesi ve okçu",
+      "artillery_pieces": "Topçu bulunmamaktaydı"
+    }
+  },
+  "tactical_breakdown": {
+    "mountain_flanking": "Dulkadir süvarilerinin sarp Turnadağı eteklerindeki savunması, Şehsuvaroğlu Ali Bey'in arazi bilgisi sayesinde arkadan sarıldı.",
+    "firearms_superiority": "Dar dağ geçidinde sıkışan Türkmen atlıları yeniçeri tüfek salvoları karşısında manevra kabiliyetini yitirdi.",
+    "dynastic_alliance": "Eski Dulkadir beyi Şehsuvar Bey'in oğlu Ali Bey'in Osmanlı safında yer alması yerel aşiretlerin desteğini böldü."
+  },
+  "battle_phases": [
+    {
+      "phase": 1,
+      "title": "Kemah'ın Düşüşü ve Harekât Kararı",
+      "description": "Fırat boyundaki müstahkem Kemah Kalesi'nin fethinden sonra Çaldıran'da Osmanlı lojistiğini taciz eden Alâüddevle Bey üzerine ordu sevk edildi."
+    },
+    {
+      "phase": 2,
+      "title": "Turnadağı Eteklerinde Karşılaşma",
+      "description": "Hadım Sinan Paşa öncü kuvvetlerle Göksun mevkiinde Alâüddevle'nin dağlık savunma hattıyla karşılaştı."
+    },
+    {
+      "phase": 3,
+      "title": "Şehsuvaroğlu Ali Bey'in Kuşatması ve Hücum",
+      "description": "Ali Bey'e bağlı yerel kılavuzlar eşliğinde Osmanlı sol kanadı Turnadağı'nın sırtlarını tutarak Dulkadir merkezini ateş altına aldı."
+    },
+    {
+      "phase": 4,
+      "title": "Alâüddevle Bey'in Maktul Düşmesi ve İlhak",
+      "description": "Doksan yaşını aşmış olan Alâüddevle Bozkurt Bey savaş meydanında dört oğluyla birlikte maktul düştü; beylik toprakları doğrudan Osmanlı mülküne dahil edildi."
+    }
+  ],
+  "historical_significance": [
+    "Dulkadiroğulları Beyliği tarihe karıştı; Maraş, Elbistan, Bozok ve Malatya Osmanlı eyaleti oldu.",
+    "Anadolu Türk siyasi birliği (Selçuklu mirası üzerindeki tüm beyliklerin ilhakı) kesin olarak tamamlandı.",
+    "Memlûk Sultanlığı ile Osmanlı Devleti arasındaki tampon bölge kalktı ve iki imparatorluk doğrudan sınır komşusu oldu.",
+    "Mısır ve Suriye Seferi için gereken güney ikmal ve lojistik üsleri emniyete alındı."
+  ],
+  "primary_source_references": [
+    {
+      "source_work": "Tevârih-i Âl-i Osmân, IX. Defter",
+      "author": "İbn Kemal (Kemalpaşazâde)",
+      "citation": "TTK Yayınları, s. 142-156",
+      "excerpt": "Alâüddevle ki fitne ocağı idi, Turnadağı ardında seyf-i İslâm ile pâymâl oldu. Mülk-i Rûm'da iki başlılık zevâl bulup nizam-ı âlem karâr kıldı."
+    },
+    {
+      "source_work": "Tâcü't-Tevârih",
+      "author": "Hoca Sâdeddin Efendi",
+      "citation": "Cilt IV, s. 218-228",
+      "excerpt": "Sinan Paşa'nın himmeti ve Şehsuvaroğlu'nun gayretiyle Turnadağı eteklerinde küffar ve ehl-i şekâvat hezimete uğradı."
+    },
+    {
+      "source_work": "Selimnâme",
+      "author": "Celâlzâde Mustafa Çelebi",
+      "citation": "MEB Yayınları, s. 120-128",
+      "excerpt": "Maraş ve Elbistan vilâyetleri Âl-i Osmân'ın adil mülküne ilhâk olunup halkı emn ü emâna kavuştu."
+    }
+  ]
+}
