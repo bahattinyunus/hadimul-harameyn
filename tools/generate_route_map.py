@@ -1184,7 +1184,7 @@ class RouteMapGenerator:
         <div class="stat-label">Çağdaş Vakayinâme & Vesika</div>
       </div>
       <div class="stat-card">
-        <div class="stat-num">25</div>
+        <div class="stat-num">50</div>
         <div class="stat-label">Birincil Tarihsel Alıntı</div>
       </div>
       <div class="stat-card">
